@@ -18,10 +18,22 @@ I am passionate about various areas of **Artificial Intelligence** including **S
 News
 ====
 
-- [April 2023] I successfully passed Amazon Web Services - Machine Learning Specialty Certification Exam!
+- **[April 2023]**: I successfully passed Amazon Web Services - Machine Learning Specialty Certification Exam!
 
-- [March 2023] I successfully passed Amazon Web Services - Cloud Practitioner Certification Exam!
+- **[March 2023]**: I successfully passed Amazon Web Services - Cloud Practitioner Certification Exam!
 
+- **[October 2022]**: I am promoted from Senior Data Scientist to Principal Data Scientist!
+
+
+
+Talks
+====
+
+- **[November 2022]**: "An Introduction to Deep Learning", ASU Data Conference, Tempe, AZ 2022. [Slide] 
+
+- **[June 2022]**: "Predicting Persistence Using Machine Learning: An Overview of Model Development to Model Deployment, Air Forum, Phoenix, AZ, 2022. [Slide]()
+
+- **[March 2022]**: "Predicting Student Persistence", ASU Library Data Science Open Lab, Tempe, AZ, 2022.[video](https://www.youtube.com/watch?v=jcvIhXXAzBY&t=2626s)
 
 
 
@@ -43,6 +55,28 @@ Honors and Awards
 - CGRER graduate travel award, university of Iowa, spring 2016.
 
 - Ranked **1st** at high school and pre-university program among all students.
+
+
+
+Selected Certifications
+====
+
+- "Natural Language Processing", earned through Udacity learning portal.[Certification](https://graduation.udacity.com/confirm/e/b17b6fe0-3450-11ed-9d86-6b60d01a3969)
+
+- "Computer Vision", earned through Udacity learning portal.[Certification](https://graduation.udacity.com/confirm/SATMTMWF)
+
+- "Deep Learning", earned through Udacity learning portal.[Certification](https://graduation.udacity.com/confirm/e/818fa8fc-548d-11ed-8ebc-9bf2a0d6cc96)
+
+- "Software Engineer Essentials", earned through Udacity learning portal.[Certification]()
+
+- "AWS Cloud Practitioner", earned through AWS certification exam.[Certification](https://www.credly.com/badges/b614a0d4-334f-4820-b5c7-f4dfdd258c1a/public_url)
+
+- "AWS Machine Learning Specialty", earned through AWS certification exam. [Certification](https://www.credly.com/badges/a770f74d-43df-4e3b-9d7e-1995fd0e34ba/public_url)
+
+- "Software Engineer Essentials", earned through Coursera learning portal.[Certification](https://www.credly.com/badges/a9bdedb9-eb29-4401-8734-3387ddb554ab)   
+
+
+ 
 
 
 Contact Information
