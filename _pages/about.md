@@ -53,7 +53,7 @@ Talks
 
 - **[June 2022]**: "Predicting Persistence Using Machine Learning: An Overview of Model Development to Model Deployment, Air Forum, Phoenix, AZ, 2022. 
 
-- **[March 2022]**: "Predicting Student Persistence", ASU Library Data Science Open Lab, Tempe, AZ, 2022.[Video](https://www.youtube.com/watch?v=jcvIhXXAzBY&t=2626s)
+- **[March 2022]**: "Predicting Student Persistence", ASU Library Data Science Open Lab, Tempe, AZ, 2022. [[Video](https://www.youtube.com/watch?v=jcvIhXXAzBY&t=2626s)]
 
 
 
