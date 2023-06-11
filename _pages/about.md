@@ -9,7 +9,7 @@ redirect_from:
 ---
 I currently work as a **Principal Data Scientist** in Actionable Analytic group at [the Office of the University Provost at Arizona State University](https://provost.asu.edu/) where I maintain the whole end-to-end machine learning model development to deployment. Prior to my current position, I was a senior machine learning scientist at Overstock. 
 
-I have obtained my Bachelor degree in Electrical Engineering from the University of Tehran (ranked 1st university in Iran) Summer 2009, Masters and Ph.D in Electrical Engineering from the University of Iowa, Summer 2016.
+I have obtained my Bachelor degree in Electrical Engineering from the [University of Tehran](https://ut.ac.ir/en) (ranked 1st university in Iran) Summer 2009, Masters and Ph.D in Electrical Engineering from the [University of Iowa](https://uiowa.edu/), Summer 2016.
 
 For more information, please refer to my **resume** here.
 
@@ -28,6 +28,9 @@ News
 - **[March 2023]**: I successfully passed Amazon Web Services - Cloud Practitioner Certification Exam.
 
 - **[October 2022]**: I am promoted from Senior Data Scientist to Principal Data Scientist.
+
+- **[December 2020]**: I will be joining Arizona State University as Senior Data Scientist.
+
 
 
 
@@ -97,7 +100,50 @@ Selected Projects
 - **Landmark Classification and Tagging for Social Media**: Built a Deep Convolution Neural Network to classify different landmarks found on social media using PyTorch as part of the Udacity Deep Learning course. [[code](https://github.com/hamidghasemi69/Landmark-Classification-and-Tagging-for-Social-Media)]
 
 
+Selected Publications
+====
+- **Using Satellite Remote Sensing and Machine Learning Techniques Towards Precipitation Prediction and Vegetation Classification**. [[pdf](https://www.researchgate.net/publication/332383830_Using_Satellite_Remote_Sensing_and_Machine_Learning_Techniques_Towards_Precipitation_Prediction_and_Vegetation_Classification)]
 
+Journal of Environmental Informatics 2019 - Impact Factor: 10.22
+Dimitrios Stampoulis Stampoulis, **Hamidreza Ghasemi Damavandi**,Dragan Boscovic, and John Sabo.
+
+- **A Bayesian Neural Network for an Accurate Representation and Transformation of Runoff Dynamics: A Case Study of the Brazos River Basin in Texas**. [[pdf](https://savvysciencepublisher.com/jms/index.php/jeset/article/view/385/359)]
+
+Journal of Environmental Science and Engineering Technology 2020
+**Hamidreza  Ghasemi  Damavandi**,  Dimitrios  Stampoulis,  John  Sabo1,Reepal  Shah,  Li Huang,   Yuhang   Wei,   Yushiou   Tsai,   Jaishri   Srinivasan,   Tushar   Sinha,   Dragan Boscovic, and Glen Low.
+
+- **Machine Learning Classifes Predictive Kinematic Features in a Mouse Model of Neurodegeneration**. [[pdf](https://www.nature.com/articles/s41598-021-82694-3)]
+
+Scientific Reports 2021 - Impact Factor: 4.997
+Ruyi Huang, Ali A. Nikooyan, Bo Xu, M. Selvan Joseph,
+**Hamidreza Ghasemi Damavandi**, Nathan von Trotha, Lilian Li, Ashok Bhattarai,
+Deeba Zadeh, Yeji Seo, Xingquan Liu, PatrickA.Truong, Edward H. Koo, J. C. Leiter , Daniel C. Lu.
+
+- **Machine Learning: An Efficient Alternative to the Variable Infiltration Capacity Model for an Accurate Simulation of Runoff Rates**. [[pdf](https://pdfs.semanticscholar.org/126d/41454be51ed2cce1585818c82eaa121b59c9.pdf)]
+
+Int'l Journal of Environmental Science and Development 2019
+**Hamidreza Ghasemi Damavandi**, Dimitrios Stampoulis, Reepal Shah, Yuhang Wei, Dragan Boscovic, and John Sabo
+
+- **Accurate Prediction of Streamflow Using Long Short-Term Memory Network: A Case Study in the Brazos River Basin in Texas**. [[pdf](https://pdfs.semanticscholar.org/e03a/50ac7336c5f843f5fe0599b5b38548abc4bd.pdf)]
+
+Int'l Journal of Environmental Science and Development 2019
+**Hamidreza Ghasemi Damavandi**, Reepal Shah, Dimitrios Stampoulis, Yuhang Wei, Dragan Boscovic, and John Sabo.
+
+- **Real-time monitoring and prediction of water quality parameters and algae concentrations using microbial potentiometric sensor signals and machine learning tools**. [[pdf](https://www.sciencedirect.com/science/article/abs/pii/S0048969720364068)]
+
+
+Science of The Total Environment 2021
+Daniel Saboe, **Hamidreza Ghasemi Damavandi**, Ming Ming Gao, Mirjana Samardzic, Kiril D. Hristovski, Dragan Boscovic, Scott R. Burge, Russell G. Burge, David A. Hoffman.
+
+- **An Active Learning Based Prediction of Epidural Stimulation Outcome in Spinal Cord Injury Patients Using Dynamic Sample weighting**. [[pdf](https://ieeexplore.ieee.org/document/8031197)]
+ICHI 2017
+Mohammad Kachuee, Lisa D. Moore, Tali Homsey, **Hamidreza Ghasemi Damavandi**, Babak Moatamed, Anahita Hosseini, Ruyi Huang, James Leiter, Daniel C. Lu, Majid Sarrafzadeh.
+
+- **Interpreting Comprehensive Two-dimensional Gas Chromatography Using Peak Topography Maps with Application to Petroleum Forensics**. [[pdf](https://link.springer.com/article/10.1186/s13065-016-0211-y)]
+
+
+Chemistry Central Journal 2016
+**Hamidreza Ghasemi Damavandi**, Ananya Sen Gupta, Robert K. Nelson, Christopher M. Reddy.
 
 
 
