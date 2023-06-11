@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I currently work as a **Principal Data Scientist** in Actionable Analytic group at [the Office of the University Provost at Arizona State University](https://provost.asu.edu/) where I maintain the whole end-to-end machine learning model development to deployment. Prior to my current position, I was a senior machine learning scientist at Overstock. 
+I am Hamidreza Ghasemi Damavandi, and currently work as a **Principal Data Scientist** in Actionable Analytic group at [the Office of the University Provost at Arizona State University](https://provost.asu.edu/) where I maintain the whole end-to-end machine learning model development to deployment. Prior to my current position, I was a senior machine learning scientist at Overstock. 
 
 I have obtained my Bachelor degree in Electrical Engineering from the [University of Tehran](https://ut.ac.ir/en) (ranked 1st university in Iran) Summer 2009, Masters and Ph.D in Electrical Engineering from the [University of Iowa](https://uiowa.edu/), Summer 2016.
 
@@ -163,6 +163,7 @@ Contact Information
 ====
 
 - **Address**: 1150 E University Dr, Tempe, AZ, 85281
-- **Email**: hghasemi@asu.edu
+- **Work Email**: hghasemi@asu.edu
+- **Personal Email**: hamidghasemi69@gmail.com
 
 
