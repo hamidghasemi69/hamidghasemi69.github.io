@@ -7,20 +7,20 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am Hamidreza Ghasemi Damavandi, and currently work as a **Principal Data Scientist** in Actionable Analytic group at [the Office of the University Provost at Arizona State University](https://provost.asu.edu/) where I maintain the whole end-to-end machine learning model development to deployment. Prior to my current position, I was a senior machine learning scientist at Overstock. 
+I am Hamidreza Ghasemi Damavandi, and currently work as a **Principal Data Scientist** in Actionable Analytic group at [the Office of the University Provost at Arizona State University](https://provost.asu.edu/) where I maintain the whole end-to-end machine learning model development to model deployment. Prior to my current position, I was a senior machine learning scientist at Overstock. 
 
 I have obtained my Bachelor degree in Electrical Engineering from the [University of Tehran](https://ut.ac.ir/en) (ranked 1st university in Iran) Summer 2013, Masters and Ph.D in Electrical Engineering from the [University of Iowa](https://uiowa.edu/), Summer 2016.
 
 For more information, please refer to my **resume** here.
 
 
-Research Interest
+<link rel="icon" type="image/png" href="../images/research.png"> Research Interest
 ====
 
-I am passionate about various areas of **Artificial Intelligence** including **Statistical Machine Learning**, **Scientific Machine Learning**, **Deep Learning**, **Reinforcement Learning**, and **Natural Language Processing**. 
+I am passionate about various areas of **Artificial Intelligence** including **Statistical Machine Learning**, **Scientific Machine Learning**, **Deep Learning**, **Reinforcement Learning**, and **Natural Language Processing**. Additionally, I am interested in deploying machine learning applications on a cloud solution such using MLOps principals.
 
 
-News
+Recent News
 ====
 
 - **[April 2023]**: I successfully passed Amazon Web Services - Machine Learning Specialty Certification Exam.
@@ -31,6 +31,7 @@ News
 
 - **[December 2020]**: I will be joining Arizona State University as Senior Data Scientist.
 
+- **[March 2020]**: I will be joining Overstock as Senior Machine Learning Scientist.
 
 
 
