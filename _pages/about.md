@@ -142,19 +142,19 @@ Deeba Zadeh, Yeji Seo, Xingquan Liu, PatrickA.Truong, Edward H. Koo, J. C. Leite
 Selected Certifications
 ====
 
-- "Natural Language Processing", earned through Udacity learning portal: [[Certification](https://graduation.udacity.com/confirm/e/b17b6fe0-3450-11ed-9d86-6b60d01a3969)]
+- "Natural Language Processing", earned through Udacity learning portal. [[Certification](https://graduation.udacity.com/confirm/e/b17b6fe0-3450-11ed-9d86-6b60d01a3969)]
 
-- "Computer Vision", earned through Udacity learning portal: [[Certification](https://graduation.udacity.com/confirm/SATMTMWF)]
+- "Computer Vision", earned through Udacity learning portal. [[Certification](https://graduation.udacity.com/confirm/SATMTMWF)]
 
-- "Deep Learning", earned through Udacity learning portal: [[Certification](https://graduation.udacity.com/confirm/e/818fa8fc-548d-11ed-8ebc-9bf2a0d6cc96)]
+- "Deep Learning", earned through Udacity learning portal. [[Certification](https://graduation.udacity.com/confirm/e/818fa8fc-548d-11ed-8ebc-9bf2a0d6cc96)]
 
-- "Software Engineer Essentials", earned through Udacity learning portal: [[Certification](https://www.credly.com/badges/a9bdedb9-eb29-4401-8734-3387ddb554ab)]
+- "Software Engineer Essentials", earned through Udacity learning portal. [[Certification](https://www.credly.com/badges/a9bdedb9-eb29-4401-8734-3387ddb554ab)]
 
-- "AWS Cloud Practitioner", earned through AWS certification exam: [[Certification](https://www.credly.com/badges/b614a0d4-334f-4820-b5c7-f4dfdd258c1a/public_url)]
+- "AWS Cloud Practitioner", earned through AWS certification exam. [[Certification](https://www.credly.com/badges/b614a0d4-334f-4820-b5c7-f4dfdd258c1a/public_url)]
 
-- "AWS Machine Learning Specialty", earned through AWS certification exam: [[Certification](https://www.credly.com/badges/a770f74d-43df-4e3b-9d7e-1995fd0e34ba/public_url)]
+- "AWS Machine Learning Specialty", earned through AWS certification exam. [[Certification](https://www.credly.com/badges/a770f74d-43df-4e3b-9d7e-1995fd0e34ba/public_url)]
 
-- "Software Engineer Essentials", earned through Coursera learning portal: [[Certification](https://www.credly.com/badges/a9bdedb9-eb29-4401-8734-3387ddb554ab)]   
+- "Software Engineer Essentials", earned through Coursera learning portal. [[Certification](https://www.credly.com/badges/a9bdedb9-eb29-4401-8734-3387ddb554ab)]   
 
 
  
