@@ -33,6 +33,7 @@ Recent News
 
 - **[March 2020]**: I will be joining Overstock as Senior Machine Learning Scientist.
 
+- **[March 2018]**: I will be joining Arizona State University as a Postdoctoral Research Associate. 
 
 
 Education
