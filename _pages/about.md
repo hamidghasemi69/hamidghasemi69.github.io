@@ -104,9 +104,8 @@ Selected Publications
 ====
 - **Using Satellite Remote Sensing and Machine Learning Techniques Towards Precipitation Prediction and Vegetation Classification**. [[pdf](https://www.researchgate.net/publication/332383830_Using_Satellite_Remote_Sensing_and_Machine_Learning_Techniques_Towards_Precipitation_Prediction_and_Vegetation_Classification)]
 
-          Journal of Environmental Informatics 2019 - Impact Factor: 10.22 
-
-          Dimitrios Stampoulis Stampoulis, **Hamidreza Ghasemi Damavandi**,Dragan Boscovic, and John Sabo.
+  Journal of Environmental Informatics 2019 - Impact Factor: 10.22 
+  Dimitrios Stampoulis Stampoulis, **Hamidreza Ghasemi Damavandi**,Dragan Boscovic, and John Sabo.
 
 - **A Bayesian Neural Network for an Accurate Representation and Transformation of Runoff Dynamics: A Case Study of the Brazos River Basin in Texas**. [[pdf](https://savvysciencepublisher.com/jms/index.php/jeset/article/view/385/359)]
 
