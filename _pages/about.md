@@ -14,7 +14,7 @@ I have obtained my Bachelor degree in Electrical Engineering from the [Universit
 For more information, please refer to my **resume** here.
 
 
-<link rel="icon" type="image/png" href="../images/research.png"> Research Interest
+Research Interest
 ====
 
 I am passionate about various areas of **Artificial Intelligence** including **Statistical Machine Learning**, **Scientific Machine Learning**, **Deep Learning**, **Reinforcement Learning**, and **Natural Language Processing**. Additionally, I am interested in deploying machine learning applications on a cloud solution such using MLOps principals.
