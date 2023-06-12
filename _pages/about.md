@@ -11,7 +11,7 @@ I am Hamidreza Ghasemi Damavandi, and currently work as a **Principal Data Scien
 
 I have obtained my Bachelor's degree in Electrical Engineering from the [University of Tehran](https://ut.ac.ir/en) (ranked 1st university in Iran) Summer 2013, Masters and Ph.D in Electrical Engineering from the [University of Iowa](https://uiowa.edu/), Summer 2016.
 
-For more information, please refer to my **resume** [here](../files/Resume_Updated.pdf).
+For more information, please refer to my [**resume**](../files/Resume_Updated.pdf).
 
 
 Research Interest
