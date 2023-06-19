@@ -11,7 +11,7 @@ I am Hamidreza Ghasemi Damavandi, and currently work as a **Principal Data Scien
 
 I have obtained my Bachelor's degree in Electrical Engineering from the [University of Tehran](https://ut.ac.ir/en) (ranked 1st university in Iran) Summer 2013, Master's degree and Ph.D in Electrical Engineering from the [University of Iowa](https://uiowa.edu/), Summer 2016.
 
-For more information, please refer to my [**resume**](../files/resume.pdf).
+For more information, please refer to my [**resume**](../files/Resume.pdf).
 
 
 Research Interest
@@ -163,7 +163,6 @@ Contact Information
 ====
 
 - **Address**: 1150 E University Dr, Tempe, AZ, 85281
-- **Work Email**: hghasemi@asu.edu
 - **Personal Email**: hamidghasemi69@gmail.com
 
 
