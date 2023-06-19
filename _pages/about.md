@@ -116,7 +116,7 @@ Selected Publications
   Scientific Reports 2021 - Impact Factor: 4.997 \
   Ruyi Huang, Ali A. Nikooyan, Bo Xu, M. Selvan Joseph,
 **Hamidreza Ghasemi Damavandi**, Nathan von Trotha, Lilian Li, Ashok Bhattarai,
-Deeba Zadeh, Yeji Seo, Xingquan Liu, PatrickA.Truong, Edward H. Koo, J. C. Leiter , Daniel C. Lu.
+Deeba Zadeh, Yeji Seo, Xingquan Liu, Patrick A.Truong, Edward H. Koo, J. C. Leiter , Daniel C. Lu.
 
 - **Machine Learning: An Efficient Alternative to the Variable Infiltration Capacity Model for an Accurate Simulation of Runoff Rates**. [[pdf](https://pdfs.semanticscholar.org/126d/41454be51ed2cce1585818c82eaa121b59c9.pdf)] \
   Int'l Journal of Environmental Science and Development 2019 \
