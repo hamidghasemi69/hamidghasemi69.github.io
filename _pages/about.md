@@ -61,7 +61,7 @@ Talks
 Honors and Awards
 ====
 
-- Received Green Card through **National Interest Waiver (NIW)** due to exceptional abilities in the field of science, June 2019.
+- Received Green Card through **National Interest Waiver (NIW)** due to academic achievements, June 2019.
 
 - Ranked **5th** in the nation‑wide Azad university entrance exam for Bachelor of Science, summer 2009.
 
