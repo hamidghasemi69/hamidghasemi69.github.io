@@ -52,7 +52,7 @@ Talks
 
 - **[November 2022]**: "An Introduction to Deep Learning", ASU Data Conference, Tempe, AZ 2022. [[Slide](../files/Introduction_to_DeepLearning.pptx)]
 
-- **[June 2022]**: "Predicting Persistence Using Machine Learning: An Overview of Model Development to Model Deployment, Air Forum, Phoenix, AZ, 2022. 
+- **[June 2022]**: "Predicting Persistence Using Machine Learning: An Overview of Model Development to Model Deployment", Air Forum, Phoenix, AZ, 2022. 
 
 - **[March 2022]**: "Predicting Student Persistence", ASU Library Data Science Open Lab, Tempe, AZ, 2022. [[Video](https://www.youtube.com/watch?v=jcvIhXXAzBY&t=2626s)]
 
