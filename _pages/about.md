@@ -143,6 +143,8 @@ Deeba Zadeh, Yeji Seo, Xingquan Liu, Patrick A.Truong, Edward H. Koo, J. C. Leit
 Selected Certifications
 ====
 
+- "Generative AI with Large Language Models", earned through Coursera learning portal. [[Certification](https://www.coursera.org/account/accomplishments/verify/YHYB8N5MT5LN?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course)]
+
 - "Natural Language Processing", earned through Udacity learning portal. [[Certification](https://graduation.udacity.com/confirm/e/b17b6fe0-3450-11ed-9d86-6b60d01a3969)]
 
 - "Computer Vision", earned through Udacity learning portal. [[Certification](https://graduation.udacity.com/confirm/SATMTMWF)]
