@@ -65,7 +65,7 @@ Honors and Awards
 
 - Ranked **5th** in the nation‑wide Azad university entrance exam for Bachelor of Science, summer 2009.
 
-- Ranked **236th** among **450000** in the nation‑wide public university entrance exam for Bachelor of Science, summer 2009.
+- Ranked **236th** among **310,000** in the nation‑wide public university entrance exam for Bachelor of Science, summer 2009.
 
 - Admitted to the University of Tehran, **ranked 1st** school in Iran, summer 2009.
 
