@@ -50,6 +50,8 @@ Education
 Talks
 ====
 
+- **[December 2023]**: "An Introduction to Generative AI", ASU Data Conference, Tempe, AZ 2023. [[Video](https://www.youtube.com/watch?v=ItEEkVSb39Q&list=PLXW4bzMu4rtESb86iqtwVdYF-Q8mQ4Jtv&index=15)]
+
 - **[November 2022]**: "An Introduction to Deep Learning", ASU Data Conference, Tempe, AZ 2022. [[Slide](../files/Introduction_to_DeepLearning.pptx)]
 
 - **[June 2022]**: "Predicting Persistence Using Machine Learning: An Overview of Model Development to Model Deployment", Air Forum, Phoenix, AZ, 2022. 
