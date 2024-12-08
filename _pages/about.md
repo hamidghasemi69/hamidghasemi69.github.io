@@ -7,21 +7,22 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am Hamidreza Ghasemi Damavandi, and currently work as a **Principal Data Scientist** in Actionable Analytics group at [the Office of the University Provost at Arizona State University](https://provost.asu.edu/) where I maintain the whole end-to-end machine learning model development to model deployment. Prior to my current position, I was a senior machine learning scientist at Overstock. 
+I am Hamidreza Ghasemi Damavandi, currently serving as a **Principal Data Scientist** in the Actionable Analytics group within [the Office of the University Provost at Arizona State University](https://provost.asu.edu/). In this role, I oversee the complete lifecycle of machine learning projects, from model development to deployment. Previously, I worked as a Senior Machine Learning Scientist at Overstock.
 
-I have obtained my Bachelor's degree in Electrical Engineering from the [University of Tehran](https://ut.ac.ir/en) (ranked 1st university in Iran) Summer 2013, Master's degree and Ph.D in Electrical Engineering from the [University of Iowa](https://uiowa.edu/), Summer 2016.
+I earned my Bachelor's degree in Electrical Engineering from the [University of Tehran](https://ut.ac.ir/en) (ranked as the top university in Iran) in Summer 2013 and later completed my Master's and Ph.D. in Electrical Engineering at the [University of Iowa](https://uiowa.edu/) in Summer 2016.
 
-For more information, please refer to my [**resume**](../files/resume.pdf).
-
+For additional details, please see my [**resume**](../files/resume.pdf)..
 
 Research Interest
 ====
 
-I am passionate about various areas of **Artificial Intelligence** including **Statistical Machine Learning**, **Scientific Machine Learning**, **Deep Learning**, **Reinforcement Learning**, and **Natural Language Processing**. Additionally, I am interested in deploying machine learning applications on a cloud solution using **MLOps** principals.
+I am deeply passionate about **Artificial Intelligence**, with interests spanning **Statistical Machine Learning**, **Scientific Machine Learning**, **Deep Learning**, **Reinforcement Learning**, and **Natural Language Processing**. I am also enthusiastic about implementing machine learning solutions on cloud platforms using **MLOps** principles for efficient deployment and scalability.
 
 
 Recent News
 ====
+
+- **[October 2024]**: I successfully passed Amazon Web Services - AI Practitioner Certification Exam.
 
 - **[April 2023]**: I successfully passed Amazon Web Services - Machine Learning Specialty Certification Exam.
 
@@ -50,6 +51,8 @@ Education
 Talks
 ====
 
+- **[December 2024]**: "Transformers: Revolutionary Deep Learning Architectures", ASU Data Conference, Tempe, AZ 2024.
+
 - **[December 2023]**: "An Introduction to Generative AI", ASU Data Conference, Tempe, AZ 2023. [[Video](https://www.youtube.com/watch?v=ItEEkVSb39Q&list=PLXW4bzMu4rtESb86iqtwVdYF-Q8mQ4Jtv&index=15)]
 
 - **[November 2022]**: "An Introduction to Deep Learning", ASU Data Conference, Tempe, AZ 2022. [[Slide](../files/Introduction_to_DeepLearning.pptx)]
@@ -63,7 +66,7 @@ Talks
 Honors and Awards
 ====
 
-- Received Green Card through **National Interest Waiver (NIW)** due to academic achievements, June 2019.
+- Obtained a Green Card in June 2019 through the **National Interest Waiver (NIW)** for academic achievements. As of September 2024, I am a U.S. citizen.
 
 - Ranked **5th** in the nation‑wide Azad university entrance exam for Bachelor of Science, summer 2009.
 
@@ -145,19 +148,21 @@ Deeba Zadeh, Yeji Seo, Xingquan Liu, Patrick A.Truong, Edward H. Koo, J. C. Leit
 Selected Certifications
 ====
 
-- "Generative AI with Large Language Models", earned through Coursera learning portal. [[Certification](https://www.coursera.org/account/accomplishments/verify/YHYB8N5MT5LN?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course)]
+- "AWS AI Practitioner", earned through the AWS certification exam. [[Certification](https://www.credly.com/badges/e73583bf-4840-406b-a227-119e805dc626/public_url)]
 
-- "Natural Language Processing", earned through Udacity learning portal. [[Certification](https://graduation.udacity.com/confirm/e/b17b6fe0-3450-11ed-9d86-6b60d01a3969)]
+- "Generative AI with Large Language Models", earned through the Coursera learning portal. [[Certification](https://www.coursera.org/account/accomplishments/verify/YHYB8N5MT5LN?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course)]
+
+- "Natural Language Processing", earned through the Udacity learning portal. [[Certification](https://graduation.udacity.com/confirm/e/b17b6fe0-3450-11ed-9d86-6b60d01a3969)]
 
 - "Computer Vision", earned through Udacity learning portal. [[Certification](https://graduation.udacity.com/confirm/SATMTMWF)]
 
-- "Deep Learning", earned through Udacity learning portal. [[Certification](https://graduation.udacity.com/confirm/e/818fa8fc-548d-11ed-8ebc-9bf2a0d6cc96)]
+- "Deep Learning", earned through the Udacity learning portal. [[Certification](https://graduation.udacity.com/confirm/e/818fa8fc-548d-11ed-8ebc-9bf2a0d6cc96)]
 
-- "AWS Cloud Practitioner", earned through AWS certification exam. [[Certification](https://www.credly.com/badges/b614a0d4-334f-4820-b5c7-f4dfdd258c1a/public_url)]
+- "AWS Cloud Practitioner", earned through the AWS certification exam. [[Certification](https://www.credly.com/badges/b614a0d4-334f-4820-b5c7-f4dfdd258c1a/public_url)]
 
-- "AWS Machine Learning Specialty", earned through AWS certification exam. [[Certification](https://www.credly.com/badges/a770f74d-43df-4e3b-9d7e-1995fd0e34ba/public_url)]
+- "AWS Machine Learning Specialty", earned through the AWS certification exam. [[Certification](https://www.credly.com/badges/a770f74d-43df-4e3b-9d7e-1995fd0e34ba/public_url)]
 
-- "Software Engineer Essentials", earned through Coursera learning portal. [[Certification](https://www.credly.com/badges/a9bdedb9-eb29-4401-8734-3387ddb554ab)]   
+- "Software Engineer Essentials", earned through the Coursera learning portal. [[Certification](https://www.credly.com/badges/a9bdedb9-eb29-4401-8734-3387ddb554ab)]   
 
 
  
