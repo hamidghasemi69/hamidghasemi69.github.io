@@ -13,6 +13,9 @@ I earned my Bachelor's degree in Electrical Engineering from the [University of 
 
 For additional details, please see my [**resume**](../files/resume.pdf).
 
+
+FYI - I am a **U.S. citizen** and do not require visa sponsorship for any role.
+
 Research Interest
 ====
 
