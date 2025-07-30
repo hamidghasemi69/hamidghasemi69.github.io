@@ -71,8 +71,6 @@ Honors and Awards
 
 - Obtained a Green Card in June 2019 through the **National Interest Waiver (NIW)** for academic achievements. As of September 2024, I am a U.S. citizen.
 
-- Ranked **5th** in the nation‑wide Azad university entrance exam for Bachelor of Science, summer 2009.
-
 - Ranked **236th** among **310,000** in the nation‑wide public university entrance exam for Bachelor of Science, summer 2009.
 
 - Admitted to the University of Tehran, **ranked 1st** overall and **ranked 2nd** technology school in Iran, summer 2009.
