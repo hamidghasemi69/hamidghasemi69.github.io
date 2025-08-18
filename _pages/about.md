@@ -73,6 +73,8 @@ Honors and Awards
 
 - Ranked **236th** among **310,000** in the nation‑wide public university entrance exam for Bachelor of Science, summer 2009.
 
+- Ranked **5th** for Azad university entrance exam for Bachelor of Science, summer 2009.  
+
 - Admitted to the University of Tehran, **ranked 1st** overall and **ranked 2nd** technology school in Iran, summer 2009.
 
 - Served as a convener and chair in a session of Machine Learning applications of Hydrology, AGU 2019.
