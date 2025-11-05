@@ -54,9 +54,11 @@ Education
 Talks
 ====
 
-- **[December 2024]**: "Transformers: Revolutionary Deep Learning Architectures", ASU Data Conference, Tempe, AZ 2024.
+- **[November 2025]**: "Cracking XGBoost: The Go-To Machine learning Algorithms for Structured Data", ASU Data Conference, Tempe, AZ 2024. [[Slide](../files/XGB.pptx)]
 
-- **[December 2023]**: "An Introduction to Generative AI", ASU Data Conference, Tempe, AZ 2023. [[Video](https://www.youtube.com/watch?v=ItEEkVSb39Q&list=PLXW4bzMu4rtESb86iqtwVdYF-Q8mQ4Jtv&index=15)]
+- **[November 2024]**: "Transformers: Revolutionary Deep Learning Architectures", ASU Data Conference, Tempe, AZ 2024.
+
+- **[November 2023]**: "An Introduction to Generative AI", ASU Data Conference, Tempe, AZ 2023. [[Video](https://www.youtube.com/watch?v=ItEEkVSb39Q&list=PLXW4bzMu4rtESb86iqtwVdYF-Q8mQ4Jtv&index=15)]
 
 - **[November 2022]**: "An Introduction to Deep Learning", ASU Data Conference, Tempe, AZ 2022. [[Slide](../files/Introduction_to_DeepLearning.pptx)]
 
