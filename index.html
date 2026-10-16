@@ -112,6 +112,8 @@ section{padding:0 0 96px}
 .ti{position:relative;padding:0 0 30px}
 .ti::before{content:"";position:absolute;left:-28px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
 .ti.now::before{background:var(--accent);box-shadow:0 0 12px var(--accent)}
+.ti.withlogo{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start}
+.ti .lg{width:48px;height:48px;border-radius:11px;box-shadow:0 0 0 1px var(--line2)}
 .ti .when{font-family:var(--mono);font-size:13px;color:var(--accent)}
 .ti h4{font-family:var(--head);font-size:20px;font-weight:600;margin:2px 0}
 .ti .org{color:var(--muted);font-size:15px}
@@ -271,10 +273,10 @@ footer a{color:var(--muted)}
   <div class="sh reveal"><span class="num">02</span><h2>Experience</h2><span class="rule"></span></div>
   <div class="reveal two">
     <div class="tl">
-      <div class="ti now"><div class="when">Oct 2022 — Present</div><h4>Principal Data Scientist</h4><div class="org">Arizona State University · Office of the University Provost</div><p>Promoted from Senior Data Scientist. Leads ML projects end to end, from model development to deployment.</p></div>
-      <div class="ti"><div class="when">Dec 2020 — Oct 2022</div><h4>Senior Data Scientist</h4><div class="org">Arizona State University</div></div>
-      <div class="ti"><div class="when">Mar 2020 — Dec 2020</div><h4>Senior Machine Learning Scientist</h4><div class="org">Overstock</div></div>
-      <div class="ti"><div class="when">Mar 2018 — Mar 2020</div><h4>Postdoctoral Research Associate</h4><div class="org">Arizona State University</div></div>
+      <div class="ti now withlogo"><img class="lg" src="/images/logos/asu.png" alt="Arizona State University logo"><div><div class="when">Oct 2022 — Present</div><h4>Principal Data Scientist</h4><div class="org">Arizona State University · Office of the University Provost</div><p>Promoted from Senior Data Scientist. Leads ML projects end to end, from model development to deployment.</p></div></div>
+      <div class="ti withlogo"><img class="lg" src="/images/logos/asu.png" alt="Arizona State University logo"><div><div class="when">Dec 2020 — Oct 2022</div><h4>Senior Data Scientist</h4><div class="org">Arizona State University</div></div></div>
+      <div class="ti withlogo"><img class="lg" src="/images/logos/overstock.png" alt="Overstock logo"><div><div class="when">Mar 2020 — Dec 2020</div><h4>Senior Machine Learning Scientist</h4><div class="org">Overstock</div></div></div>
+      <div class="ti withlogo"><img class="lg" src="/images/logos/asu.png" alt="Arizona State University logo"><div><div class="when">Mar 2018 — Mar 2020</div><h4>Postdoctoral Research Associate</h4><div class="org">Arizona State University</div></div></div>
     </div>
     <div class="reveal box">
       <h3>Education</h3>
