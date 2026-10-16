@@ -1,11 +1,8 @@
 ---
-permalink: /
+permalink: /about-classic/
 title: "About Me"
 excerpt: "About me"
 author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
 ---
 I am Hamidreza Ghasemi Damavandi, currently serving as a **Principal Data Scientist** in the Actionable Analytics group within [the Office of the University Provost at Arizona State University](https://provost.asu.edu/). In this role, I oversee the complete lifecycle of machine learning projects, from model development to deployment. Previously, I worked as a Senior Machine Learning Scientist at Overstock.
 

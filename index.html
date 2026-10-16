@@ -1,0 +1,312 @@
+---
+layout: null
+permalink: /
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hamidreza Ghasemi Damavandi · Principal Data Scientist</title>
+<meta name="description" content="Hamidreza Ghasemi Damavandi, Principal Data Scientist at Arizona State University. Machine learning from model development to production deployment.">
+<meta name="theme-color" content="#0a0e16">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e16; --bg2:#0f1520; --card:#121a27; --card2:#16202f;
+  --line:#1f2a3b; --line2:#2a3850;
+  --text:#e6edf6; --muted:#94a3b8; --dim:#64748b;
+  --accent:#2ee6c5; --accent2:#5b8cff; --glow:rgba(46,230,197,.18);
+  --mono:'JetBrains Mono',ui-monospace,Menlo,monospace;
+  --head:'Space Grotesk',system-ui,sans-serif;
+  --body:'Inter',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--body);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--accent);color:#04120f}
+.bg-grid{position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:56px 56px;opacity:.35;
+  mask-image:radial-gradient(ellipse at 50% 0%,#000 0%,transparent 70%);-webkit-mask-image:radial-gradient(ellipse at 50% 0%,#000 0%,transparent 70%)}
+.bg-glow{position:fixed;z-index:-1;pointer-events:none;width:720px;height:720px;border-radius:50%;filter:blur(120px);opacity:.22}
+.g1{background:var(--accent);top:-320px;right:-200px}
+.g2{background:var(--accent2);top:240px;left:-380px;opacity:.14}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+/* nav */
+nav{position:sticky;top:0;z-index:10;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:rgba(10,14,22,.72);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:var(--mono);font-size:15px;color:var(--accent)}
+.logo span{color:var(--muted)}
+.links{display:flex;gap:28px;font-size:14px;color:var(--muted)}
+.links a:hover{color:var(--text)}
+
+/* hero */
+.hero{padding:96px 0 72px;display:grid;grid-template-columns:1.4fr 1fr;gap:56px;align-items:center}
+.tag{font-family:var(--mono);font-size:13px;color:var(--accent);display:inline-flex;align-items:center;gap:10px;padding:6px 14px;border:1px solid var(--line2);border-radius:999px;background:rgba(46,230,197,.06)}
+.tag i{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent)}
+h1{font-family:var(--head);font-weight:700;font-size:clamp(40px,6vw,64px);line-height:1.05;letter-spacing:-.02em;margin:22px 0 18px}
+h1 .grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:19px;color:var(--muted);max-width:560px}
+.lead b{color:var(--text);font-weight:600}
+.meta{display:flex;flex-wrap:wrap;gap:18px;margin:22px 0 30px;font-family:var(--mono);font-size:13px;color:var(--dim)}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:10px;font-size:14px;font-weight:600;border:1px solid var(--line2);background:var(--card);transition:.2s}
+.btn:hover{border-color:var(--accent);transform:translateY(-1px)}
+.btn.primary{background:var(--accent);color:#04120f;border-color:var(--accent)}
+.btn.primary:hover{box-shadow:0 8px 30px var(--glow)}
+.btn svg{width:16px;height:16px}
+.photo{position:relative;justify-self:center;width:100%;max-width:340px;aspect-ratio:1}
+.photo::before{content:"";position:absolute;inset:-14px;border-radius:28px;background:conic-gradient(from 140deg,var(--accent),var(--accent2),transparent 60%,var(--accent));opacity:.55;filter:blur(18px)}
+.photo img{position:relative;width:100%;height:100%;object-fit:cover;border-radius:22px;border:1px solid var(--line2)}
+.photo .chip{position:absolute;bottom:-16px;left:-16px;background:var(--card2);border:1px solid var(--line2);border-radius:12px;padding:10px 14px;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.photo .chip b{color:var(--accent);font-weight:500}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:96px}
+.stat{background:var(--bg2);padding:24px}
+.stat .n{font-family:var(--head);font-size:32px;font-weight:700}
+.stat .n em{font-style:normal;color:var(--accent)}
+.stat .l{font-size:13px;color:var(--muted)}
+
+/* sections */
+section{padding:0 0 96px}
+.sh{display:flex;align-items:baseline;gap:14px;margin-bottom:32px}
+.sh .num{font-family:var(--mono);font-size:14px;color:var(--accent)}
+.sh h2{font-family:var(--head);font-size:30px;font-weight:600;letter-spacing:-.01em}
+.sh .rule{flex:1;height:1px;background:var(--line);margin-left:8px}
+.about{display:grid;grid-template-columns:1.5fr 1fr;gap:48px}
+.about p{color:var(--muted);margin-bottom:16px}
+.about p b{color:var(--text);font-weight:600}
+.about a{color:var(--accent)}
+.note{display:flex;gap:12px;align-items:flex-start;padding:16px 18px;border:1px solid var(--line2);border-radius:12px;background:rgba(91,140,255,.06);font-size:14px;color:var(--muted)}
+.note b{color:var(--text)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip2{font-family:var(--mono);font-size:13px;padding:7px 12px;border-radius:8px;background:var(--card);border:1px solid var(--line);color:var(--text)}
+.box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
+.box h3{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-bottom:14px;font-weight:500}
+
+/* timeline */
+.tl{position:relative;padding-left:28px}
+.tl::before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--accent),var(--accent2) 60%,var(--line))}
+.ti{position:relative;padding:0 0 30px}
+.ti::before{content:"";position:absolute;left:-28px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.ti.now::before{background:var(--accent);box-shadow:0 0 12px var(--accent)}
+.ti .when{font-family:var(--mono);font-size:13px;color:var(--accent)}
+.ti h4{font-family:var(--head);font-size:20px;font-weight:600;margin:2px 0}
+.ti .org{color:var(--muted);font-size:15px}
+.ti p{color:var(--dim);font-size:14px;margin-top:4px}
+
+/* cards grid */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{display:flex;flex-direction:column;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;transition:.2s}
+.card:hover{border-color:var(--line2);background:var(--card2);transform:translateY(-2px)}
+.card .kind{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent2)}
+.card h4{font-family:var(--head);font-size:18px;font-weight:600;line-height:1.3}
+.card p{color:var(--muted);font-size:14px;flex:1}
+.card .go{font-family:var(--mono);font-size:13px;color:var(--accent)}
+
+/* talks */
+.talk{display:grid;grid-template-columns:120px 1fr auto;gap:20px;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--line)}
+.talk:first-child{border-top:1px solid var(--line)}
+.talk .d{font-family:var(--mono);font-size:13px;color:var(--dim)}
+.talk h4{font-weight:600;font-size:16px}
+.talk .v{color:var(--muted);font-size:14px}
+.talk .res{display:flex;gap:8px}
+.pill{font-family:var(--mono);font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line2);color:var(--accent)}
+.pill:hover{border-color:var(--accent)}
+
+/* two col */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+.list li{list-style:none;padding:12px 0;border-bottom:1px solid var(--line);color:var(--muted);font-size:15px;display:flex;gap:12px}
+.list li:last-child{border-bottom:none}
+.list li::before{content:"▹";color:var(--accent)}
+.list b{color:var(--text);font-weight:600}
+.edu{display:flex;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.edu:last-child{border-bottom:none}
+.edu b{font-weight:600}
+.edu span{color:var(--muted);font-size:14px}
+.edu .y{font-family:var(--mono);color:var(--accent);font-size:13px;white-space:nowrap}
+
+/* cert */
+.cert{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px;background:var(--card);border:1px solid var(--line);border-radius:12px;transition:.2s}
+.cert:hover{border-color:var(--accent)}
+.cert b{font-weight:600;font-size:15px}
+.cert span{display:block;color:var(--dim);font-size:13px}
+.cert .arrow{color:var(--accent);font-family:var(--mono)}
+.certs{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+
+/* contact */
+.contact{text-align:center;padding:64px 24px;border:1px solid var(--line2);border-radius:20px;background:radial-gradient(ellipse at 50% 0%,rgba(46,230,197,.10),transparent 70%),var(--bg2)}
+.contact h2{font-family:var(--head);font-size:36px;margin-bottom:10px}
+.contact p{color:var(--muted);margin-bottom:26px}
+.contact .btns{justify-content:center}
+footer{padding:40px 0 56px;text-align:center;font-family:var(--mono);font-size:12px;color:var(--dim)}
+footer a{color:var(--muted)}
+
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr;padding-top:56px;gap:48px}
+  .photo{max-width:260px;justify-self:start}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .about,.two{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr 1fr}
+  .links{display:none}
+  .photo .chip{left:12px;bottom:-14px}
+}
+@media (max-width:560px){
+  .wrap{padding:0 16px}
+  .grid,.certs{grid-template-columns:1fr}
+  .talk{grid-template-columns:1fr;gap:4px}
+  .edu{flex-direction:column;gap:2px}
+  .lead{font-size:17px}
+}
+</style>
+</head>
+<body>
+<div class="bg-grid"></div><div class="bg-glow g1"></div><div class="bg-glow g2"></div>
+
+<nav><div class="wrap">
+  <a href="#top" class="logo">hamid<span>.ghasemi()</span></a>
+  <div class="links">
+    <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#talks">Talks</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
+  </div>
+</div></nav>
+
+<main class="wrap" id="top">
+
+<header class="hero">
+  <div>
+    <span class="tag"><i></i>Principal Data Scientist · Arizona State University</span>
+    <h1>Hamidreza<br><span class="grad">Ghasemi Damavandi</span></h1>
+    <p class="lead">I build machine learning systems end to end, <b>from model development to production deployment</b>, with a focus on deep learning, NLP and MLOps on the cloud.</p>
+    <div class="meta"><span>📍 Tempe, AZ</span><span>🎓 Ph.D., Electrical Engineering</span><span>🇺🇸 U.S. citizen</span></div>
+    <div class="btns">
+      <a class="btn primary" href="/files/resume.pdf">Resume
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v12m0 0l-5-5m5 5l5-5M5 20h14"/></svg></a>
+      <a class="btn" href="https://www.linkedin.com/in/hamidghasemi69/">LinkedIn</a>
+      <a class="btn" href="https://github.com/hamidghasemi69">GitHub</a>
+      <a class="btn" href="https://scholar.google.com/citations?user=aNTQ-U4AAAAJ&hl=en">Scholar</a>
+      <a class="btn" href="mailto:hamidghasemi69@gmail.com">Email</a>
+    </div>
+  </div>
+  <div class="photo">
+    <img src="/images/profile-square.jpg" alt="Portrait of Hamidreza Ghasemi Damavandi">
+    <div class="chip">status: <b>building ML in production</b></div>
+  </div>
+</header>
+
+<div class="stats">
+  <div class="stat"><div class="n">8<em>+</em></div><div class="l">years in ML &amp; data science</div></div>
+  <div class="stat"><div class="n">3<em>×</em></div><div class="l">AWS certifications</div></div>
+  <div class="stat"><div class="n">6</div><div class="l">conference talks</div></div>
+  <div class="stat"><div class="n">Ph.D.</div><div class="l">Electrical Engineering, Iowa</div></div>
+</div>
+
+<section id="about">
+  <div class="sh"><span class="num">01</span><h2>About</h2><span class="rule"></span></div>
+  <div class="about">
+    <div>
+      <p>I am a <b>Principal Data Scientist</b> in the Actionable Analytics group within the <a href="https://provost.asu.edu/">Office of the University Provost at Arizona State University</a>, where I oversee the complete lifecycle of machine learning projects, from model development to deployment. Previously, I was a <b>Senior Machine Learning Scientist at Overstock</b>.</p>
+      <p>I earned my B.S. in Electrical Engineering from the <a href="https://ut.ac.ir/en">University of Tehran</a>, ranked first overall in Iran, and my M.S. and Ph.D. in Electrical Engineering from the <a href="https://uiowa.edu/">University of Iowa</a>.</p>
+      <div class="note"><span>✓</span><span>I am a <b>U.S. citizen</b> and do not require visa sponsorship for any role.</span></div>
+    </div>
+    <div class="box">
+      <h3>Research interests</h3>
+      <div class="chips">
+        <span class="chip2">Statistical ML</span><span class="chip2">Scientific ML</span><span class="chip2">Deep Learning</span>
+        <span class="chip2">Reinforcement Learning</span><span class="chip2">NLP</span><span class="chip2">Generative AI</span>
+        <span class="chip2">MLOps</span><span class="chip2">Cloud / AWS</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="sh"><span class="num">02</span><h2>Experience</h2><span class="rule"></span></div>
+  <div class="two">
+    <div class="tl">
+      <div class="ti now"><div class="when">Oct 2022 — Present</div><h4>Principal Data Scientist</h4><div class="org">Arizona State University · Office of the University Provost</div><p>Promoted from Senior Data Scientist. Leads ML projects end to end, from model development to deployment.</p></div>
+      <div class="ti"><div class="when">Dec 2020 — Oct 2022</div><h4>Senior Data Scientist</h4><div class="org">Arizona State University</div></div>
+      <div class="ti"><div class="when">Mar 2020 — Dec 2020</div><h4>Senior Machine Learning Scientist</h4><div class="org">Overstock</div></div>
+      <div class="ti"><div class="when">Mar 2018 — Mar 2020</div><h4>Postdoctoral Research Associate</h4><div class="org">Arizona State University</div></div>
+    </div>
+    <div class="box">
+      <h3>Education</h3>
+      <div class="edu"><div><b>Ph.D., Electrical Engineering</b><br><span>University of Iowa, Iowa City, IA</span></div><div class="y">2016</div></div>
+      <div class="edu"><div><b>M.S., Electrical Engineering</b><br><span>University of Iowa, Iowa City, IA</span></div><div class="y">2016</div></div>
+      <div class="edu"><div><b>B.S., Electrical Engineering</b><br><span>University of Tehran, Iran</span></div><div class="y">2013</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="sh"><span class="num">03</span><h2>Selected Projects</h2><span class="rule"></span></div>
+  <div class="grid">
+    <a class="card" href="https://github.com/hamidghasemi69/Face-Generation-Using-GAN"><span class="kind">Generative · GAN</span><h4>Face Generation</h4><p>Deep convolutional GAN that generates realistic faces from a celebrity image dataset.</p><span class="go">view code →</span></a>
+    <a class="card" href="https://github.com/hamidghasemi69/Text-Translation-and-Sentiment-Analysis-using-Transformers"><span class="kind">NLP · Transformers</span><h4>Translation &amp; Sentiment Analysis</h4><p>Text translation and sentiment analysis with Hugging Face transformers.</p><span class="go">view code →</span></a>
+    <a class="card" href="https://github.com/hamidghasemi69/Image-Captioning"><span class="kind">Vision · CNN-RNN</span><h4>Image Captioning</h4><p>CNN encoder with an RNN decoder that writes captions for images.</p><span class="go">view code →</span></a>
+    <a class="card" href="https://github.com/hamidghasemi69/Simultaneous-Localization-and-Mapping"><span class="kind">Robotics · SLAM</span><h4>SLAM</h4><p>Tracks a robot's position in a 2D world in real time while mapping landmarks.</p><span class="go">view code →</span></a>
+    <a class="card" href="https://github.com/hamidghasemi69/Facial-Keypoint-Detection"><span class="kind">Vision · PyTorch</span><h4>Facial Keypoint Detection</h4><p>CNN that locates eyes, nose and mouth keypoints in face images.</p><span class="go">view code →</span></a>
+    <a class="card" href="https://github.com/hamidghasemi69/VUI-Speech-Recognizer"><span class="kind">Speech · PyTorch</span><h4>DNN Speech Recognizer</h4><p>Deep network for an end-to-end automatic speech recognition pipeline.</p><span class="go">view code →</span></a>
+    <a class="card" href="https://github.com/hamidghasemi69/NLP-Machine-Translation"><span class="kind">NLP · Seq2Seq</span><h4>Machine Translation</h4><p>RNN encoder-decoder translating between English and French.</p><span class="go">view code →</span></a>
+    <a class="card" href="https://github.com/hamidghasemi69/Part-of-Speech-Tagging"><span class="kind">NLP · HMM</span><h4>Part-of-Speech Tagging</h4><p>Hidden Markov model that tags words with their part of speech.</p><span class="go">view code →</span></a>
+    <a class="card" href="https://github.com/hamidghasemi69/Landmark-Classification-and-Tagging-for-Social-Media"><span class="kind">Vision · CNN</span><h4>Landmark Classification</h4><p>Deep CNN classifying landmarks in social media photos.</p><span class="go">view code →</span></a>
+  </div>
+</section>
+
+<section id="talks">
+  <div class="sh"><span class="num">04</span><h2>Talks</h2><span class="rule"></span></div>
+  <div>
+    <div class="talk"><span class="d">Nov 2025</span><div><h4>Cracking XGBoost: The Go-To Machine Learning Algorithm for Structured Data</h4><span class="v">ASU Data Conference, Tempe, AZ</span></div><div class="res"><a class="pill" href="/files/XGB.pptx">slides</a></div></div>
+    <div class="talk"><span class="d">Nov 2024</span><div><h4>Transformers: Revolutionary Deep Learning Architectures</h4><span class="v">ASU Data Conference, Tempe, AZ</span></div><div class="res"></div></div>
+    <div class="talk"><span class="d">Nov 2023</span><div><h4>An Introduction to Generative AI</h4><span class="v">ASU Data Conference, Tempe, AZ</span></div><div class="res"><a class="pill" href="https://www.youtube.com/watch?v=ItEEkVSb39Q&list=PLXW4bzMu4rtESb86iqtwVdYF-Q8mQ4Jtv&index=15">video</a></div></div>
+    <div class="talk"><span class="d">Nov 2022</span><div><h4>An Introduction to Deep Learning</h4><span class="v">ASU Data Conference, Tempe, AZ</span></div><div class="res"><a class="pill" href="/files/Introduction_to_DeepLearning.pptx">slides</a></div></div>
+    <div class="talk"><span class="d">Jun 2022</span><div><h4>Predicting Persistence Using Machine Learning: From Model Development to Deployment</h4><span class="v">AIR Forum, Phoenix, AZ</span></div><div class="res"></div></div>
+    <div class="talk"><span class="d">Mar 2022</span><div><h4>Predicting Student Persistence</h4><span class="v">ASU Library Data Science Open Lab, Tempe, AZ</span></div><div class="res"><a class="pill" href="https://www.youtube.com/watch?v=jcvIhXXAzBY&t=2626s">video</a></div></div>
+  </div>
+</section>
+
+<section id="certifications">
+  <div class="sh"><span class="num">05</span><h2>Certifications &amp; Honors</h2><span class="rule"></span></div>
+  <div class="certs" style="margin-bottom:24px">
+    <a class="cert" href="https://www.credly.com/badges/a770f74d-43df-4e3b-9d7e-1995fd0e34ba/public_url"><div><b>AWS Machine Learning Specialty</b><span>Amazon Web Services · 2023</span></div><span class="arrow">↗</span></a>
+    <a class="cert" href="https://www.credly.com/badges/e73583bf-4840-406b-a227-119e805dc626/public_url"><div><b>AWS AI Practitioner</b><span>Amazon Web Services · 2024</span></div><span class="arrow">↗</span></a>
+    <a class="cert" href="https://www.credly.com/badges/b614a0d4-334f-4820-b5c7-f4dfdd258c1a/public_url"><div><b>AWS Cloud Practitioner</b><span>Amazon Web Services · 2023</span></div><span class="arrow">↗</span></a>
+    <a class="cert" href="https://www.coursera.org/account/accomplishments/verify/YHYB8N5MT5LN"><div><b>Generative AI with Large Language Models</b><span>Coursera</span></div><span class="arrow">↗</span></a>
+    <a class="cert" href="https://graduation.udacity.com/confirm/e/b17b6fe0-3450-11ed-9d86-6b60d01a3969"><div><b>Natural Language Processing</b><span>Udacity Nanodegree</span></div><span class="arrow">↗</span></a>
+    <a class="cert" href="https://graduation.udacity.com/confirm/SATMTMWF"><div><b>Computer Vision</b><span>Udacity Nanodegree</span></div><span class="arrow">↗</span></a>
+    <a class="cert" href="https://graduation.udacity.com/confirm/e/818fa8fc-548d-11ed-8ebc-9bf2a0d6cc96"><div><b>Deep Learning</b><span>Udacity Nanodegree</span></div><span class="arrow">↗</span></a>
+    <a class="cert" href="https://www.credly.com/badges/a9bdedb9-eb29-4401-8734-3387ddb554ab"><div><b>Software Engineer Essentials</b><span>Coursera</span></div><span class="arrow">↗</span></a>
+  </div>
+  <div class="box">
+    <h3>Honors &amp; awards</h3>
+    <ul class="list">
+      <li><span>Green Card through the <b>National Interest Waiver (NIW)</b> for academic achievements (2019); U.S. citizen since 2024.</span></li>
+      <li><span>Ranked <b>236th among 310,000</b> in Iran's nationwide university entrance exam (2009).</span></li>
+      <li><span>Admitted to the University of Tehran, ranked <b>1st overall</b> in Iran.</span></li>
+      <li><span>Convener and chair, Machine Learning Applications in Hydrology session, <b>AGU 2019</b>.</span></li>
+      <li><span>Full Graduate Research Assistantship (2013) and CGRER graduate travel award (2016), University of Iowa.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact">
+    <h2>Let's connect</h2>
+    <p>Open to conversations about machine learning, MLOps and new opportunities.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:hamidghasemi69@gmail.com">hamidghasemi69@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/hamidghasemi69/">LinkedIn</a>
+      <a class="btn" href="https://www.researchgate.net/profile/Hamidreza-Ghasemi-Damavandi">ResearchGate</a>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer>© 2026 Hamidreza Ghasemi Damavandi · Tempe, AZ</footer>
+</body>
+</html>
