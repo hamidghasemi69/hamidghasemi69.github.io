@@ -10,6 +10,22 @@ permalink: /
 <title>Hamidreza Ghasemi Damavandi · Principal Data Scientist</title>
 <meta name="description" content="Hamidreza Ghasemi Damavandi, Principal Data Scientist at Arizona State University. Machine learning from model development to production deployment.">
 <meta name="theme-color" content="#0a0e16">
+<script>document.documentElement.classList.add("js")</script>
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/images/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="canonical" href="https://hamidghasemi69.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hamidghasemi69.github.io/">
+<meta property="og:title" content="Hamidreza Ghasemi Damavandi · Principal Data Scientist">
+<meta property="og:description" content="Machine learning from model development to production deployment. Principal Data Scientist at Arizona State University.">
+<meta property="og:image" content="https://hamidghasemi69.github.io/images/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hamidreza Ghasemi Damavandi · Principal Data Scientist">
+<meta name="twitter:description" content="Machine learning from model development to production deployment.">
+<meta name="twitter:image" content="https://hamidghasemi69.github.io/images/og-card.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -148,6 +164,32 @@ section{padding:0 0 96px}
 footer{padding:40px 0 56px;text-align:center;font-family:var(--mono);font-size:12px;color:var(--dim)}
 footer a{color:var(--muted)}
 
+.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+.js .grid .card.reveal:nth-child(3n+2){transition-delay:.08s}
+.js .grid .card.reveal:nth-child(3n){transition-delay:.16s}
+.caret{display:inline-block;width:.08em;height:.9em;margin-left:.08em;background:var(--accent);vertical-align:-.08em;animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.hero > div:first-child > *{animation:rise .8s ease both}
+.hero > div:first-child > *:nth-child(2){animation-delay:.08s}
+.hero > div:first-child > *:nth-child(3){animation-delay:.16s}
+.hero > div:first-child > *:nth-child(4){animation-delay:.24s}
+.hero > div:first-child > *:nth-child(5){animation-delay:.32s}
+.photo{animation:rise 1s .2s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+/* featured */
+.featured{position:relative;display:grid;grid-template-columns:1.3fr 1fr;gap:32px;padding:32px;margin-bottom:20px;border-radius:18px;border:1px solid var(--line2);background:linear-gradient(135deg,rgba(46,230,197,.08),rgba(91,140,255,.06) 60%,transparent),var(--card);overflow:hidden}
+.featured::after{content:"";position:absolute;inset:0;border-radius:18px;padding:1px;background:linear-gradient(120deg,var(--accent),transparent 40%,var(--accent2));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;opacity:.6}
+.featured .kind{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.featured h3{font-family:var(--head);font-size:26px;font-weight:600;line-height:1.25;margin:8px 0 12px}
+.featured p{color:var(--muted);font-size:15px;margin-bottom:16px}
+.fstats{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-content:start}
+.fstat{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:16px}
+.fstat .n{font-family:var(--head);font-size:28px;font-weight:700;color:var(--text)}
+.fstat .n em{font-style:normal;color:var(--accent)}
+.fstat .l{font-size:13px;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){.js .reveal,.hero > div:first-child > *,.photo{animation:none;transition:none;opacity:1;transform:none}.caret{animation:none}}
+@media (max-width:860px){.featured{grid-template-columns:1fr}}
 @media (max-width:860px){
   .hero{grid-template-columns:1fr;padding-top:56px;gap:48px}
   .photo{max-width:260px;justify-self:start}
@@ -181,7 +223,7 @@ footer a{color:var(--muted)}
 <header class="hero">
   <div>
     <span class="tag"><i></i>Principal Data Scientist · Arizona State University</span>
-    <h1>Hamidreza<br><span class="grad">Ghasemi Damavandi</span></h1>
+    <h1>Hamidreza<br><span class="grad">Ghasemi Damavandi</span><span class="caret" aria-hidden="true"></span></h1>
     <p class="lead">I build machine learning systems end to end, <b>from model development to production deployment</b>, with a focus on deep learning, NLP and MLOps on the cloud.</p>
     <div class="meta"><span>📍 Tempe, AZ</span><span>🎓 Ph.D., Electrical Engineering</span><span>🇺🇸 U.S. citizen</span></div>
     <div class="btns">
@@ -195,11 +237,11 @@ footer a{color:var(--muted)}
   </div>
   <div class="photo">
     <img src="/images/profile-square.jpg" alt="Portrait of Hamidreza Ghasemi Damavandi">
-    <div class="chip">status: <b>building ML in production</b></div>
+    <div class="chip">status: <b id="typed" data-text="building ML in production">building ML in production</b></div>
   </div>
 </header>
 
-<div class="stats">
+<div class="reveal stats">
   <div class="stat"><div class="n">8<em>+</em></div><div class="l">years in ML &amp; data science</div></div>
   <div class="stat"><div class="n">3<em>×</em></div><div class="l">AWS certifications</div></div>
   <div class="stat"><div class="n">6</div><div class="l">conference talks</div></div>
@@ -207,14 +249,14 @@ footer a{color:var(--muted)}
 </div>
 
 <section id="about">
-  <div class="sh"><span class="num">01</span><h2>About</h2><span class="rule"></span></div>
-  <div class="about">
+  <div class="sh reveal"><span class="num">01</span><h2>About</h2><span class="rule"></span></div>
+  <div class="reveal about">
     <div>
       <p>I am a <b>Principal Data Scientist</b> in the Actionable Analytics group within the <a href="https://provost.asu.edu/">Office of the University Provost at Arizona State University</a>, where I oversee the complete lifecycle of machine learning projects, from model development to deployment. Previously, I was a <b>Senior Machine Learning Scientist at Overstock</b>.</p>
       <p>I earned my B.S. in Electrical Engineering from the <a href="https://ut.ac.ir/en">University of Tehran</a>, ranked first overall in Iran, and my M.S. and Ph.D. in Electrical Engineering from the <a href="https://uiowa.edu/">University of Iowa</a>.</p>
       <div class="note"><span>✓</span><span>I am a <b>U.S. citizen</b> and do not require visa sponsorship for any role.</span></div>
     </div>
-    <div class="box">
+    <div class="reveal box">
       <h3>Research interests</h3>
       <div class="chips">
         <span class="chip2">Statistical ML</span><span class="chip2">Scientific ML</span><span class="chip2">Deep Learning</span>
@@ -226,15 +268,15 @@ footer a{color:var(--muted)}
 </section>
 
 <section id="experience">
-  <div class="sh"><span class="num">02</span><h2>Experience</h2><span class="rule"></span></div>
-  <div class="two">
+  <div class="sh reveal"><span class="num">02</span><h2>Experience</h2><span class="rule"></span></div>
+  <div class="reveal two">
     <div class="tl">
       <div class="ti now"><div class="when">Oct 2022 — Present</div><h4>Principal Data Scientist</h4><div class="org">Arizona State University · Office of the University Provost</div><p>Promoted from Senior Data Scientist. Leads ML projects end to end, from model development to deployment.</p></div>
       <div class="ti"><div class="when">Dec 2020 — Oct 2022</div><h4>Senior Data Scientist</h4><div class="org">Arizona State University</div></div>
       <div class="ti"><div class="when">Mar 2020 — Dec 2020</div><h4>Senior Machine Learning Scientist</h4><div class="org">Overstock</div></div>
       <div class="ti"><div class="when">Mar 2018 — Mar 2020</div><h4>Postdoctoral Research Associate</h4><div class="org">Arizona State University</div></div>
     </div>
-    <div class="box">
+    <div class="reveal box">
       <h3>Education</h3>
       <div class="edu"><div><b>Ph.D., Electrical Engineering</b><br><span>University of Iowa, Iowa City, IA</span></div><div class="y">2016</div></div>
       <div class="edu"><div><b>M.S., Electrical Engineering</b><br><span>University of Iowa, Iowa City, IA</span></div><div class="y">2016</div></div>
@@ -244,45 +286,59 @@ footer a{color:var(--muted)}
 </section>
 
 <section id="projects">
-  <div class="sh"><span class="num">03</span><h2>Selected Projects</h2><span class="rule"></span></div>
+  <div class="sh reveal"><span class="num">03</span><h2>Selected Projects</h2><span class="rule"></span></div>
+  <div class="featured reveal">
+    <div>
+      <span class="kind">★ Featured · ML Engineering</span>
+      <h3>Production House-Price API with Missing-Data Imputation</h3>
+      <p>Took a house-price model served by a REST API and made it production-ready: KNN imputation so estimates work with incomplete inputs, a redesigned request path that removed a serialization bottleneck, a batch endpoint, input validation, structured logging, Docker and CI.</p>
+      <div class="chips"><span class="chip2">FastAPI</span><span class="chip2">scikit-learn</span><span class="chip2">KNN imputation</span><span class="chip2">Docker</span><span class="chip2">GitHub Actions</span><span class="chip2">pytest</span></div>
+    </div>
+    <div class="fstats">
+      <div class="fstat"><div class="n">5.6<em>×</em></div><div class="l">throughput (62 → 348 req/s)</div></div>
+      <div class="fstat"><div class="n">27<em> ms</em></div><div class="l">median latency, down from 149 ms</div></div>
+      <div class="fstat"><div class="n">4.1<em>%</em></div><div class="l">avg. price shift with 15% of inputs missing</div></div>
+      <div class="fstat"><div class="n">97<em>%</em></div><div class="l">test coverage, CI on every push</div></div>
+    </div>
+  </div>
   <div class="grid">
-    <a class="card" href="https://github.com/hamidghasemi69/Face-Generation-Using-GAN"><span class="kind">Generative · GAN</span><h4>Face Generation</h4><p>Deep convolutional GAN that generates realistic faces from a celebrity image dataset.</p><span class="go">view code →</span></a>
-    <a class="card" href="https://github.com/hamidghasemi69/Text-Translation-and-Sentiment-Analysis-using-Transformers"><span class="kind">NLP · Transformers</span><h4>Translation &amp; Sentiment Analysis</h4><p>Text translation and sentiment analysis with Hugging Face transformers.</p><span class="go">view code →</span></a>
-    <a class="card" href="https://github.com/hamidghasemi69/Image-Captioning"><span class="kind">Vision · CNN-RNN</span><h4>Image Captioning</h4><p>CNN encoder with an RNN decoder that writes captions for images.</p><span class="go">view code →</span></a>
-    <a class="card" href="https://github.com/hamidghasemi69/Simultaneous-Localization-and-Mapping"><span class="kind">Robotics · SLAM</span><h4>SLAM</h4><p>Tracks a robot's position in a 2D world in real time while mapping landmarks.</p><span class="go">view code →</span></a>
-    <a class="card" href="https://github.com/hamidghasemi69/Facial-Keypoint-Detection"><span class="kind">Vision · PyTorch</span><h4>Facial Keypoint Detection</h4><p>CNN that locates eyes, nose and mouth keypoints in face images.</p><span class="go">view code →</span></a>
-    <a class="card" href="https://github.com/hamidghasemi69/VUI-Speech-Recognizer"><span class="kind">Speech · PyTorch</span><h4>DNN Speech Recognizer</h4><p>Deep network for an end-to-end automatic speech recognition pipeline.</p><span class="go">view code →</span></a>
-    <a class="card" href="https://github.com/hamidghasemi69/NLP-Machine-Translation"><span class="kind">NLP · Seq2Seq</span><h4>Machine Translation</h4><p>RNN encoder-decoder translating between English and French.</p><span class="go">view code →</span></a>
-    <a class="card" href="https://github.com/hamidghasemi69/Part-of-Speech-Tagging"><span class="kind">NLP · HMM</span><h4>Part-of-Speech Tagging</h4><p>Hidden Markov model that tags words with their part of speech.</p><span class="go">view code →</span></a>
-    <a class="card" href="https://github.com/hamidghasemi69/Landmark-Classification-and-Tagging-for-Social-Media"><span class="kind">Vision · CNN</span><h4>Landmark Classification</h4><p>Deep CNN classifying landmarks in social media photos.</p><span class="go">view code →</span></a>
+    <a class="card reveal" href="https://github.com/hamidghasemi69/Face-Generation-Using-GAN"><span class="kind">Generative · GAN</span><h4>Face Generation</h4><p>Deep convolutional GAN that generates realistic faces from a celebrity image dataset.</p><span class="go">view code →</span></a>
+    <a class="card reveal" href="https://github.com/hamidghasemi69/Text-Translation-and-Sentiment-Analysis-using-Transformers"><span class="kind">NLP · Transformers</span><h4>Translation &amp; Sentiment Analysis</h4><p>Text translation and sentiment analysis with Hugging Face transformers.</p><span class="go">view code →</span></a>
+    <a class="card reveal" href="https://github.com/hamidghasemi69/Image-Captioning"><span class="kind">Vision · CNN-RNN</span><h4>Image Captioning</h4><p>CNN encoder with an RNN decoder that writes captions for images.</p><span class="go">view code →</span></a>
+    <a class="card reveal" href="https://github.com/hamidghasemi69/Simultaneous-Localization-and-Mapping"><span class="kind">Robotics · SLAM</span><h4>SLAM</h4><p>Tracks a robot's position in a 2D world in real time while mapping landmarks.</p><span class="go">view code →</span></a>
+    <a class="card reveal" href="https://github.com/hamidghasemi69/Facial-Keypoint-Detection"><span class="kind">Vision · PyTorch</span><h4>Facial Keypoint Detection</h4><p>CNN that locates eyes, nose and mouth keypoints in face images.</p><span class="go">view code →</span></a>
+    <a class="card reveal" href="https://github.com/hamidghasemi69/VUI-Speech-Recognizer"><span class="kind">Speech · PyTorch</span><h4>DNN Speech Recognizer</h4><p>Deep network for an end-to-end automatic speech recognition pipeline.</p><span class="go">view code →</span></a>
+    <a class="card reveal" href="https://github.com/hamidghasemi69/NLP-Machine-Translation"><span class="kind">NLP · Seq2Seq</span><h4>Machine Translation</h4><p>RNN encoder-decoder translating between English and French.</p><span class="go">view code →</span></a>
+    <a class="card reveal" href="https://github.com/hamidghasemi69/Part-of-Speech-Tagging"><span class="kind">NLP · HMM</span><h4>Part-of-Speech Tagging</h4><p>Hidden Markov model that tags words with their part of speech.</p><span class="go">view code →</span></a>
+    <a class="card reveal" href="https://github.com/hamidghasemi69/Landmark-Classification-and-Tagging-for-Social-Media"><span class="kind">Vision · CNN</span><h4>Landmark Classification</h4><p>Deep CNN classifying landmarks in social media photos.</p><span class="go">view code →</span></a>
   </div>
 </section>
 
 <section id="talks">
-  <div class="sh"><span class="num">04</span><h2>Talks</h2><span class="rule"></span></div>
+  <div class="sh reveal"><span class="num">04</span><h2>Talks</h2><span class="rule"></span></div>
   <div>
-    <div class="talk"><span class="d">Nov 2025</span><div><h4>Cracking XGBoost: The Go-To Machine Learning Algorithm for Structured Data</h4><span class="v">ASU Data Conference, Tempe, AZ</span></div><div class="res"><a class="pill" href="/files/XGB.pptx">slides</a></div></div>
-    <div class="talk"><span class="d">Nov 2024</span><div><h4>Transformers: Revolutionary Deep Learning Architectures</h4><span class="v">ASU Data Conference, Tempe, AZ</span></div><div class="res"></div></div>
-    <div class="talk"><span class="d">Nov 2023</span><div><h4>An Introduction to Generative AI</h4><span class="v">ASU Data Conference, Tempe, AZ</span></div><div class="res"><a class="pill" href="https://www.youtube.com/watch?v=ItEEkVSb39Q&list=PLXW4bzMu4rtESb86iqtwVdYF-Q8mQ4Jtv&index=15">video</a></div></div>
-    <div class="talk"><span class="d">Nov 2022</span><div><h4>An Introduction to Deep Learning</h4><span class="v">ASU Data Conference, Tempe, AZ</span></div><div class="res"><a class="pill" href="/files/Introduction_to_DeepLearning.pptx">slides</a></div></div>
-    <div class="talk"><span class="d">Jun 2022</span><div><h4>Predicting Persistence Using Machine Learning: From Model Development to Deployment</h4><span class="v">AIR Forum, Phoenix, AZ</span></div><div class="res"></div></div>
-    <div class="talk"><span class="d">Mar 2022</span><div><h4>Predicting Student Persistence</h4><span class="v">ASU Library Data Science Open Lab, Tempe, AZ</span></div><div class="res"><a class="pill" href="https://www.youtube.com/watch?v=jcvIhXXAzBY&t=2626s">video</a></div></div>
+    <div class="talk reveal"><span class="d">Nov 2025</span><div><h4>Cracking XGBoost: The Go-To Machine Learning Algorithm for Structured Data</h4><span class="v">ASU Data Conference, Tempe, AZ</span></div><div class="res"><a class="pill" href="/files/XGB.pptx">slides</a></div></div>
+    <div class="talk reveal"><span class="d">Nov 2024</span><div><h4>Transformers: Revolutionary Deep Learning Architectures</h4><span class="v">ASU Data Conference, Tempe, AZ</span></div><div class="res"></div></div>
+    <div class="talk reveal"><span class="d">Nov 2023</span><div><h4>An Introduction to Generative AI</h4><span class="v">ASU Data Conference, Tempe, AZ</span></div><div class="res"><a class="pill" href="https://www.youtube.com/watch?v=ItEEkVSb39Q&list=PLXW4bzMu4rtESb86iqtwVdYF-Q8mQ4Jtv&index=15">video</a></div></div>
+    <div class="talk reveal"><span class="d">Nov 2022</span><div><h4>An Introduction to Deep Learning</h4><span class="v">ASU Data Conference, Tempe, AZ</span></div><div class="res"><a class="pill" href="/files/Introduction_to_DeepLearning.pptx">slides</a></div></div>
+    <div class="talk reveal"><span class="d">Jun 2022</span><div><h4>Predicting Persistence Using Machine Learning: From Model Development to Deployment</h4><span class="v">AIR Forum, Phoenix, AZ</span></div><div class="res"></div></div>
+    <div class="talk reveal"><span class="d">Mar 2022</span><div><h4>Predicting Student Persistence</h4><span class="v">ASU Library Data Science Open Lab, Tempe, AZ</span></div><div class="res"><a class="pill" href="https://www.youtube.com/watch?v=jcvIhXXAzBY&t=2626s">video</a></div></div>
   </div>
 </section>
 
 <section id="certifications">
-  <div class="sh"><span class="num">05</span><h2>Certifications &amp; Honors</h2><span class="rule"></span></div>
+  <div class="sh reveal"><span class="num">05</span><h2>Certifications &amp; Honors</h2><span class="rule"></span></div>
   <div class="certs" style="margin-bottom:24px">
-    <a class="cert" href="https://www.credly.com/badges/a770f74d-43df-4e3b-9d7e-1995fd0e34ba/public_url"><div><b>AWS Machine Learning Specialty</b><span>Amazon Web Services · 2023</span></div><span class="arrow">↗</span></a>
-    <a class="cert" href="https://www.credly.com/badges/e73583bf-4840-406b-a227-119e805dc626/public_url"><div><b>AWS AI Practitioner</b><span>Amazon Web Services · 2024</span></div><span class="arrow">↗</span></a>
-    <a class="cert" href="https://www.credly.com/badges/b614a0d4-334f-4820-b5c7-f4dfdd258c1a/public_url"><div><b>AWS Cloud Practitioner</b><span>Amazon Web Services · 2023</span></div><span class="arrow">↗</span></a>
-    <a class="cert" href="https://www.coursera.org/account/accomplishments/verify/YHYB8N5MT5LN"><div><b>Generative AI with Large Language Models</b><span>Coursera</span></div><span class="arrow">↗</span></a>
-    <a class="cert" href="https://graduation.udacity.com/confirm/e/b17b6fe0-3450-11ed-9d86-6b60d01a3969"><div><b>Natural Language Processing</b><span>Udacity Nanodegree</span></div><span class="arrow">↗</span></a>
-    <a class="cert" href="https://graduation.udacity.com/confirm/SATMTMWF"><div><b>Computer Vision</b><span>Udacity Nanodegree</span></div><span class="arrow">↗</span></a>
-    <a class="cert" href="https://graduation.udacity.com/confirm/e/818fa8fc-548d-11ed-8ebc-9bf2a0d6cc96"><div><b>Deep Learning</b><span>Udacity Nanodegree</span></div><span class="arrow">↗</span></a>
-    <a class="cert" href="https://www.credly.com/badges/a9bdedb9-eb29-4401-8734-3387ddb554ab"><div><b>Software Engineer Essentials</b><span>Coursera</span></div><span class="arrow">↗</span></a>
+    <a class="cert reveal" href="https://www.credly.com/badges/a770f74d-43df-4e3b-9d7e-1995fd0e34ba/public_url"><div><b>AWS Machine Learning Specialty</b><span>Amazon Web Services · 2023</span></div><span class="arrow">↗</span></a>
+    <a class="cert reveal" href="https://www.credly.com/badges/e73583bf-4840-406b-a227-119e805dc626/public_url"><div><b>AWS AI Practitioner</b><span>Amazon Web Services · 2024</span></div><span class="arrow">↗</span></a>
+    <a class="cert reveal" href="https://www.credly.com/badges/b614a0d4-334f-4820-b5c7-f4dfdd258c1a/public_url"><div><b>AWS Cloud Practitioner</b><span>Amazon Web Services · 2023</span></div><span class="arrow">↗</span></a>
+    <a class="cert reveal" href="https://www.coursera.org/account/accomplishments/verify/YHYB8N5MT5LN"><div><b>Generative AI with Large Language Models</b><span>Coursera</span></div><span class="arrow">↗</span></a>
+    <a class="cert reveal" href="https://graduation.udacity.com/confirm/e/b17b6fe0-3450-11ed-9d86-6b60d01a3969"><div><b>Natural Language Processing</b><span>Udacity Nanodegree</span></div><span class="arrow">↗</span></a>
+    <a class="cert reveal" href="https://graduation.udacity.com/confirm/SATMTMWF"><div><b>Computer Vision</b><span>Udacity Nanodegree</span></div><span class="arrow">↗</span></a>
+    <a class="cert reveal" href="https://graduation.udacity.com/confirm/e/818fa8fc-548d-11ed-8ebc-9bf2a0d6cc96"><div><b>Deep Learning</b><span>Udacity Nanodegree</span></div><span class="arrow">↗</span></a>
+    <a class="cert reveal" href="https://www.credly.com/badges/a9bdedb9-eb29-4401-8734-3387ddb554ab"><div><b>Software Engineer Essentials</b><span>Coursera</span></div><span class="arrow">↗</span></a>
   </div>
-  <div class="box">
+  <div class="reveal box">
     <h3>Honors &amp; awards</h3>
     <ul class="list">
       <li><span>Green Card through the <b>National Interest Waiver (NIW)</b> for academic achievements (2019); U.S. citizen since 2024.</span></li>
@@ -295,7 +351,7 @@ footer a{color:var(--muted)}
 </section>
 
 <section id="contact">
-  <div class="contact">
+  <div class="reveal contact">
     <h2>Let's connect</h2>
     <p>Open to conversations about machine learning, MLOps and new opportunities.</p>
     <div class="btns">
@@ -308,5 +364,22 @@ footer a{color:var(--muted)}
 
 </main>
 <footer>© 2026 Hamidreza Ghasemi Damavandi · Tempe, AZ</footer>
+<script>
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els = document.querySelectorAll('.reveal');
+  if (!reduce && 'IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {threshold: 0.12, rootMargin: '0px 0px -40px 0px'});
+    els.forEach(function(el){ io.observe(el); });
+  } else { els.forEach(function(el){ el.classList.add('in'); }); }
+  var t = document.getElementById('typed');
+  if (t && !reduce) {
+    var text = t.getAttribute('data-text'), i = 0; t.textContent = '';
+    setTimeout(function tick(){ t.textContent = text.slice(0, ++i); if (i < text.length) setTimeout(tick, 55); }, 900);
+  }
+})();
+</script>
 </body>
 </html>
