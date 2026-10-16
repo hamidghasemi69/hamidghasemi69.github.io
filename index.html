@@ -94,6 +94,22 @@ h1 .grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-
 .lead b{color:var(--text);font-weight:600}
 .meta{display:flex;flex-wrap:wrap;gap:18px;margin:22px 0 30px;font-family:var(--mono);font-size:13px;color:var(--dim)}
 .btns{display:flex;flex-wrap:wrap;gap:12px}
+.hbtns{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.hbtn{position:relative;display:inline-flex;align-items:center;gap:10px;height:50px;padding:0 20px;border-radius:14px;font-family:var(--head);font-size:15px;font-weight:600;color:var(--text);background:var(--pillbg);border:1px solid var(--line2);backdrop-filter:blur(6px);transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease,color .25s ease,background .25s ease}
+.hbtn svg{width:19px;height:19px;flex:none;transition:transform .25s ease}
+.hbtn:hover{transform:translateY(-3px)}
+.hbtn:hover svg{transform:scale(1.12)}
+.hbtn.li:hover{border-color:#0a66c2;color:#4ea3ff;box-shadow:0 10px 26px -10px rgba(10,102,194,.7)}
+.hbtn.gh:hover{border-color:var(--text);box-shadow:0 10px 26px -12px rgba(148,163,184,.6)}
+.hbtn.sch:hover{border-color:#4285f4;color:#6ea6ff;box-shadow:0 10px 26px -10px rgba(66,133,244,.7)}
+.hbtn.ml:hover{border-color:var(--accent);color:var(--accent);box-shadow:0 10px 26px -10px var(--glow)}
+:root[data-theme="light"] .hbtn.li:hover{color:#0a66c2}
+:root[data-theme="light"] .hbtn.sch:hover{color:#1a5fd6}
+.hbtn.primary{color:var(--on-accent);border:none;padding:0 22px;background:linear-gradient(110deg,var(--accent),var(--accent3) 55%,var(--accent2));background-size:200% 100%;background-position:0 0;box-shadow:0 10px 30px -10px var(--glow);overflow:hidden}
+.hbtn.primary:hover{background-position:100% 0;box-shadow:0 14px 36px -10px var(--glow)}
+.hbtn.primary::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg);transition:left .6s ease}
+.hbtn.primary:hover::after{left:120%}
+.hbtn.primary:hover svg{transform:translateY(2px)}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:10px;font-size:14px;font-weight:600;border:1px solid var(--line2);background:var(--card);transition:.2s}
 .btn:hover{border-color:var(--accent);transform:translateY(-1px)}
 .btn.primary{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
@@ -102,15 +118,24 @@ h1 .grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-
 .photo{position:relative;justify-self:center;width:100%;max-width:340px;aspect-ratio:1}
 .photo::before{content:"";position:absolute;inset:-14px;border-radius:28px;background:conic-gradient(from 140deg,var(--accent),var(--accent2),transparent 60%,var(--accent));opacity:.55;filter:blur(18px)}
 .photo img{position:relative;width:100%;height:100%;object-fit:cover;border-radius:22px;border:1px solid var(--line2)}
-.photo .chip{position:absolute;bottom:-16px;left:-16px;background:var(--card2);border:1px solid var(--line2);border-radius:12px;padding:10px 14px;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.photo .chip{position:absolute;bottom:-22px;left:-22px;display:flex;align-items:center;gap:10px;background:var(--card2);border:1px solid var(--line2);border-radius:14px;padding:13px 18px;font-family:var(--mono);font-size:15px;color:var(--muted);box-shadow:0 14px 34px -14px rgba(0,0,0,.6)}
+.photo .chip::before{content:"";width:10px;height:10px;flex:none;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 var(--glow);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(46,230,197,.55)}70%{box-shadow:0 0 0 10px rgba(46,230,197,0)}100%{box-shadow:0 0 0 0 rgba(46,230,197,0)}}
 .photo .chip b{color:var(--accent);font-weight:500}
 
 /* stats */
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:96px}
-.stat{background:var(--bg2);padding:24px}
-.stat .n{font-family:var(--head);font-size:32px;font-weight:700}
-.stat .n em{font-style:normal;color:var(--accent)}
-.stat .l{font-size:13px;color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:96px}
+.stat{position:relative;overflow:hidden;background:linear-gradient(160deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:18px;padding:24px 22px 22px;transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+.stat::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent2));opacity:.85}
+.stat::after{content:"";position:absolute;width:160px;height:160px;right:-60px;top:-60px;border-radius:50%;background:radial-gradient(circle,var(--glow),transparent 70%);transition:transform .4s ease}
+.stat:hover{transform:translateY(-4px);border-color:var(--line2);box-shadow:0 18px 40px -18px var(--glow)}
+.stat:hover::after{transform:scale(1.35)}
+.stat .si{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:rgba(46,230,197,.10);border:1px solid rgba(46,230,197,.25);color:var(--accent);margin-bottom:16px}
+:root[data-theme="light"] .stat .si{background:rgba(15,159,138,.08);border-color:rgba(15,159,138,.25)}
+.stat .si svg{width:22px;height:22px}
+.stat .n{font-family:var(--head);font-size:40px;font-weight:700;line-height:1;letter-spacing:-.02em;background:linear-gradient(90deg,var(--text),var(--text) 55%,var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat .n em{font-style:normal;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat .l{margin-top:8px;font-size:14px;color:var(--muted)}
 
 /* sections */
 section{padding:0 0 96px;scroll-margin-top:96px}
@@ -222,16 +247,18 @@ footer a{color:var(--muted)}
 @media (max-width:860px){
   .hero{grid-template-columns:1fr;padding-top:56px;gap:48px}
   .photo{max-width:260px;justify-self:start}
-  .stats{grid-template-columns:repeat(2,1fr)}
+  .stats{grid-template-columns:repeat(2,1fr);gap:12px}
   .about,.two{grid-template-columns:1fr}
   .grid{grid-template-columns:1fr 1fr}
   .links{order:3;flex-basis:100%;overflow-x:auto;justify-content:flex-start;scrollbar-width:none;border-radius:14px}
   .links::-webkit-scrollbar{display:none}
   .links a{font-size:15px;padding:8px 14px;white-space:nowrap}
   nav .wrap{flex-wrap:wrap;height:auto;padding-top:12px;padding-bottom:12px;gap:12px}
-  .photo .chip{left:12px;bottom:-14px}
+  .photo .chip{left:12px;bottom:-18px;font-size:13px;padding:10px 14px}
 }
 @media (max-width:560px){
+  .hbtn{height:46px;padding:0 15px;font-size:14px}
+  .stat .n{font-size:34px}
   .bname small{display:none}
   .wrap{padding:0 16px}
   .grid,.certs{grid-template-columns:1fr}
@@ -270,13 +297,12 @@ footer a{color:var(--muted)}
     <h1>Hamidreza<br><span class="grad">Ghasemi Damavandi</span><span class="caret" aria-hidden="true"></span></h1>
     <p class="lead">I build machine learning systems end to end, <b>from model development to production deployment</b>, with a focus on deep learning, NLP and MLOps on the cloud.</p>
     <div class="meta"><span>📍 Tempe, AZ</span><span>🎓 Ph.D., Electrical Engineering</span><span>🇺🇸 U.S. citizen</span></div>
-    <div class="btns">
-      <a class="btn primary" href="/files/resume.pdf">Resume
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v12m0 0l-5-5m5 5l5-5M5 20h14"/></svg></a>
-      <a class="btn" href="https://www.linkedin.com/in/hamidghasemi69/">LinkedIn</a>
-      <a class="btn" href="https://github.com/hamidghasemi69">GitHub</a>
-      <a class="btn" href="https://scholar.google.com/citations?user=aNTQ-U4AAAAJ&hl=en">Scholar</a>
-      <a class="btn" href="mailto:hamidghasemi69@gmail.com">Email</a>
+    <div class="hbtns">
+      <a class="hbtn primary" href="/files/resume.pdf"><span>Download Resume</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg></a>
+      <a class="hbtn li" href="https://www.linkedin.com/in/hamidghasemi69/" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75V21h-4z"/></svg><span>LinkedIn</span></a>
+      <a class="hbtn gh" href="https://github.com/hamidghasemi69" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg><span>GitHub</span></a>
+      <a class="hbtn sch" href="https://scholar.google.com/citations?user=aNTQ-U4AAAAJ&hl=en" aria-label="Google Scholar"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm-6.5 9.62V16c0 1.66 2.91 3.5 6.5 3.5s6.5-1.84 6.5-3.5v-3.38L12 16.2l-6.5-3.58z"/></svg><span>Scholar</span></a>
+      <a class="hbtn ml" href="mailto:hamidghasemi69@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7l8.5 6 8.5-6"/></svg><span>Email</span></a>
     </div>
   </div>
   <div class="photo">
@@ -286,10 +312,10 @@ footer a{color:var(--muted)}
 </header>
 
 <div class="reveal stats">
-  <div class="stat"><div class="n">8<em>+</em></div><div class="l">years in ML &amp; data science</div></div>
-  <div class="stat"><div class="n">3<em>×</em></div><div class="l">AWS certifications</div></div>
-  <div class="stat"><div class="n">6</div><div class="l">conference talks</div></div>
-  <div class="stat"><div class="n">Ph.D.</div><div class="l">Electrical Engineering, Iowa</div></div>
+  <div class="stat"><div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 0-4 4v1H6a3 3 0 0 0-3 3v1a3 3 0 0 0 3 3h1"/><path d="M12 2a4 4 0 0 1 4 4v1h2a3 3 0 0 1 3 3v1a3 3 0 0 1-3 3h-1"/><path d="M7 14v3a3 3 0 0 0 3 3h4a3 3 0 0 0 3-3v-3"/><path d="M12 7v13"/></svg></div><div class="n"><span class="count" data-to="8">8</span><em>+</em></div><div class="l">Years in ML &amp; data science</div></div>
+  <div class="stat"><div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 0 1-.6-9.96A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/><path d="M9.5 13.5l2 2 3.5-4"/></svg></div><div class="n"><span class="count" data-to="3">3</span><em>×</em></div><div class="l">AWS certifications</div></div>
+  <div class="stat"><div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2.5" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3.5M8.5 21.5h7"/></svg></div><div class="n"><span class="count" data-to="6">6</span></div><div class="l">Conference talks</div></div>
+  <div class="stat"><div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5M22 9v6"/></svg></div><div class="n">Ph.D.</div><div class="l">Electrical Engineering, University of Iowa</div></div>
 </div>
 
 <section id="about">
@@ -434,6 +460,18 @@ footer a{color:var(--muted)}
     var meta = document.querySelector('meta[name="theme-color"]'); if (meta) meta.setAttribute('content', next === 'light' ? '#f6f8fb' : '#0a0e16');
     try { localStorage.setItem('theme', next); } catch(e) {}
   });
+  var counts = document.querySelectorAll('.count');
+  if (!reduce && 'IntersectionObserver' in window) {
+    var co = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (!e.isIntersecting) return; co.unobserve(e.target);
+        var el = e.target, to = +el.getAttribute('data-to'), t0 = null;
+        (function step(ts){ if (!t0) t0 = ts; var p = Math.min((ts - t0) / 1100, 1);
+          el.textContent = Math.round(to * (1 - Math.pow(1 - p, 3))); if (p < 1) requestAnimationFrame(step); })(performance.now());
+      });
+    }, {threshold: 0.6});
+    counts.forEach(function(c){ c.textContent = '0'; co.observe(c); });
+  }
   var t = document.getElementById('typed');
   if (t && !reduce) {
     var text = t.getAttribute('data-text'), i = 0; t.textContent = '';
