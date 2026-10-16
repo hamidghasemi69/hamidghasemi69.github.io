@@ -139,8 +139,10 @@ h1 .grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-
 
 /* sections */
 section{padding:0 0 96px;scroll-margin-top:96px}
-.sh{display:flex;align-items:baseline;gap:14px;margin-bottom:32px}
-.sh .num{font-family:var(--mono);font-size:14px;color:var(--accent)}
+.sh{display:flex;align-items:center;gap:16px;margin-bottom:32px}
+.sico{width:46px;height:46px;flex:none;display:grid;place-items:center;border-radius:14px;color:var(--on-accent);background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 10px 26px -10px var(--glow);transition:transform .35s ease}
+.sico svg{width:23px;height:23px}
+.sh:hover .sico{transform:rotate(-8deg) scale(1.06)}
 .sh h2{font-family:var(--head);font-size:30px;font-weight:600;letter-spacing:-.01em}
 .sh .rule{flex:1;height:1px;background:var(--line);margin-left:8px}
 .about{display:grid;grid-template-columns:1.5fr 1fr;gap:48px}
@@ -342,7 +344,7 @@ footer a{color:var(--muted)}
 </div>
 
 <section id="about">
-  <div class="sh reveal"><span class="num">01</span><h2>About</h2><span class="rule"></span></div>
+  <div class="sh reveal"><span class="sico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><h2>About</h2><span class="rule"></span></div>
   <div class="reveal about">
     <div>
       <p>I am a <b>Principal Data Scientist</b> in the Actionable Analytics group within the <a href="https://provost.asu.edu/">Office of the University Provost at Arizona State University</a>, where I oversee the complete lifecycle of machine learning projects, from model development to deployment. Previously, I was a <b>Senior Machine Learning Scientist at Overstock</b>.</p>
@@ -361,7 +363,7 @@ footer a{color:var(--muted)}
 </section>
 
 <section id="experience">
-  <div class="sh reveal"><span class="num">02</span><h2>Experience</h2><span class="rule"></span></div>
+  <div class="sh reveal"><span class="sico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2.5"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg></span><h2>Experience</h2><span class="rule"></span></div>
   <div class="reveal two">
     <div class="tl">
       <div class="ti now withlogo"><img class="lg" src="/images/logos/asu.png" alt="Arizona State University logo"><div><div class="when">Oct 2022 — Present</div><h4>Principal Data Scientist</h4><div class="org">Arizona State University · Office of the University Provost</div><p>Promoted from Senior Data Scientist. Leads ML projects end to end, from model development to deployment.</p></div></div>
@@ -379,7 +381,7 @@ footer a{color:var(--muted)}
 </section>
 
 <section id="projects">
-  <div class="sh reveal"><span class="num">03</span><h2>Selected Projects</h2><span class="rule"></span></div>
+  <div class="sh reveal"><span class="sico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 5-9 5-9-5z"/><path d="M3 12l9 5 9-5M3 17l9 5 9-5"/></svg></span><h2>Selected Projects</h2><span class="rule"></span></div>
   <div class="featured reveal">
     <div>
       <span class="kind">★ Featured · ML Engineering</span>
@@ -408,7 +410,7 @@ footer a{color:var(--muted)}
 </section>
 
 <section id="talks">
-  <div class="sh reveal"><span class="num">04</span><h2>Talks</h2><span class="rule"></span></div>
+  <div class="sh reveal"><span class="sico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="12" rx="2"/><path d="M12 15v4M8 21h8M8 10l2.5-2.5L13 10l3-3"/></svg></span><h2>Talks</h2><span class="rule"></span></div>
   <div>
     <div class="talk reveal"><span class="d">Nov 2025</span><div><h4>Cracking XGBoost: The Go-To Machine Learning Algorithm for Structured Data</h4><span class="v">ASU Data Conference, Tempe, AZ</span></div><div class="res"><a class="pill" href="/files/XGB.pptx">slides</a></div></div>
     <div class="talk reveal"><span class="d">Nov 2024</span><div><h4>Transformers: Revolutionary Deep Learning Architectures</h4><span class="v">ASU Data Conference, Tempe, AZ</span></div><div class="res"></div></div>
@@ -420,7 +422,7 @@ footer a{color:var(--muted)}
 </section>
 
 <section id="certifications">
-  <div class="sh reveal"><span class="num">05</span><h2>Certifications &amp; Honors</h2><span class="rule"></span></div>
+  <div class="sh reveal"><span class="sico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></svg></span><h2>Certifications &amp; Honors</h2><span class="rule"></span></div>
   <div class="certs" style="margin-bottom:24px">
     <a class="cert reveal" href="https://www.credly.com/badges/a770f74d-43df-4e3b-9d7e-1995fd0e34ba/public_url"><div><b>AWS Machine Learning Specialty</b><span>Amazon Web Services · 2023</span></div><span class="arrow">↗</span></a>
     <a class="cert reveal" href="https://www.credly.com/badges/e73583bf-4840-406b-a227-119e805dc626/public_url"><div><b>AWS AI Practitioner</b><span>Amazon Web Services · 2024</span></div><span class="arrow">↗</span></a>
