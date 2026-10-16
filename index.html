@@ -148,7 +148,8 @@ section{padding:0 0 96px;scroll-margin-top:96px}
 .list li:last-child{border-bottom:none}
 .list li::before{content:"▹";color:var(--accent)}
 .list b{color:var(--text);font-weight:600}
-.edu{display:flex;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.edu{display:grid;grid-template-columns:44px 1fr auto;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
+.edu .lg{width:44px;height:44px;border-radius:10px;box-shadow:0 0 0 1px var(--line2)}
 .edu:last-child{border-bottom:none}
 .edu b{font-weight:600}
 .edu span{color:var(--muted);font-size:14px}
@@ -215,7 +216,8 @@ footer a{color:var(--muted)}
   .wrap{padding:0 16px}
   .grid,.certs{grid-template-columns:1fr}
   .talk{grid-template-columns:1fr;gap:4px}
-  .edu{flex-direction:column;gap:2px}
+  .edu{grid-template-columns:44px 1fr;row-gap:2px}
+  .edu .y{grid-column:2}
   .lead{font-size:17px}
 }
 </style>
@@ -291,9 +293,9 @@ footer a{color:var(--muted)}
     </div>
     <div class="reveal box">
       <h3>Education</h3>
-      <div class="edu"><div><b>Ph.D., Electrical Engineering</b><br><span>University of Iowa, Iowa City, IA</span></div><div class="y">2016</div></div>
-      <div class="edu"><div><b>M.S., Electrical Engineering</b><br><span>University of Iowa, Iowa City, IA</span></div><div class="y">2016</div></div>
-      <div class="edu"><div><b>B.S., Electrical Engineering</b><br><span>University of Tehran, Iran</span></div><div class="y">2013</div></div>
+      <div class="edu"><img class="lg" src="/images/logos/iowa.png" alt="University of Iowa logo"><div><b>Ph.D., Electrical Engineering</b><br><span>University of Iowa, Iowa City, IA</span></div><div class="y">2016</div></div>
+      <div class="edu"><img class="lg" src="/images/logos/iowa.png" alt="University of Iowa logo"><div><b>M.S., Electrical Engineering</b><br><span>University of Iowa, Iowa City, IA</span></div><div class="y">2016</div></div>
+      <div class="edu"><img class="lg" src="/images/logos/tehran.png" alt="University of Tehran logo"><div><b>B.S., Electrical Engineering</b><br><span>University of Tehran, Iran</span></div><div class="y">2013</div></div>
     </div>
   </div>
 </section>
