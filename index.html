@@ -293,7 +293,7 @@ footer a{color:var(--muted)}
 .fstat .n em{font-style:normal;color:var(--accent)}
 .fstat .l{font-size:13px;color:var(--muted)}
 .tintro{color:var(--muted);margin:-12px 0 24px;font-size:16px}
-.trips{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.trips{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .trip{margin:0;position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line2);aspect-ratio:4/5;box-shadow:0 18px 40px -24px rgba(0,0,0,.6);transition:transform .35s,box-shadow .35s,border-color .35s}
 .trip:hover{transform:translateY(-6px);border-color:var(--accent);box-shadow:0 26px 50px -24px var(--glow,rgba(46,230,197,.4))}
 .tpic{position:absolute;inset:0}
@@ -321,7 +321,7 @@ footer a{color:var(--muted)}
   .links a{font-size:15px;padding:8px 14px;white-space:nowrap}
   nav .wrap{flex-wrap:wrap;height:auto;padding-top:12px;padding-bottom:12px;gap:12px}
 }
-@media (max-width:1100px){.trips{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:760px){.trips{grid-template-columns:repeat(2,1fr)}.trip:last-child{grid-column:span 2;aspect-ratio:16/10}}
 @media (max-width:860px){
   .contact{grid-template-columns:1fr;padding:28px;gap:32px}
   .hero{grid-template-columns:1fr;padding-top:56px;gap:48px}
@@ -529,10 +529,6 @@ footer a{color:var(--muted)}
     <figure class="trip reveal">
       <div class="tpic"><svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="hb1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffcf8a"/><stop offset="1" stop-color="#f08a4b"/></linearGradient><radialGradient id="hb2" cx=".5" cy=".55" r=".6"><stop offset="0" stop-color="#e48a52"/><stop offset="1" stop-color="#a5482a"/></radialGradient></defs><rect width="400" height="500" fill="url(#hb1)"/><path d="M0 120 Q200 90 400 120 V500 H0z" fill="#c8693d"/><path d="M95 120 C60 260 110 400 200 400 C290 400 340 260 305 120" fill="none" stroke="#2f7f6f" stroke-width="44"/><path d="M95 120 C60 260 110 400 200 400 C290 400 340 260 305 120" fill="none" stroke="#3fae95" stroke-width="22" opacity=".55"/><path d="M123 120 C100 250 135 360 200 362 C265 360 300 250 277 120 Z" fill="url(#hb2)"/><path d="M150 180 Q200 160 250 180 M140 250 Q200 230 260 250 M155 320 Q200 305 245 320" stroke="#c46a3c" stroke-width="3" fill="none" opacity=".6"/><path d="M0 430 Q60 410 120 440 L160 500 H0z M400 420 Q330 410 280 450 L250 500 H400z" fill="#6b2a17"/><path d="M0 470 Q200 440 400 470 V500 H0z" fill="#4a1d10"/></svg><img src="/images/travel/horseshoe-bend.jpg" alt="Horseshoe Bend" loading="lazy" onerror="this.remove()"></div>
       <figcaption><span class="tloc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Page, AZ</span><b>Horseshoe Bend</b><span class="tcap">The Colorado River carving a perfect bend 1,000 feet below.</span></figcaption>
-    </figure>
-    <figure class="trip reveal">
-      <div class="tpic"><svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="sg1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1d2a5c"/><stop offset=".35" stop-color="#8a3f8f"/><stop offset=".62" stop-color="#ff7a59"/><stop offset=".8" stop-color="#ffc56b"/></linearGradient></defs><rect width="400" height="500" fill="url(#sg1)"/><circle cx="200" cy="330" r="60" fill="#ffe0a3" opacity=".85"/><path d="M0 330 Q60 300 120 320 Q190 290 260 318 Q330 295 400 315 V500 H0z" fill="#5a2d55"/><path d="M0 370 Q100 350 200 368 T400 360 V500 H0z" fill="#2b1934"/><g fill="#170d1d"><path d="M88 470 V250 a14 14 0 0 1 28 0 V470z"/><path d="M88 360 H66 a10 10 0 0 1-10-10 V300 a10 10 0 0 1 20 0 V340 H88z"/><path d="M116 330 H138 V280 a10 10 0 0 1 20 0 V330 a12 12 0 0 1-12 12 H116z"/><path d="M290 470 V300 a11 11 0 0 1 22 0 V470z"/><path d="M290 390 H275 a8 8 0 0 1-8-8 V345 a8 8 0 0 1 16 0 V375 H290z"/><path d="M312 370 H326 V335 a8 8 0 0 1 16 0 V372 a10 10 0 0 1-10 10 H312z"/><path d="M0 470 Q200 445 400 470 V500 H0z"/><circle cx="200" cy="460" r="22"/><circle cx="230" cy="465" r="16"/><circle cx="20" cy="462" r="18"/></g></svg><img src="/images/travel/saguaro.jpg" alt="Saguaro National Park" loading="lazy" onerror="this.remove()"></div>
-      <figcaption><span class="tloc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Tucson, AZ</span><b>Saguaro National Park</b><span class="tcap">Giant saguaro cacti silhouetted against a desert sky.</span></figcaption>
     </figure>
   </div>
 </section>
