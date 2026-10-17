@@ -67,13 +67,13 @@ a{color:inherit;text-decoration:none}
 
 /* nav */
 nav{position:sticky;top:0;z-index:10;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:var(--navbg);border-bottom:1px solid var(--line)}
-nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:76px}
+nav .wrap{max-width:1360px;display:flex;align-items:center;justify-content:space-between;gap:16px;height:76px}
 .brand{display:flex;align-items:center;gap:12px;white-space:nowrap}
 .brand .mark{width:40px;height:40px;flex:none;border-radius:12px;box-shadow:0 6px 20px var(--glow);transition:transform .35s ease}
 .brand:hover .mark{transform:rotate(-8deg) scale(1.05)}
 .bname{display:flex;flex-direction:column;font-family:var(--head);font-size:19px;font-weight:700;line-height:1.1;letter-spacing:-.01em;color:var(--text)}
 .bname small{font-family:var(--mono);font-size:11.5px;font-weight:400;letter-spacing:.06em;color:var(--accent);margin-top:3px}
-.links{display:flex;align-items:center;gap:2px;padding:5px;border:1px solid var(--line2);border-radius:999px;background:var(--pillbg)}
+.links{display:flex;align-items:center;gap:0;padding:5px;border:1px solid var(--line2);border-radius:999px;background:var(--pillbg)}
 .links a{position:relative;font-family:var(--head);font-size:15px;font-weight:500;color:var(--muted);padding:8px 12px;border-radius:999px;transition:color .2s,background .2s}
 .links a:hover{color:var(--text);background:var(--hover)}
 .links a.active{color:var(--on-accent);background:linear-gradient(90deg,var(--accent),var(--accent3));box-shadow:0 4px 18px var(--glow)}
@@ -295,6 +295,34 @@ footer a{color:var(--muted)}
 .fstat .n{font-family:var(--head);font-size:28px;font-weight:700;color:var(--text)}
 .fstat .n em{font-style:normal;color:var(--accent)}
 .fstat .l{font-size:13px;color:var(--muted)}
+.about.solo{grid-template-columns:1fr;max-width:860px}
+.rintro{color:var(--muted);margin:-12px 0 24px;font-size:16px}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rcard{position:relative;display:flex;flex-direction:column;gap:10px;padding:24px;border-radius:16px;background:var(--card);border:1px solid var(--line);overflow:hidden;transition:transform .3s,border-color .3s,box-shadow .3s}
+.rcard::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent2));opacity:.0;transition:opacity .3s}
+.rcard:hover{transform:translateY(-4px);border-color:var(--line2);box-shadow:0 20px 40px -26px var(--glow,rgba(46,230,197,.4))}
+.rcard:hover::before{opacity:1}
+.rico{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;color:var(--accent);background:rgba(46,230,197,.10);border:1px solid rgba(46,230,197,.25);transition:transform .3s}
+:root[data-theme="light"] .rico{background:rgba(15,159,138,.08);border-color:rgba(15,159,138,.25)}
+.rcard:hover .rico{transform:rotate(-6deg) scale(1.06)}
+.rico svg{width:21px;height:21px}
+.rcard h3{font-family:var(--head);font-size:18px;font-weight:600;line-height:1.3;margin-top:4px}
+.rcard p{color:var(--muted);font-size:14px;line-height:1.6;flex:1}
+.rtags{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.rtags span{font-family:var(--mono);font-size:11.5px;padding:3px 9px;border-radius:6px;color:var(--accent2);background:rgba(91,140,255,.08);border:1px solid rgba(91,140,255,.22)}
+.rapply{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:22px;padding:16px 20px;border-radius:14px;border:1px dashed var(--line2)}
+.rapply .rlbl{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin-right:4px}
+.rapply span:not(.rlbl){font-size:14px;color:var(--text);padding:4px 11px;border-radius:999px;background:var(--pillbg);border:1px solid var(--line2)}
+.rapply a{margin-left:auto;font-family:var(--head);font-size:14px;font-weight:600;color:var(--accent)}
+.sgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.scard{padding:22px 24px;border-radius:16px;background:var(--card);border:1px solid var(--line);transition:border-color .3s,box-shadow .3s}
+.scard:hover{border-color:var(--line2);box-shadow:0 20px 40px -28px var(--glow,rgba(46,230,197,.4))}
+.shd{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.shd h3{font-family:var(--head);font-size:18px;font-weight:600}
+.scard:hover .rico{transform:rotate(-6deg) scale(1.06)}
+.schips{display:flex;flex-wrap:wrap;gap:7px}
+.schips span{font-size:13.5px;padding:5px 11px;border-radius:8px;color:var(--text);background:var(--pillbg);border:1px solid var(--line2);transition:border-color .2s,color .2s,transform .2s}
+.schips span:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px)}
 .tintro{color:var(--muted);margin:-12px 0 24px;font-size:16px}
 .trips{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .trip{margin:0;position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line2);aspect-ratio:4/5;box-shadow:0 18px 40px -24px rgba(0,0,0,.6);transition:transform .35s,box-shadow .35s,border-color .35s}
@@ -316,14 +344,18 @@ footer a{color:var(--muted)}
 }
 @media (max-width:1640px){
   .bname small{display:none}
-  .links a{padding:8px 9px;font-size:15px}
+  .links a{padding:8px 8px;font-size:14.5px}
+  .links{gap:0}
 }
-@media (max-width:1100px){
+@media (max-width:1400px){
   .links{order:3;flex-basis:100%;overflow-x:auto;justify-content:flex-start;scrollbar-width:none;border-radius:14px}
   .links::-webkit-scrollbar{display:none}
   .links a{font-size:15px;padding:8px 14px;white-space:nowrap}
   nav .wrap{flex-wrap:wrap;height:auto;padding-top:12px;padding-bottom:12px;gap:12px}
 }
+@media (max-width:1000px){.rgrid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:760px){.sgrid{grid-template-columns:1fr}}
+@media (max-width:600px){.rgrid{grid-template-columns:1fr}.rapply a{margin-left:0}}
 @media (max-width:760px){.trips{grid-template-columns:repeat(2,1fr)}.trip:last-child{grid-column:span 2;aspect-ratio:16/10}}
 @media (max-width:860px){
   .contact{grid-template-columns:1fr;padding:28px;gap:32px}
@@ -365,7 +397,7 @@ footer a{color:var(--muted)}
     <span class="bname">Hamid Ghasemi<small>Principal Data Scientist</small></span>
   </a>
   <div class="links">
-    <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#talks">Talks</a><a href="#certifications">Certifications</a><a href="#updates">Updates</a><a href="#travel">Travel</a><a href="#contact">Contact</a>
+    <a href="#about">About</a><a href="#research">Research</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#talks">Talks</a><a href="#certifications">Certifications</a><a href="#updates">Updates</a><a href="#travel">Travel</a><a href="#contact">Contact</a>
   </div>
   <div class="navright">
     <button class="theme" id="themeToggle" type="button" aria-label="Switch between dark and light mode" title="Toggle dark / light mode">
@@ -410,21 +442,27 @@ footer a{color:var(--muted)}
 
 <section id="about">
   <div class="sh reveal"><span class="sico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><h2>About</h2><span class="rule"></span></div>
-  <div class="reveal about">
+  <div class="reveal about solo">
     <div>
       <p>I am a <b>Principal Data Scientist</b> in the Actionable Analytics group within the <a href="https://provost.asu.edu/">Office of the University Provost at Arizona State University</a>, where I oversee the complete lifecycle of machine learning projects, from model development to deployment. Previously, I was a <b>Senior Machine Learning Scientist at Overstock</b>.</p>
       <p>I earned my B.S. in Electrical Engineering from the <a href="https://ut.ac.ir/en">University of Tehran</a>, ranked first overall in Iran, and my M.S. and Ph.D. in Electrical Engineering from the <a href="https://uiowa.edu/">University of Iowa</a>.</p>
       <div class="note"><span>✓</span><span>I am a <b>U.S. citizen</b> and do not require visa sponsorship for any role.</span></div>
     </div>
-    <div class="reveal box">
-      <h3>Research interests</h3>
-      <div class="chips">
-        <span class="chip2">Statistical ML</span><span class="chip2">Scientific ML</span><span class="chip2">Deep Learning</span>
-        <span class="chip2">Reinforcement Learning</span><span class="chip2">NLP</span><span class="chip2">Generative AI</span>
-        <span class="chip2">MLOps</span><span class="chip2">Cloud / AWS</span>
-      </div>
-    </div>
   </div>
+</section>
+
+<section id="research">
+  <div class="sh reveal"><span class="sico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3v6L4.5 18.5A1.7 1.7 0 0 0 6 21h12a1.7 1.7 0 0 0 1.5-2.5L14 9V3"/><path d="M7.5 15h9"/></svg></span><h2>Research Interests</h2><span class="rule"></span></div>
+  <p class="rintro reveal">I like problems where rigorous methods meet real impact. These are the areas I keep coming back to:</p>
+  <div class="rgrid">
+    <div class="rcard reveal"><span class="rico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></span><h3>Large Language Models &amp; Generative AI</h3><p>Retrieval-augmented generation, agentic workflows and LLM reasoning, and how to make them useful in real decision-making.</p><div class="rtags"><span>LLMs</span><span>RAG</span><span>Agents</span><span>Reasoning</span></div></div>
+    <div class="rcard reveal"><span class="rico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>Trustworthy &amp; Explainable AI</h3><p>Uncertainty and confidence estimation, including step-wise confidence for LLM reasoning, plus model explainability with SHAP.</p><div class="rtags"><span>Uncertainty</span><span>Confidence</span><span>SHAP</span></div></div>
+    <div class="rcard reveal"><span class="rico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18"/><path d="M5 16l4-5 4 3 6-8"/><circle cx="19" cy="6" r="1.5"/></svg></span><h3>Statistical &amp; Scientific ML</h3><p>Statistical inference, applied statistics and scientific machine learning that respects the structure of the problem.</p><div class="rtags"><span>Inference</span><span>Scientific ML</span><span>Applied statistics</span></div></div>
+    <div class="rcard reveal"><span class="rico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 7l3 4M7 17l3-4M14 11l3-4M14 13l3 4"/></svg></span><h3>Deep Learning &amp; NLP</h3><p>Transformer architectures, representation learning and language understanding for text-heavy, real-world data.</p><div class="rtags"><span>Transformers</span><span>NLP</span><span>Representation learning</span></div></div>
+    <div class="rcard reveal"><span class="rico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h3l2-6 4 12 3-9 2 3h6"/></svg></span><h3>Signal &amp; Image Processing</h3><p>The foundation of my Ph.D. in Electrical Engineering: estimation, detection and computer vision.</p><div class="rtags"><span>Estimation</span><span>Computer vision</span><span>Ph.D. research</span></div></div>
+    <div class="rcard reveal"><span class="rico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></span><h3>Optimization &amp; Reinforcement Learning</h3><p>Constrained optimization (linear and integer programming) and learning to make sequential decisions under uncertainty.</p><div class="rtags"><span>Linear / integer programming</span><span>RL</span></div></div>
+  </div>
+  <div class="rapply reveal"><span class="rlbl">Applied to</span><span>Student success &amp; learning analytics at ASU</span><span>Advisor support with LLMs</span><span>E-commerce pricing &amp; discounts</span><a href="https://scholar.google.com/citations?user=aNTQ-U4AAAAJ&amp;hl=en">Publications on Google Scholar →</a></div>
 </section>
 
 <section id="experience">
@@ -471,6 +509,18 @@ footer a{color:var(--muted)}
     <a class="card reveal" href="https://github.com/hamidghasemi69/NLP-Machine-Translation"><span class="kind">NLP · Seq2Seq</span><h4>Machine Translation</h4><p>RNN encoder-decoder translating between English and French.</p><span class="go">view code →</span></a>
     <a class="card reveal" href="https://github.com/hamidghasemi69/Part-of-Speech-Tagging"><span class="kind">NLP · HMM</span><h4>Part-of-Speech Tagging</h4><p>Hidden Markov model that tags words with their part of speech.</p><span class="go">view code →</span></a>
     <a class="card reveal" href="https://github.com/hamidghasemi69/Landmark-Classification-and-Tagging-for-Social-Media"><span class="kind">Vision · CNN</span><h4>Landmark Classification</h4><p>Deep CNN classifying landmarks in social media photos.</p><span class="go">view code →</span></a>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="sh reveal"><span class="sico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></svg></span><h2>Skills</h2><span class="rule"></span></div>
+  <div class="sgrid">
+    <div class="scard reveal"><div class="shd"><span class="rico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/></svg></span><h3>Generative AI &amp; LLMs</h3></div><div class="schips"><span>Retrieval-Augmented Generation (RAG)</span><span>Prompt Engineering</span><span>Fine-tuning</span><span>LangChain</span><span>Hugging Face Transformers</span><span>OpenAI API</span><span>Vector Databases</span><span>Embeddings</span></div></div>
+    <div class="scard reveal"><div class="shd"><span class="rico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5.2A3 3 0 0 0 7 17a3 3 0 0 0 5 1.5V5.5A3 3 0 0 0 9.5 4z"/><path d="M14.5 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5.2A3 3 0 0 1 17 17a3 3 0 0 1-5 1.5"/></svg></span><h3>Machine Learning &amp; Deep Learning</h3></div><div class="schips"><span>Supervised &amp; Unsupervised Learning</span><span>Classification</span><span>Regression</span><span>Clustering</span><span>Time Series Analysis</span><span>Recommendation Systems</span><span>CNNs</span><span>RNNs / LSTMs</span><span>GANs</span><span>Transformers</span><span>PyTorch</span><span>TensorFlow</span><span>Keras</span><span>Scikit-learn</span></div></div>
+    <div class="scard reveal"><div class="shd"><span class="rico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M8.5 11h7M8.5 14.5h4"/></svg></span><h3>Natural Language Processing</h3></div><div class="schips"><span>Sentiment Analysis</span><span>Topic Modeling</span><span>Named Entity Recognition (NER)</span><span>Machine Translation</span><span>Text Summarization</span><span>Question Answering</span><span>Hugging Face</span><span>NLTK</span><span>spaCy</span></div></div>
+    <div class="scard reveal"><div class="shd"><span class="rico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span><h3>Computer Vision</h3></div><div class="schips"><span>Image Classification</span><span>Object Detection</span><span>Image Captioning</span><span>Face Generation</span><span>Landmark Recognition</span><span>OpenCV</span></div></div>
+    <div class="scard reveal"><div class="shd"><span class="rico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 0 1-.6-9.96A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/></svg></span><h3>Cloud Computing &amp; MLOps</h3></div><div class="schips"><span>AWS SageMaker</span><span>AWS Bedrock</span><span>AWS Lambda</span><span>AWS EC2</span><span>AWS S3</span><span>Docker</span><span>Kubernetes</span><span>Jenkins</span><span>MLflow</span><span>FastAPI</span><span>Flask</span><span>Apache Spark</span></div></div>
+    <div class="scard reveal"><div class="shd"><span class="rico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6M14 4l-4 16"/></svg></span><h3>Programming &amp; Data Science</h3></div><div class="schips"><span>Python</span><span>SQL</span><span>R</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span><span>Git</span><span>GitHub</span><span>Data Structures</span><span>Algorithms</span></div></div>
   </div>
 </section>
 
