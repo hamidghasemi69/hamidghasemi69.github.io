@@ -10,7 +10,7 @@ permalink: /
 <title>Hamidreza Ghasemi · Principal Data Scientist</title>
 <meta name="description" content="Hamidreza Ghasemi, Principal Data Scientist at Arizona State University. Machine learning from model development to production deployment.">
 <meta name="theme-color" content="#0a0e16">
-<script>document.documentElement.classList.add("js");try{var _t=localStorage.getItem("theme");if(_t)document.documentElement.setAttribute("data-theme",_t);}catch(e){}</script>
+<script>document.documentElement.classList.add("js");try{var _t=localStorage.getItem("theme");if(_t)document.documentElement.setAttribute("data-theme",_t);}catch(e){}try{if(sessionStorage.getItem("seenIntro"))document.documentElement.classList.add("nointro");sessionStorage.setItem("seenIntro","1");}catch(e){}</script>
 <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/images/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
@@ -425,10 +425,24 @@ footer p{margin:0}
 @media (max-width:860px){.edubox{position:static}}
 @media (max-width:560px){.hero .dl{display:none}.hbtns{gap:8px}.hbtn.ico{width:44px;height:44px}.hero .hbtn.primary{height:44px;padding:0 16px}}
 @media (max-width:340px){.hbtns{flex-wrap:wrap}}
+
+/* intro loader */
+#intro{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:var(--bg);animation:introOut .7s cubic-bezier(.7,0,.2,1) 1.55s forwards}
+.intro-in{display:flex;flex-direction:column;align-items:center;gap:18px;animation:introUp .6s ease both}
+.intro-name{font-family:var(--head);font-weight:700;font-size:clamp(34px,6vw,64px);letter-spacing:-.02em;color:var(--text);line-height:1}
+.intro-name span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.intro-bar{width:min(340px,70vw);height:5px;border-radius:999px;background:var(--line2);overflow:hidden}
+.intro-bar i{display:block;height:100%;width:0;border-radius:inherit;background:linear-gradient(90deg,var(--accent),var(--accent2));box-shadow:0 0 14px var(--glow,rgba(46,230,197,.6));animation:introFill 1.25s cubic-bezier(.6,.05,.3,1) .2s forwards}
+.intro-sub{font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);animation:introUp .6s ease .3s both}
+@keyframes introFill{to{width:100%}}
+@keyframes introUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes introOut{to{transform:translateY(-100%);visibility:hidden}}
+html.nointro #intro{display:none}
+@media (prefers-reduced-motion:reduce){#intro{display:none}}
 </style>
 </head>
 <body>
-<div id="progress" aria-hidden="true"></div><div id="spot" aria-hidden="true"></div><canvas id="waves" aria-hidden="true"></canvas><div class="bg-grid"></div><div class="bg-glow g1"></div><div class="bg-glow g2"></div>
+<div id="intro" aria-hidden="true"><div class="intro-in"><div class="intro-name">Hamidreza <span>Ghasemi</span></div><div class="intro-bar"><i></i></div><div class="intro-sub">Principal Data Scientist</div></div></div><div id="progress" aria-hidden="true"></div><div id="spot" aria-hidden="true"></div><canvas id="waves" aria-hidden="true"></canvas><div class="bg-grid"></div><div class="bg-glow g1"></div><div class="bg-glow g2"></div>
 
 <nav><div class="wrap">
   <a href="#top" class="brand" aria-label="Hamid Ghasemi, back to top">
