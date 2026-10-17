@@ -439,6 +439,16 @@ footer p{margin:0}
 @keyframes introOut{to{transform:translateY(-100%);visibility:hidden}}
 html.nointro #intro{display:none}
 @media (prefers-reduced-motion:reduce){#intro{display:none}}
+
+.bookbtn{display:flex;align-items:center;gap:14px;margin:0 0 26px;padding:14px 18px;border-radius:16px;border:1px solid rgba(46,230,197,.4);background:linear-gradient(110deg,rgba(46,230,197,.14),rgba(91,140,255,.12));color:var(--text);transition:transform .25s,box-shadow .25s,border-color .25s;max-width:360px}
+.bookbtn svg{width:40px;height:40px;flex:none;padding:9px;border-radius:12px;color:var(--on-accent);background:linear-gradient(135deg,var(--accent),var(--accent2))}
+.bookbtn span{display:flex;flex-direction:column;line-height:1.3}
+.bookbtn b{font-family:var(--head);font-size:16px;font-weight:600}
+.bookbtn small{font-size:13px;color:var(--muted)}
+.bookbtn i{margin-left:auto;font-style:normal;font-size:20px;color:var(--accent);transition:transform .25s}
+.bookbtn:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:0 14px 32px -14px var(--glow,rgba(46,230,197,.6))}
+.bookbtn:hover i{transform:translateX(4px)}
+:root[data-theme="light"] .bookbtn{border-color:rgba(15,159,138,.35);background:linear-gradient(110deg,rgba(15,159,138,.08),rgba(59,91,219,.07))}
 </style>
 <script type="application/ld+json">
 {
@@ -762,7 +772,8 @@ html.nointro #intro{display:none}
     <div class="cinfo">
       <span class="kicker">Get in touch</span>
       <h2>Let's connect</h2>
-      <p>Open to conversations about machine learning, MLOps and new opportunities. Send me a message here and it lands straight in my inbox.</p>
+      <p>Open to conversations about machine learning, MLOps and new opportunities. Send me a message here and it lands straight in my inbox, or pick a time that works for you.</p>
+      <a class="bookbtn" href="https://calendly.com/hamidghasemi69/30min" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M16 2.5v4M8 2.5v4M3 10h18"/><path d="M9 15l2 2 4-4"/></svg><span><b>Book a 30-min chat</b><small>Pick a time on my calendar</small></span><i aria-hidden="true">→</i></a>
       <div class="clinks">
         <a href="mailto:hamidghasemi69@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7l8.5 6 8.5-6"/></svg>hamidghasemi69@gmail.com</a>
         <a href="https://www.linkedin.com/in/hamidghasemi69/"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75V21h-4z"/></svg>LinkedIn</a>
