@@ -64,14 +64,14 @@ a{color:inherit;text-decoration:none}
 
 /* nav */
 nav{position:sticky;top:0;z-index:10;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:var(--navbg);border-bottom:1px solid var(--line)}
-nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:76px}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:76px}
 .brand{display:flex;align-items:center;gap:12px;white-space:nowrap}
 .brand .mark{width:40px;height:40px;flex:none;border-radius:12px;box-shadow:0 6px 20px var(--glow);transition:transform .35s ease}
 .brand:hover .mark{transform:rotate(-8deg) scale(1.05)}
 .bname{display:flex;flex-direction:column;font-family:var(--head);font-size:19px;font-weight:700;line-height:1.1;letter-spacing:-.01em;color:var(--text)}
 .bname small{font-family:var(--mono);font-size:11.5px;font-weight:400;letter-spacing:.06em;color:var(--accent);margin-top:3px}
-.links{display:flex;align-items:center;gap:4px;padding:5px;border:1px solid var(--line2);border-radius:999px;background:var(--pillbg)}
-.links a{position:relative;font-family:var(--head);font-size:16px;font-weight:500;color:var(--muted);padding:9px 18px;border-radius:999px;transition:color .2s,background .2s}
+.links{display:flex;align-items:center;gap:2px;padding:5px;border:1px solid var(--line2);border-radius:999px;background:var(--pillbg)}
+.links a{position:relative;font-family:var(--head);font-size:15px;font-weight:500;color:var(--muted);padding:8px 12px;border-radius:999px;transition:color .2s,background .2s}
 .links a:hover{color:var(--text);background:var(--hover)}
 .links a.active{color:var(--on-accent);background:linear-gradient(90deg,var(--accent),var(--accent3));box-shadow:0 4px 18px var(--glow)}
 .navcta{font-family:var(--head);font-size:15px;font-weight:600;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);color:var(--accent);white-space:nowrap;transition:.2s}
@@ -194,6 +194,31 @@ section{padding:0 0 96px;scroll-margin-top:96px}
 .list li:last-child{border-bottom:none}
 .list li::before{content:"▹";color:var(--accent)}
 .list b{color:var(--text);font-weight:600}
+.nowline{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:-12px 0 28px}
+.nowlbl{font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--on-accent);background:linear-gradient(90deg,var(--accent),var(--accent2));padding:5px 10px;border-radius:7px}
+.ntag{font-family:var(--mono);font-size:13px;color:var(--text);padding:5px 11px;border-radius:7px;border:1px solid var(--line2);background:var(--pillbg)}
+.wins{list-style:none;margin:10px 0 0;display:flex;flex-direction:column;gap:7px}
+.wins li{position:relative;padding-left:20px;font-size:14px;color:var(--muted);line-height:1.55}
+.wins li::before{content:"";position:absolute;left:2px;top:.62em;width:8px;height:8px;border-radius:2px;background:linear-gradient(135deg,var(--accent),var(--accent2));transform:rotate(45deg)}
+.wins b{color:var(--text);font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tags span{font-family:var(--mono);font-size:12px;padding:4px 9px;border-radius:6px;color:var(--accent);background:rgba(46,230,197,.08);border:1px solid rgba(46,230,197,.22)}
+:root[data-theme="light"] .tags span{background:rgba(15,159,138,.07);border-color:rgba(15,159,138,.25)}
+.updates{list-style:none;border-left:2px solid var(--line2);margin-left:6px}
+.upd{display:grid;grid-template-columns:96px 120px 1fr;gap:16px;align-items:baseline;padding:14px 0 14px 24px;position:relative}
+.upd::before{content:"";position:absolute;left:-7px;top:21px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.upd:first-child::before{background:var(--accent);box-shadow:0 0 10px var(--accent)}
+.ud{font-family:var(--mono);font-size:13px;color:var(--dim)}
+.uk{justify-self:start;font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:999px;border:1px solid var(--line2);color:var(--muted)}
+.k-talk{color:#5b8cff;border-color:rgba(91,140,255,.4)}
+.k-certification{color:#ff9f43;border-color:rgba(255,159,67,.4)}
+.k-career{color:var(--accent);border-color:rgba(46,230,197,.4)}
+.k-milestone{color:#e879f9;border-color:rgba(232,121,249,.4)}
+.ut{color:var(--muted);font-size:15px}
+.ut b{color:var(--text);font-weight:600}
+.updates:not(.open) .extra{display:none}
+.morebtn{margin:14px 0 0 30px;font-family:var(--head);font-size:14px;font-weight:600;color:var(--accent);background:none;border:1px solid var(--line2);border-radius:999px;padding:8px 16px;cursor:pointer}
+.morebtn:hover{border-color:var(--accent)}
 .edu{display:grid;grid-template-columns:44px 1fr auto;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
 .edu .lg{width:44px;height:44px;border-radius:10px;box-shadow:0 0 0 1px var(--line2)}
 .edu:last-child{border-bottom:none}
@@ -202,11 +227,15 @@ section{padding:0 0 96px;scroll-margin-top:96px}
 .edu .y{font-family:var(--mono);color:var(--accent);font-size:13px;white-space:nowrap}
 
 /* cert */
-.cert{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px;background:var(--card);border:1px solid var(--line);border-radius:12px;transition:.2s}
+.cert{display:flex;align-items:center;gap:14px;padding:16px 18px;background:var(--card);border:1px solid var(--line);border-radius:12px;transition:.2s}
 .cert:hover{border-color:var(--accent)}
 .cert b{font-weight:600;font-size:15px}
 .cert span{display:block;color:var(--dim);font-size:13px}
-.cert .arrow{color:var(--accent);font-family:var(--mono)}
+.cert .arrow{color:var(--accent);font-family:var(--mono);margin-left:auto}
+.cert .ct{flex:1;min-width:0}
+.clogo{width:40px;height:40px;flex:none;border-radius:10px;object-fit:contain;background:#fff;box-shadow:0 0 0 1px var(--line2)}
+.cert .cico{display:grid;place-items:center;background:rgba(255,153,0,.12);color:#ff9900;box-shadow:0 0 0 1px rgba(255,153,0,.35)}
+.cert .cico svg{width:22px;height:22px;color:#ff9900}
 .certs{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 
 /* contact */
@@ -262,8 +291,15 @@ footer a{color:var(--muted)}
 .fstat .l{font-size:13px;color:var(--muted)}
 @media (prefers-reduced-motion:reduce){.js .reveal,.hero > div:first-child > *,.photo{animation:none;transition:none;opacity:1;transform:none}.caret{animation:none}}
 @media (max-width:860px){.featured{grid-template-columns:1fr}}
+@media (max-width:1320px){
+  .bname small{display:none}
+  .links a{padding:8px 11px}
+}
 @media (max-width:1100px){
-  .links a{padding:9px 13px;font-size:15px}
+  .links{order:3;flex-basis:100%;overflow-x:auto;justify-content:flex-start;scrollbar-width:none;border-radius:14px}
+  .links::-webkit-scrollbar{display:none}
+  .links a{font-size:15px;padding:8px 14px;white-space:nowrap}
+  nav .wrap{flex-wrap:wrap;height:auto;padding-top:12px;padding-bottom:12px;gap:12px}
 }
 @media (max-width:860px){
   .contact{grid-template-columns:1fr;padding:28px;gap:32px}
@@ -272,13 +308,11 @@ footer a{color:var(--muted)}
   .stats{grid-template-columns:repeat(2,1fr);gap:12px}
   .about,.two{grid-template-columns:1fr}
   .grid{grid-template-columns:1fr 1fr}
-  .links{order:3;flex-basis:100%;overflow-x:auto;justify-content:flex-start;scrollbar-width:none;border-radius:14px}
-  .links::-webkit-scrollbar{display:none}
-  .links a{font-size:15px;padding:8px 14px;white-space:nowrap}
-  nav .wrap{flex-wrap:wrap;height:auto;padding-top:12px;padding-bottom:12px;gap:12px}
   .photo .chip{left:12px;bottom:-18px;font-size:13px;padding:10px 14px}
 }
 @media (max-width:560px){
+  .upd{grid-template-columns:1fr;gap:4px}
+  .nowline{margin-top:-8px}
   .frow{flex-direction:column}
   .cform{padding:18px}
   .contact{padding:20px}
@@ -303,7 +337,7 @@ footer a{color:var(--muted)}
     <span class="bname">Hamid Ghasemi<small>Principal Data Scientist</small></span>
   </a>
   <div class="links">
-    <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#talks">Talks</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
+    <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#talks">Talks</a><a href="#certifications">Certifications</a><a href="#updates">Updates</a><a href="#contact">Contact</a>
   </div>
   <div class="navright">
     <button class="theme" id="themeToggle" type="button" aria-label="Switch between dark and light mode" title="Toggle dark / light mode">
@@ -322,6 +356,7 @@ footer a{color:var(--muted)}
     <h1>Hamidreza<br><span class="grad">Ghasemi Damavandi</span><span class="caret" aria-hidden="true"></span></h1>
     <p class="lead">I build machine learning systems end to end, <b>from model development to production deployment</b>, with a focus on deep learning, NLP and MLOps on the cloud.</p>
     <div class="meta"><span>📍 Tempe, AZ</span><span>🎓 Ph.D., Electrical Engineering</span><span>🇺🇸 U.S. citizen</span></div>
+    <div class="nowline"><span class="nowlbl">Now</span><span class="ntag">Generative AI</span><span class="ntag">RAG</span><span class="ntag">MLOps on AWS</span><span class="ntag">Student-success ML</span></div>
     <div class="hbtns">
       <a class="hbtn primary" href="/files/resume.pdf"><span>Download Resume</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg></a>
       <a class="hbtn li" href="https://www.linkedin.com/in/hamidghasemi69/" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75V21h-4z"/></svg><span>LinkedIn</span></a>
@@ -366,9 +401,9 @@ footer a{color:var(--muted)}
   <div class="sh reveal"><span class="sico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2.5"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg></span><h2>Experience</h2><span class="rule"></span></div>
   <div class="reveal two">
     <div class="tl">
-      <div class="ti now withlogo"><img class="lg" src="/images/logos/asu.png" alt="Arizona State University logo"><div><div class="when">Oct 2022 — Present</div><h4>Principal Data Scientist</h4><div class="org">Arizona State University · Office of the University Provost</div><p>Promoted from Senior Data Scientist. Leads ML projects end to end, from model development to deployment.</p></div></div>
+      <div class="ti now withlogo"><img class="lg" src="/images/logos/asu.png" alt="Arizona State University logo"><div><div class="when">Oct 2022 — Present</div><h4>Principal Data Scientist</h4><div class="org">Arizona State University · Office of the University Provost</div><p>Promoted from Senior Data Scientist. Leads the group's data science and ML work end to end, from model development to deployment.</p><ul class="wins"><li>Daily XGBoost persistence model with SHAP explanations, supporting proactive interventions for <b>100,000+ students</b></li><li>LLM solution with a <b>RAG</b> architecture on AWS (Bedrock, OpenSearch, Step Functions, Lambda) to help academic advisors reach students in need</li><li>End-to-end MLOps pipelines: deployment time from <b>hours to minutes</b>, <b>99% pipeline reliability</b></li><li>Automated monitoring with Slack alerts and Amazon Q, cutting incident response time by <b>50%</b></li></ul><div class="tags"><span>XGBoost</span><span>SHAP</span><span>RAG</span><span>AWS Bedrock</span><span>SageMaker</span><span>Step Functions</span><span>Metaflow</span><span>Terraform</span><span>Jenkins</span></div></div></div>
       <div class="ti withlogo"><img class="lg" src="/images/logos/asu.png" alt="Arizona State University logo"><div><div class="when">Dec 2020 — Oct 2022</div><h4>Senior Data Scientist</h4><div class="org">Arizona State University</div></div></div>
-      <div class="ti withlogo"><img class="lg" src="/images/logos/overstock.png" alt="Overstock logo"><div><div class="when">Mar 2020 — Dec 2020</div><h4>Senior Machine Learning Scientist</h4><div class="org">Overstock</div></div></div>
+      <div class="ti withlogo"><img class="lg" src="/images/logos/overstock.png" alt="Overstock logo"><div><div class="when">Mar 2020 — Dec 2020</div><h4>Senior Machine Learning Scientist</h4><div class="org">Overstock</div><ul class="wins"><li>Multi-variate constrained optimization (linear &amp; integer programming) to allocate discounts on sale items</li><li>Production Python pipelines on million-row datasets, containerized with Docker and orchestrated with Airflow</li></ul><div class="tags"><span>Python</span><span>Optimization</span><span>Docker</span><span>Airflow</span></div></div></div>
       <div class="ti withlogo"><img class="lg" src="/images/logos/asu.png" alt="Arizona State University logo"><div><div class="when">Mar 2018 — Mar 2020</div><h4>Postdoctoral Research Associate</h4><div class="org">Arizona State University</div></div></div>
     </div>
     <div class="reveal box">
@@ -424,14 +459,18 @@ footer a{color:var(--muted)}
 <section id="certifications">
   <div class="sh reveal"><span class="sico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></svg></span><h2>Certifications &amp; Honors</h2><span class="rule"></span></div>
   <div class="certs" style="margin-bottom:24px">
-    <a class="cert reveal" href="https://www.credly.com/badges/a770f74d-43df-4e3b-9d7e-1995fd0e34ba/public_url"><div><b>AWS Machine Learning Specialty</b><span>Amazon Web Services · 2023</span></div><span class="arrow">↗</span></a>
-    <a class="cert reveal" href="https://www.credly.com/badges/e73583bf-4840-406b-a227-119e805dc626/public_url"><div><b>AWS AI Practitioner</b><span>Amazon Web Services · 2024</span></div><span class="arrow">↗</span></a>
-    <a class="cert reveal" href="https://www.credly.com/badges/b614a0d4-334f-4820-b5c7-f4dfdd258c1a/public_url"><div><b>AWS Cloud Practitioner</b><span>Amazon Web Services · 2023</span></div><span class="arrow">↗</span></a>
-    <a class="cert reveal" href="https://www.coursera.org/account/accomplishments/verify/YHYB8N5MT5LN"><div><b>Generative AI with Large Language Models</b><span>Coursera</span></div><span class="arrow">↗</span></a>
-    <a class="cert reveal" href="https://graduation.udacity.com/confirm/e/b17b6fe0-3450-11ed-9d86-6b60d01a3969"><div><b>Natural Language Processing</b><span>Udacity Nanodegree</span></div><span class="arrow">↗</span></a>
-    <a class="cert reveal" href="https://graduation.udacity.com/confirm/SATMTMWF"><div><b>Computer Vision</b><span>Udacity Nanodegree</span></div><span class="arrow">↗</span></a>
-    <a class="cert reveal" href="https://graduation.udacity.com/confirm/e/818fa8fc-548d-11ed-8ebc-9bf2a0d6cc96"><div><b>Deep Learning</b><span>Udacity Nanodegree</span></div><span class="arrow">↗</span></a>
-    <a class="cert reveal" href="https://www.credly.com/badges/a9bdedb9-eb29-4401-8734-3387ddb554ab"><div><b>Software Engineer Essentials</b><span>Coursera</span></div><span class="arrow">↗</span></a>
+    <a class="cert reveal" href="https://www.credly.com/badges/a770f74d-43df-4e3b-9d7e-1995fd0e34ba/public_url"><span class="clogo cico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 0 1-.6-9.96A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/></svg></span><div class="ct"><b>AWS Machine Learning Specialty</b><span>Amazon Web Services · 2023</span></div><span class="arrow">↗</span></a>
+    <a class="cert reveal" href="https://www.credly.com/badges/e73583bf-4840-406b-a227-119e805dc626/public_url"><span class="clogo cico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 0 1-.6-9.96A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/></svg></span><div class="ct"><b>AWS AI Practitioner</b><span>Amazon Web Services · 2024</span></div><span class="arrow">↗</span></a>
+    <a class="cert reveal" href="https://www.credly.com/badges/b614a0d4-334f-4820-b5c7-f4dfdd258c1a/public_url"><span class="clogo cico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 0 1-.6-9.96A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/></svg></span><div class="ct"><b>AWS Cloud Practitioner</b><span>Amazon Web Services · 2023</span></div><span class="arrow">↗</span></a>
+    <a class="cert reveal" href="https://www.credly.com/badges/ce031d62-e17c-4e2a-b845-bbaeda8dc940"><img class="clogo" src="/images/logos/nvidia.png" alt=""><div class="ct"><b>NVIDIA-Certified Associate: Generative AI/LLMs</b><span>NVIDIA</span></div><span class="arrow">↗</span></a>
+    <div class="cert reveal"><img class="clogo" src="/images/logos/jhu.png" alt=""><div class="ct"><b>Certificate Program in Applied Generative AI</b><span>Johns Hopkins University</span></div></div>
+    <a class="cert reveal" href="https://www.udacity.com/certificate/e/bf7ca964-0989-11ef-b211-73d2c4f36a70"><img class="clogo" src="/images/logos/udacity.png" alt=""><div class="ct"><b>LLMs &amp; Text Generation</b><span>Udacity Nanodegree</span></div><span class="arrow">↗</span></a>
+    <a class="cert reveal" href="https://www.coursera.org/account/accomplishments/verify/YHYB8N5MT5LN"><img class="clogo" src="/images/logos/coursera.png" alt=""><div class="ct"><b>Generative AI with Large Language Models</b><span>Coursera</span></div><span class="arrow">↗</span></a>
+    <a class="cert reveal" href="https://graduation.udacity.com/confirm/e/b17b6fe0-3450-11ed-9d86-6b60d01a3969"><img class="clogo" src="/images/logos/udacity.png" alt=""><div class="ct"><b>Natural Language Processing</b><span>Udacity Nanodegree</span></div><span class="arrow">↗</span></a>
+    <a class="cert reveal" href="https://graduation.udacity.com/confirm/SATMTMWF"><img class="clogo" src="/images/logos/udacity.png" alt=""><div class="ct"><b>Computer Vision</b><span>Udacity Nanodegree</span></div><span class="arrow">↗</span></a>
+    <a class="cert reveal" href="https://graduation.udacity.com/confirm/e/818fa8fc-548d-11ed-8ebc-9bf2a0d6cc96"><img class="clogo" src="/images/logos/udacity.png" alt=""><div class="ct"><b>Deep Learning</b><span>Udacity Nanodegree</span></div><span class="arrow">↗</span></a>
+    <a class="cert reveal" href="https://www.credly.com/badges/a9bdedb9-eb29-4401-8734-3387ddb554ab"><img class="clogo" src="/images/logos/coursera.png" alt=""><div class="ct"><b>Software Engineering Essentials</b><span>Coursera</span></div><span class="arrow">↗</span></a>
+    <a class="cert reveal" href="https://badgr.com/public/assertions/CbcIbKXHTjGWua4-vwESXg"><img class="clogo" src="/images/logos/asu.png" alt=""><div class="ct"><b>Data Structures and Algorithms</b><span>ASU CareerCatalyst</span></div><span class="arrow">↗</span></a>
   </div>
   <div class="reveal box">
     <h3>Honors &amp; awards</h3>
@@ -443,6 +482,12 @@ footer a{color:var(--muted)}
       <li><span>Full Graduate Research Assistantship (2013) and CGRER graduate travel award (2016), University of Iowa.</span></li>
     </ul>
   </div>
+</section>
+
+<section id="updates">
+  <div class="sh reveal"><span class="sico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1.5"/></svg></span><h2>Updates</h2><span class="rule"></span></div>
+  <ul class="updates" id="updList"><li class="upd reveal"><span class="ud">Nov 2025</span><span class="uk k-talk">Talk</span><span class="ut">Spoke on <b>XGBoost for structured data</b> at the ASU Data Conference.</span></li><li class="upd reveal"><span class="ud">Nov 2024</span><span class="uk k-talk">Talk</span><span class="ut">Spoke on <b>Transformers</b> at the ASU Data Conference.</span></li><li class="upd reveal"><span class="ud">Oct 2024</span><span class="uk k-certification">Certification</span><span class="ut">Earned the <b>AWS Certified AI Practitioner</b> certification.</span></li><li class="upd reveal"><span class="ud">Sep 2024</span><span class="uk k-milestone">Milestone</span><span class="ut">Became a <b>U.S. citizen</b>.</span></li><li class="upd reveal"><span class="ud">Nov 2023</span><span class="uk k-talk">Talk</span><span class="ut">Gave <b>An Introduction to Generative AI</b> at the ASU Data Conference.</span></li><li class="upd reveal"><span class="ud">Apr 2023</span><span class="uk k-certification">Certification</span><span class="ut">Earned the <b>AWS Machine Learning Specialty</b> certification.</span></li><li class="upd reveal extra"><span class="ud">Mar 2023</span><span class="uk k-certification">Certification</span><span class="ut">Earned the <b>AWS Cloud Practitioner</b> certification.</span></li><li class="upd reveal extra"><span class="ud">Oct 2022</span><span class="uk k-career">Career</span><span class="ut">Promoted to <b>Principal Data Scientist</b> at Arizona State University.</span></li><li class="upd reveal extra"><span class="ud">Dec 2020</span><span class="uk k-career">Career</span><span class="ut">Joined <b>Arizona State University</b> as Senior Data Scientist.</span></li><li class="upd reveal extra"><span class="ud">Mar 2020</span><span class="uk k-career">Career</span><span class="ut">Joined <b>Overstock</b> as Senior Machine Learning Scientist.</span></li><li class="upd reveal extra"><span class="ud">Mar 2018</span><span class="uk k-career">Career</span><span class="ut">Joined <b>Arizona State University</b> as a Postdoctoral Research Associate.</span></li></ul>
+  <button class="morebtn" id="updMore" type="button">Show all updates ↓</button>
 </section>
 
 <section id="contact">
@@ -530,6 +575,12 @@ footer a{color:var(--muted)}
       })
       .catch(function(){ fst.className = 'fstatus err'; fst.textContent = 'Sorry, the message could not be sent. Please email me at hamidghasemi69@gmail.com.'; })
       .finally(function(){ btn.disabled = false; });
+  });
+  var um = document.getElementById('updMore'), ul = document.getElementById('updList');
+  if (um && ul) um.addEventListener('click', function(){
+    var open = ul.classList.toggle('open');
+    if (open) ul.querySelectorAll('.extra').forEach(function(li){ li.classList.add('in'); });
+    um.textContent = open ? 'Show fewer ↑' : 'Show all updates ↓';
   });
   var t = document.getElementById('typed');
   if (t && !reduce) {
