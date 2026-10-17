@@ -122,9 +122,9 @@ h1 .grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-
 .pmeta{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:46px;animation:rise 1s .35s ease both}
 .pmeta span{font-family:var(--mono);font-size:12.5px;color:var(--muted);padding:6px 11px;border-radius:999px;border:1px solid var(--line2);background:var(--pillbg);white-space:nowrap}
 .photo{position:relative;justify-self:center;width:100%;max-width:340px;aspect-ratio:1}
-.photo::before{content:"";position:absolute;inset:-14px;border-radius:28px;background:conic-gradient(from 140deg,var(--accent),var(--accent2),transparent 60%,var(--accent));opacity:.55;filter:blur(18px)}
-.photo img{position:relative;width:100%;height:100%;object-fit:cover;border-radius:22px;border:1px solid var(--line2)}
-.photo .chip{position:absolute;bottom:-22px;left:-22px;display:flex;align-items:center;gap:10px;background:var(--card2);border:1px solid var(--line2);border-radius:14px;padding:13px 18px;font-family:var(--mono);font-size:15px;color:var(--muted);box-shadow:0 14px 34px -14px rgba(0,0,0,.6)}
+.photo::before{content:"";position:absolute;inset:-14px;border-radius:50%;background:conic-gradient(from 140deg,var(--accent),var(--accent2),transparent 60%,var(--accent));opacity:.55;filter:blur(18px)}
+.photo img{position:relative;width:100%;height:100%;object-fit:cover;border-radius:50%;border:3px solid var(--card2);box-shadow:0 0 0 1px var(--line2)}
+.photo .chip{position:absolute;bottom:-14px;left:50%;transform:translateX(-50%);white-space:nowrap;display:flex;align-items:center;gap:10px;background:var(--card2);border:1px solid var(--line2);border-radius:14px;padding:13px 18px;font-family:var(--mono);font-size:15px;color:var(--muted);box-shadow:0 14px 34px -14px rgba(0,0,0,.6)}
 .photo .chip::before{content:"";width:10px;height:10px;flex:none;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 var(--glow);animation:pulse 2s infinite}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(46,230,197,.55)}70%{box-shadow:0 0 0 10px rgba(46,230,197,0)}100%{box-shadow:0 0 0 0 rgba(46,230,197,0)}}
 .photo .chip b{color:var(--accent);font-weight:500}
@@ -381,7 +381,7 @@ footer a{color:var(--muted)}
   .stats{grid-template-columns:repeat(2,1fr);gap:12px}
   .about,.two{grid-template-columns:1fr}
   .grid{grid-template-columns:1fr 1fr}
-  .photo .chip{left:12px;bottom:-18px;font-size:13px;padding:10px 14px}
+  .photo .chip{bottom:-14px;left:0;transform:none;font-size:13px;padding:10px 14px}
 }
 @media (max-width:560px){
   .upd{grid-template-columns:1fr;gap:4px}
