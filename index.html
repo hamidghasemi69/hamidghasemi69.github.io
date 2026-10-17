@@ -323,6 +323,20 @@ footer a{color:var(--muted)}
 .schips{display:flex;flex-wrap:wrap;gap:7px}
 .schips span{font-size:13.5px;padding:5px 11px;border-radius:8px;color:var(--text);background:var(--pillbg);border:1px solid var(--line2);transition:border-color .2s,color .2s,transform .2s}
 .schips span:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px)}
+.visa{position:relative;padding:30px 32px;border-radius:18px;border:1px solid var(--line2);background:linear-gradient(135deg,rgba(46,230,197,.08),rgba(91,140,255,.08)),var(--card);overflow:hidden}
+.visa::after{content:"";position:absolute;right:-80px;top:-80px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(46,230,197,.22),transparent 70%);pointer-events:none}
+.vhead{position:relative;margin-bottom:26px}
+.vbadge{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:13px;font-weight:500;padding:6px 12px;border-radius:999px;color:var(--on-accent);background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.vhead h3{font-family:var(--head);font-size:26px;font-weight:600;letter-spacing:-.01em;margin:14px 0 6px}
+.vhead p{color:var(--muted);font-size:16px}
+.vsteps{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;position:relative}
+.vstep{position:relative;display:flex;flex-direction:column;gap:10px;padding:20px;border-radius:14px;background:var(--card2,var(--card));border:1px solid var(--line);transition:transform .3s,border-color .3s}
+.vstep:hover{transform:translateY(-4px);border-color:var(--accent)}
+.vstep.now{border-color:rgba(46,230,197,.45);box-shadow:0 0 0 1px rgba(46,230,197,.15),0 18px 40px -26px var(--glow,rgba(46,230,197,.5))}
+.vyear{font-family:var(--mono);font-size:13px;color:var(--accent);letter-spacing:.06em}
+.vdot{position:absolute;top:16px;right:18px;font-size:26px;line-height:1}
+.vstep b{font-family:var(--head);font-size:17px;font-weight:600;line-height:1.35;display:block;margin-bottom:6px}
+.vstep p{color:var(--muted);font-size:14px;line-height:1.6}
 .tintro{color:var(--muted);margin:-12px 0 24px;font-size:16px}
 .trips{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .trip{margin:0;position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line2);aspect-ratio:4/5;box-shadow:0 18px 40px -24px rgba(0,0,0,.6);transition:transform .35s,box-shadow .35s,border-color .35s}
@@ -354,6 +368,7 @@ footer a{color:var(--muted)}
   nav .wrap{flex-wrap:wrap;height:auto;padding-top:12px;padding-bottom:12px;gap:12px}
 }
 @media (max-width:1000px){.rgrid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:860px){.vsteps{grid-template-columns:1fr}.visa{padding:22px 18px}.vhead h3{font-size:22px}}
 @media (max-width:760px){.sgrid{grid-template-columns:1fr}}
 @media (max-width:600px){.rgrid{grid-template-columns:1fr}.rapply a{margin-left:0}}
 @media (max-width:760px){.trips{grid-template-columns:repeat(2,1fr)}.trip:last-child{grid-column:span 2;aspect-ratio:16/10}}
@@ -397,7 +412,7 @@ footer a{color:var(--muted)}
     <span class="bname">Hamid Ghasemi<small>Principal Data Scientist</small></span>
   </a>
   <div class="links">
-    <a href="#about">About</a><a href="#research">Research</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#talks">Talks</a><a href="#certifications">Certifications</a><a href="#updates">Updates</a><a href="#travel">Travel</a><a href="#contact">Contact</a>
+    <a href="#about">About</a><a href="#visa">Visa</a><a href="#research">Research</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#talks">Talks</a><a href="#certifications">Certifications</a><a href="#updates">Updates</a><a href="#travel">Travel</a><a href="#contact">Contact</a>
   </div>
   <div class="navright">
     <button class="theme" id="themeToggle" type="button" aria-label="Switch between dark and light mode" title="Toggle dark / light mode">
@@ -448,6 +463,37 @@ footer a{color:var(--muted)}
       <p>I earned my B.S. in Electrical Engineering from the <a href="https://ut.ac.ir/en">University of Tehran</a>, ranked first overall in Iran, and my M.S. and Ph.D. in Electrical Engineering from the <a href="https://uiowa.edu/">University of Iowa</a>.</p>
       <div class="note"><span>✓</span><span>I am a <b>U.S. citizen</b> and do not require visa sponsorship for any role.</span></div>
     </div>
+  </div>
+</section>
+
+<section id="visa">
+  <div class="sh reveal"><span class="sico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M8 17h8"/></svg></span><h2>Visa Status</h2><span class="rule"></span></div>
+  <div class="visa reveal">
+    <div class="vhead">
+      <span class="vbadge">🇺🇸 U.S. Citizen</span>
+      <h3>Short version: hire me, zero paperwork! 🎉</h3>
+      <p>No visa, no sponsorship, no waiting on a lottery. Ever. Here is how I got here:</p>
+    </div>
+    <ol class="vsteps">
+      <li class="vstep">
+        <span class="vyear">2016</span>
+        <span class="vdot" aria-hidden="true">🎓</span>
+        <div><b>Green card through the National Interest Waiver (NIW)</b>
+        <p>My research and academic achievements made the case that my work benefits the United States, so I earned an EB-2 NIW green card on my own merit, with no employer sponsor needed. Proud nerd moment!</p></div>
+      </li>
+      <li class="vstep">
+        <span class="vyear">2024</span>
+        <span class="vdot" aria-hidden="true">🗽</span>
+        <div><b>Became a naturalized U.S. citizen</b>
+        <p>Raised my right hand, took the oath, and made it official. One of the best days of my life!</p></div>
+      </li>
+      <li class="vstep now">
+        <span class="vyear">Today</span>
+        <span class="vdot" aria-hidden="true">🚀</span>
+        <div><b>Ready to start, no strings attached</b>
+        <p>Available for any role with no sponsorship, no transfers and no timelines to worry about. Let's build something great.</p></div>
+      </li>
+    </ol>
   </div>
 </section>
 
