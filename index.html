@@ -292,11 +292,28 @@ footer a{color:var(--muted)}
 .fstat .n{font-family:var(--head);font-size:28px;font-weight:700;color:var(--text)}
 .fstat .n em{font-style:normal;color:var(--accent)}
 .fstat .l{font-size:13px;color:var(--muted)}
+.tintro{color:var(--muted);margin:-12px 0 24px;font-size:16px}
+.trips{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.trip{margin:0;position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line2);aspect-ratio:4/5;box-shadow:0 18px 40px -24px rgba(0,0,0,.6);transition:transform .35s,box-shadow .35s,border-color .35s}
+.trip:hover{transform:translateY(-6px);border-color:var(--accent);box-shadow:0 26px 50px -24px var(--glow,rgba(46,230,197,.4))}
+.tpic{position:absolute;inset:0}
+.tpic svg,.tpic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.trip:hover .tpic svg,.trip:hover .tpic img{transform:scale(1.07)}
+.trip figcaption{position:absolute;left:0;right:0;bottom:0;padding:56px 18px 18px;display:flex;flex-direction:column;gap:4px;color:#fff;background:linear-gradient(180deg,transparent,rgba(5,8,16,.55) 35%,rgba(5,8,16,.88))}
+.trip b{font-family:var(--head);font-size:21px;font-weight:600;letter-spacing:-.01em}
+.tloc{display:inline-flex;align-items:center;gap:5px;font-family:var(--mono);font-size:11.5px;letter-spacing:.04em;color:#7ff5df;text-transform:uppercase}
+.tloc svg{width:13px;height:13px}
+.tcap{font-size:13.5px;line-height:1.45;color:rgba(255,255,255,.78);max-height:0;opacity:0;overflow:hidden;transition:max-height .4s,opacity .4s}
+.trip:hover .tcap,.trip:focus-within .tcap{max-height:80px;opacity:1}
+@media (hover:none){.tcap{max-height:80px;opacity:1}}
 @media (prefers-reduced-motion:reduce){.js .reveal,.hero > div:first-child > *,.photo{animation:none;transition:none;opacity:1;transform:none}.caret{animation:none}}
 @media (max-width:860px){.featured{grid-template-columns:1fr}}
-@media (max-width:1320px){
-  .bname small{display:none}
+@media (max-width:1500px){
   .links a{padding:8px 11px}
+}
+@media (max-width:1640px){
+  .bname small{display:none}
+  .links a{padding:8px 9px;font-size:15px}
 }
 @media (max-width:1100px){
   .links{order:3;flex-basis:100%;overflow-x:auto;justify-content:flex-start;scrollbar-width:none;border-radius:14px}
@@ -304,6 +321,7 @@ footer a{color:var(--muted)}
   .links a{font-size:15px;padding:8px 14px;white-space:nowrap}
   nav .wrap{flex-wrap:wrap;height:auto;padding-top:12px;padding-bottom:12px;gap:12px}
 }
+@media (max-width:1100px){.trips{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:860px){
   .contact{grid-template-columns:1fr;padding:28px;gap:32px}
   .hero{grid-template-columns:1fr;padding-top:56px;gap:48px}
@@ -324,6 +342,9 @@ footer a{color:var(--muted)}
   .bname small{display:none}
   .wrap{padding:0 16px}
   .grid,.certs{grid-template-columns:1fr}
+  .trips{gap:12px}
+  .trip b{font-size:17px}
+  .trip figcaption{padding:40px 12px 12px}
   .talk{grid-template-columns:1fr;gap:4px}
   .edu{grid-template-columns:44px 1fr;row-gap:2px}
   .edu .y{grid-column:2}
@@ -340,7 +361,7 @@ footer a{color:var(--muted)}
     <span class="bname">Hamid Ghasemi<small>Principal Data Scientist</small></span>
   </a>
   <div class="links">
-    <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#talks">Talks</a><a href="#certifications">Certifications</a><a href="#updates">Updates</a><a href="#contact">Contact</a>
+    <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#talks">Talks</a><a href="#certifications">Certifications</a><a href="#updates">Updates</a><a href="#travel">Travel</a><a href="#contact">Contact</a>
   </div>
   <div class="navright">
     <button class="theme" id="themeToggle" type="button" aria-label="Switch between dark and light mode" title="Toggle dark / light mode">
@@ -491,6 +512,29 @@ footer a{color:var(--muted)}
   <div class="sh reveal"><span class="sico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1.5"/></svg></span><h2>Updates</h2><span class="rule"></span></div>
   <ul class="updates" id="updList"><li class="upd reveal"><span class="ud">Nov 2025</span><span class="uk k-talk">Talk</span><span class="ut">Spoke on <b>XGBoost for structured data</b> at the ASU Data Conference.</span></li><li class="upd reveal"><span class="ud">Nov 2024</span><span class="uk k-talk">Talk</span><span class="ut">Spoke on <b>Transformers</b> at the ASU Data Conference.</span></li><li class="upd reveal"><span class="ud">Oct 2024</span><span class="uk k-certification">Certification</span><span class="ut">Earned the <b>AWS Certified AI Practitioner</b> certification.</span></li><li class="upd reveal"><span class="ud">Sep 2024</span><span class="uk k-milestone">Milestone</span><span class="ut">Became a <b>U.S. citizen</b>.</span></li><li class="upd reveal"><span class="ud">Nov 2023</span><span class="uk k-talk">Talk</span><span class="ut">Gave <b>An Introduction to Generative AI</b> at the ASU Data Conference.</span></li><li class="upd reveal"><span class="ud">Apr 2023</span><span class="uk k-certification">Certification</span><span class="ut">Earned the <b>AWS Machine Learning Specialty</b> certification.</span></li><li class="upd reveal extra"><span class="ud">Mar 2023</span><span class="uk k-certification">Certification</span><span class="ut">Earned the <b>AWS Cloud Practitioner</b> certification.</span></li><li class="upd reveal extra"><span class="ud">Oct 2022</span><span class="uk k-career">Career</span><span class="ut">Promoted to <b>Principal Data Scientist</b> at Arizona State University.</span></li><li class="upd reveal extra"><span class="ud">Dec 2020</span><span class="uk k-career">Career</span><span class="ut">Joined <b>Arizona State University</b> as Senior Data Scientist.</span></li><li class="upd reveal extra"><span class="ud">Mar 2020</span><span class="uk k-career">Career</span><span class="ut">Joined <b>Overstock</b> as Senior Machine Learning Scientist.</span></li><li class="upd reveal extra"><span class="ud">Mar 2018</span><span class="uk k-career">Career</span><span class="ut">Joined <b>Arizona State University</b> as a Postdoctoral Research Associate.</span></li></ul>
   <button class="morebtn" id="updMore" type="button">Show all updates ↓</button>
+</section>
+
+<section id="travel">
+  <div class="sh reveal"><span class="sico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20l6-11 4 7 3-4 5 8z"/><circle cx="17" cy="6" r="2"/></svg></span><h2>Travel</h2><span class="rule"></span></div>
+  <p class="tintro reveal">Outside of work I love exploring Arizona. A few favorite places close to home:</p>
+  <div class="trips">
+    <figure class="trip reveal">
+      <div class="tpic"><svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="sd1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b1e4f"/><stop offset=".45" stop-color="#e2584a"/><stop offset=".75" stop-color="#ffb35c"/></linearGradient><linearGradient id="sd2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d4572e"/><stop offset="1" stop-color="#7a2614"/></linearGradient></defs><rect width="400" height="500" fill="url(#sd1)"/><circle cx="290" cy="250" r="34" fill="#ffd9a0" opacity=".9"/><path d="M0 330 L40 300 L60 230 L80 225 L90 180 L105 178 L112 215 L130 220 L140 260 L175 265 L190 300 L240 305 L250 250 L262 200 L272 198 L282 240 L300 245 L310 290 L360 300 L400 280 V500 H0z" fill="url(#sd2)"/><path d="M60 230 L80 225 L84 300 M262 200 L272 198 L275 300" stroke="#5e1c0e" stroke-width="3" opacity=".35"/><path d="M0 380 Q120 350 220 375 T400 360 V500 H0z" fill="#3d3b22"/><g fill="#2a2a17"><circle cx="40" cy="390" r="16"/><circle cx="70" cy="398" r="12"/><circle cx="330" cy="382" r="18"/><circle cx="360" cy="392" r="12"/><circle cx="200" cy="396" r="10"/></g><path d="M0 430 Q200 410 400 435 V500 H0z" fill="#1f2013"/></svg><img src="/images/travel/sedona.jpg" alt="Sedona" loading="lazy" onerror="this.remove()"></div>
+      <figcaption><span class="tloc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Red rock country</span><b>Sedona</b><span class="tcap">Cathedral Rock and the red buttes glowing at sunset.</span></figcaption>
+    </figure>
+    <figure class="trip reveal">
+      <div class="tpic"><svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="gc1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fb6e8"/><stop offset=".55" stop-color="#f6c99a"/></linearGradient></defs><rect width="400" height="500" fill="url(#gc1)"/><path d="M0 230 L60 225 L80 215 L150 218 L170 210 L260 214 L280 206 L400 212 V500 H0z" fill="#b9a3c9"/><path d="M0 270 L30 262 L50 250 L110 252 L140 240 L190 245 L230 236 L300 242 L330 232 L400 238 V500 H0z" fill="#c98b78"/><path d="M0 320 L40 300 L70 302 L100 285 L150 290 L170 310 L210 300 L250 280 L300 286 L340 275 L400 280 V500 H0z" fill="#c4643f"/><path d="M0 330 L70 320 L100 300" stroke="#e8a06a" stroke-width="3" fill="none" opacity=".6"/><path d="M0 380 L50 360 L90 365 L120 345 L160 350 L180 380 L220 395 L260 360 L310 350 L350 330 L400 335 V500 H0z" fill="#9c3f22"/><path d="M170 400 Q200 420 225 404" stroke="#4f9e8f" stroke-width="5" fill="none"/><path d="M0 440 L80 420 L150 430 L200 455 L260 430 L330 415 L400 425 V500 H0z" fill="#5e2414"/></svg><img src="/images/travel/grand-canyon.jpg" alt="Grand Canyon" loading="lazy" onerror="this.remove()"></div>
+      <figcaption><span class="tloc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Northern Arizona</span><b>Grand Canyon</b><span class="tcap">Layers of rock two billion years deep, best at sunrise.</span></figcaption>
+    </figure>
+    <figure class="trip reveal">
+      <div class="tpic"><svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="hb1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffcf8a"/><stop offset="1" stop-color="#f08a4b"/></linearGradient><radialGradient id="hb2" cx=".5" cy=".55" r=".6"><stop offset="0" stop-color="#e48a52"/><stop offset="1" stop-color="#a5482a"/></radialGradient></defs><rect width="400" height="500" fill="url(#hb1)"/><path d="M0 120 Q200 90 400 120 V500 H0z" fill="#c8693d"/><path d="M95 120 C60 260 110 400 200 400 C290 400 340 260 305 120" fill="none" stroke="#2f7f6f" stroke-width="44"/><path d="M95 120 C60 260 110 400 200 400 C290 400 340 260 305 120" fill="none" stroke="#3fae95" stroke-width="22" opacity=".55"/><path d="M123 120 C100 250 135 360 200 362 C265 360 300 250 277 120 Z" fill="url(#hb2)"/><path d="M150 180 Q200 160 250 180 M140 250 Q200 230 260 250 M155 320 Q200 305 245 320" stroke="#c46a3c" stroke-width="3" fill="none" opacity=".6"/><path d="M0 430 Q60 410 120 440 L160 500 H0z M400 420 Q330 410 280 450 L250 500 H400z" fill="#6b2a17"/><path d="M0 470 Q200 440 400 470 V500 H0z" fill="#4a1d10"/></svg><img src="/images/travel/horseshoe-bend.jpg" alt="Horseshoe Bend" loading="lazy" onerror="this.remove()"></div>
+      <figcaption><span class="tloc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Page, AZ</span><b>Horseshoe Bend</b><span class="tcap">The Colorado River carving a perfect bend 1,000 feet below.</span></figcaption>
+    </figure>
+    <figure class="trip reveal">
+      <div class="tpic"><svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="sg1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1d2a5c"/><stop offset=".35" stop-color="#8a3f8f"/><stop offset=".62" stop-color="#ff7a59"/><stop offset=".8" stop-color="#ffc56b"/></linearGradient></defs><rect width="400" height="500" fill="url(#sg1)"/><circle cx="200" cy="330" r="60" fill="#ffe0a3" opacity=".85"/><path d="M0 330 Q60 300 120 320 Q190 290 260 318 Q330 295 400 315 V500 H0z" fill="#5a2d55"/><path d="M0 370 Q100 350 200 368 T400 360 V500 H0z" fill="#2b1934"/><g fill="#170d1d"><path d="M88 470 V250 a14 14 0 0 1 28 0 V470z"/><path d="M88 360 H66 a10 10 0 0 1-10-10 V300 a10 10 0 0 1 20 0 V340 H88z"/><path d="M116 330 H138 V280 a10 10 0 0 1 20 0 V330 a12 12 0 0 1-12 12 H116z"/><path d="M290 470 V300 a11 11 0 0 1 22 0 V470z"/><path d="M290 390 H275 a8 8 0 0 1-8-8 V345 a8 8 0 0 1 16 0 V375 H290z"/><path d="M312 370 H326 V335 a8 8 0 0 1 16 0 V372 a10 10 0 0 1-10 10 H312z"/><path d="M0 470 Q200 445 400 470 V500 H0z"/><circle cx="200" cy="460" r="22"/><circle cx="230" cy="465" r="16"/><circle cx="20" cy="462" r="18"/></g></svg><img src="/images/travel/saguaro.jpg" alt="Saguaro National Park" loading="lazy" onerror="this.remove()"></div>
+      <figcaption><span class="tloc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Tucson, AZ</span><b>Saguaro National Park</b><span class="tcap">Giant saguaro cacti silhouetted against a desert sky.</span></figcaption>
+    </figure>
+  </div>
 </section>
 
 <section id="contact">
