@@ -1,4 +1,6 @@
 ---
+sitemap: false
+robots: noindex
 layout: archive
 title: "Sitemap"
 permalink: /sitemap/
