@@ -550,6 +550,16 @@ html.nointro #intro{display:none}
 @media (max-width:860px){.radarwrap{grid-template-columns:1fr;padding:16px}}
 @media (max-width:560px){#radar .rlab{font-size:16px}#radar .rtick{display:none}}
 @media (prefers-reduced-motion:reduce){#radar .rshape{transition:none;transform:none}#radar .rpt{transition:none;opacity:1}}
+
+/* trust bar */
+.trust{display:flex;flex-direction:column;align-items:center;gap:16px;margin:8px 0 72px}
+.tlbl{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+.tlogos{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 14px}
+.tlogo{display:inline-flex;align-items:center;gap:10px;padding:7px 14px 7px 7px;border-radius:999px;border:1px solid var(--line);background:var(--pillbg);color:var(--muted);font-family:var(--head);font-size:14px;font-weight:600;transition:color .3s,border-color .3s,transform .3s}
+.tlogo img{width:32px;height:32px;border-radius:50%;object-fit:cover;background:#fff;filter:grayscale(1) contrast(.9);opacity:.75;transition:filter .3s,opacity .3s}
+.tlogo:hover{color:var(--text);border-color:var(--line2);transform:translateY(-2px)}
+.tlogo:hover img{filter:none;opacity:1}
+@media (max-width:560px){.tlogo span{display:none}.tlogo{padding:5px}.tlogo img{width:36px;height:36px}.tlogos{gap:10px}.trust{margin-bottom:56px}}
 </style>
 <script type="application/ld+json">
 {
@@ -688,6 +698,11 @@ html.nointro #intro{display:none}
   <div class="stat"><div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 0 1-.6-9.96A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/><path d="M9.5 13.5l2 2 3.5-4"/></svg></div><div class="n"><span class="count" data-to="3">3</span><em>×</em></div><div class="l">AWS certifications</div></div>
   <div class="stat"><div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2.5" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3.5M8.5 21.5h7"/></svg></div><div class="n"><span class="count" data-to="6">6</span></div><div class="l">Conference talks</div></div>
   <div class="stat"><div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5M22 9v6"/></svg></div><div class="n">Ph.D.</div><div class="l">Electrical Engineering, University of Iowa</div></div>
+</div>
+
+<div class="trust reveal" aria-label="Organizations I have worked with, studied at or been certified by">
+  <span class="tlbl">Worked · studied · certified at</span>
+  <div class="tlogos"><a class="tlogo" href="https://www.asu.edu/" target="_blank" rel="noopener" title="Arizona State University"><img src="/images/logos/asu.png" alt="" loading="lazy"><span>Arizona State</span></a><a class="tlogo" href="https://www.overstock.com/" target="_blank" rel="noopener" title="Overstock"><img src="/images/logos/overstock.png" alt="" loading="lazy"><span>Overstock</span></a><a class="tlogo" href="https://www.jhu.edu/" target="_blank" rel="noopener" title="Johns Hopkins University"><img src="/images/logos/jhu.png" alt="" loading="lazy"><span>Johns Hopkins</span></a><a class="tlogo" href="https://www.nvidia.com/" target="_blank" rel="noopener" title="NVIDIA"><img src="/images/logos/nvidia.png" alt="" loading="lazy"><span>NVIDIA</span></a><a class="tlogo" href="https://uiowa.edu/" target="_blank" rel="noopener" title="University of Iowa"><img src="/images/logos/iowa.png" alt="" loading="lazy"><span>Univ. of Iowa</span></a><a class="tlogo" href="https://ut.ac.ir/en" target="_blank" rel="noopener" title="University of Tehran"><img src="/images/logos/tehran.png" alt="" loading="lazy"><span>Univ. of Tehran</span></a></div>
 </div>
 
 <section id="about">
