@@ -255,7 +255,10 @@ section{padding:0 0 96px;scroll-margin-top:96px}
 .clinks a:hover svg{border-color:var(--accent);transform:translateY(-2px)}
 .clinks a:hover{color:var(--accent)}
 .cform{display:flex;flex-direction:column;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px}
-.cform label{display:flex;flex-direction:column;gap:6px;flex:1}
+.cform label{display:flex;flex-direction:column;gap:6px;flex:none}
+.frow label{flex:1;min-width:0}
+.cform label.msg{flex:1}
+.cform label.msg textarea{flex:1}
 .cform label span{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--dim)}
 .cform input,.cform textarea{width:100%;font:inherit;font-size:15px;color:var(--text);background:var(--bg2);border:1px solid var(--line2);border-radius:11px;padding:12px 14px;outline:none;transition:border-color .2s,box-shadow .2s}
 .cform textarea{resize:vertical;min-height:130px}
@@ -946,7 +949,7 @@ html.nointro #intro{display:none}
         <label><span>Email</span><input type="email" name="email" required autocomplete="email" placeholder="you@company.com"></label>
       </div>
       <label><span>Subject</span><input type="text" name="subject" placeholder="What is this about?"></label>
-      <label><span>Message</span><textarea name="message" rows="5" required placeholder="Hi Hamid, ..."></textarea></label>
+      <label class="msg"><span>Message</span><textarea name="message" rows="5" required placeholder="Hi Hamid, ..."></textarea></label>
       <button type="submit" class="hbtn primary send"><span>Send message</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/></svg></button>
       <p class="fstatus" id="formStatus" role="status" aria-live="polite"></p>
     </form>
