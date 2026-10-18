@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Ghasemi;Hamidreza;;;
+FN:Hamidreza Ghasemi
+TITLE:Principal Data Scientist
+ORG:Arizona State University
+EMAIL;TYPE=INTERNET:hamidghasemi69@gmail.com
+URL:https://hamidghasemi69.github.io
+ADR;TYPE=WORK:;;;Tempe;AZ;;USA
+X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/hamidghasemi69/
+X-SOCIALPROFILE;TYPE=github:https://github.com/hamidghasemi69
+NOTE:Machine learning\, generative AI and MLOps. Book a chat: https://calendly.com/hamidghasemi69/30min
+END:VCARD
