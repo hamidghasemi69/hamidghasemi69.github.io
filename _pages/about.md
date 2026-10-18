@@ -1,4 +1,6 @@
 ---
+sitemap: false
+robots: noindex
 permalink: /about-classic/
 title: "About Me"
 excerpt: "About me"
