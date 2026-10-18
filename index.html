@@ -520,6 +520,36 @@ html.nointro #intro{display:none}
 .vbtn.done{color:var(--accent);border-color:var(--accent)}
 .fact{display:flex;align-items:center;gap:16px;flex-wrap:wrap;justify-content:center}
 @media (max-width:420px){.vcard{flex-direction:column;align-items:flex-start}}
+
+/* skills radar */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.radarwrap{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:center;margin-bottom:22px;padding:22px 26px;border-radius:18px;border:1px solid var(--line2);background:radial-gradient(ellipse at 30% 50%,rgba(46,230,197,.07),transparent 65%),var(--card)}
+.radarbox{position:relative}
+#radar{display:block;width:100%;height:auto;overflow:visible}
+#radar .rgrid{fill:none;stroke:var(--line2);stroke-width:1}
+#radar .raxis{stroke:var(--line2);stroke-width:1}
+#radar .rshape{fill:url(#rfill);stroke:var(--accent);stroke-width:2;stroke-linejoin:round;transform-origin:210px 190px;transform:scale(0);transition:transform 1.1s cubic-bezier(.2,.8,.2,1)}
+.radarwrap.in #radar .rshape{transform:scale(1)}
+#radar .rpt{fill:var(--accent);stroke:var(--card);stroke-width:2;opacity:0;transition:opacity .4s .9s}
+.radarwrap.in #radar .rpt{opacity:1}
+#radar .rpt.on{fill:#fff;stroke:var(--accent);stroke-width:3}
+#radar .rhit{fill:transparent;cursor:pointer}
+#radar .rlab{font-family:var(--head);font-size:13px;font-weight:600;fill:var(--muted);transition:fill .2s}
+#radar .rlab.on{fill:var(--text)}
+#radar .rtick{display:none}
+.rtip{position:absolute;pointer-events:none;opacity:0;transform:translate(-50%,-115%);background:var(--card2);border:1px solid var(--line2);border-radius:10px;padding:7px 11px;font-size:12.5px;color:var(--text);white-space:nowrap;box-shadow:0 10px 24px -12px rgba(0,0,0,.6);transition:opacity .15s}
+.rtip b{font-family:var(--head)}
+.rtip span{color:var(--accent);font-family:var(--mono);font-size:11.5px;margin-left:6px}
+.rlist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.rlist li{display:grid;grid-template-columns:10px 1fr auto;column-gap:10px;row-gap:1px;align-items:center;padding:8px 12px;border-radius:10px;border:1px solid transparent;cursor:default;transition:background .2s,border-color .2s}
+.rlist li.on,.rlist li:hover{background:var(--pillbg);border-color:var(--line2)}
+.rl-dot{width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.rlist b{font-family:var(--head);font-size:15px;font-weight:600}
+.rlist em{font-style:normal;font-family:var(--mono);font-size:11.5px;color:var(--accent)}
+.rlist small{grid-column:2/4;font-size:12.5px;color:var(--muted)}
+@media (max-width:860px){.radarwrap{grid-template-columns:1fr;padding:16px}}
+@media (max-width:560px){#radar .rlab{font-size:16px}#radar .rtick{display:none}}
+@media (prefers-reduced-motion:reduce){#radar .rshape{transition:none;transform:none}#radar .rpt{transition:none;opacity:1}}
 </style>
 <script type="application/ld+json">
 {
@@ -733,6 +763,11 @@ html.nointro #intro{display:none}
 
 <section id="skills">
   <div class="sh reveal"><span class="sico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></svg></span><h2>Skills</h2><span class="rule"></span></div>
+  <div class="radarwrap reveal">
+    <div class="radarbox"><svg id="radar" viewBox="-50 0 520 380" role="img" aria-label="Skills radar chart. Machine Learning: Expert; Statistics: Expert; MLOps & AWS: Advanced+; Generative AI & LLMs: Advanced; Deep Learning: Advanced; NLP: Advanced."></svg><div class="rtip" id="rtip" role="status"></div></div>
+    <ul class="rlist" id="rlist"><li data-i="0"><span class="rl-dot"></span><b>Machine Learning</b><em>Expert</em><small>XGBoost · scikit-learn · SHAP · time series</small></li><li data-i="1"><span class="rl-dot"></span><b>Statistics</b><em>Expert</em><small>Inference · Bayesian · experimentation</small></li><li data-i="2"><span class="rl-dot"></span><b>MLOps & AWS</b><em>Advanced+</em><small>SageMaker · Step Functions · Metaflow · Terraform</small></li><li data-i="3"><span class="rl-dot"></span><b>Generative AI & LLMs</b><em>Advanced</em><small>RAG · Bedrock · LangChain · embeddings</small></li><li data-i="4"><span class="rl-dot"></span><b>Deep Learning</b><em>Advanced</em><small>PyTorch · TensorFlow · CNNs · Transformers</small></li><li data-i="5"><span class="rl-dot"></span><b>NLP</b><em>Advanced</em><small>Hugging Face · spaCy · NER · summarization</small></li></ul>
+    <table class="sr-only"><caption>Skill strength by area</caption><thead><tr><th>Area</th><th>Level</th><th>Key tools</th></tr></thead><tbody><tr><th scope="row">Machine Learning</th><td>Expert (5 / 5)</td><td>XGBoost · scikit-learn · SHAP · time series</td></tr><tr><th scope="row">Statistics</th><td>Expert (5 / 5)</td><td>Inference · Bayesian · experimentation</td></tr><tr><th scope="row">MLOps & AWS</th><td>Advanced+ (4.5 / 5)</td><td>SageMaker · Step Functions · Metaflow · Terraform</td></tr><tr><th scope="row">Generative AI & LLMs</th><td>Advanced (4 / 5)</td><td>RAG · Bedrock · LangChain · embeddings</td></tr><tr><th scope="row">Deep Learning</th><td>Advanced (4 / 5)</td><td>PyTorch · TensorFlow · CNNs · Transformers</td></tr><tr><th scope="row">NLP</th><td>Advanced (4 / 5)</td><td>Hugging Face · spaCy · NER · summarization</td></tr></tbody></table>
+  </div>
   <div class="sgrid">
     <div class="scard reveal"><div class="shd"><span class="rico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/></svg></span><h3>Generative AI &amp; LLMs</h3></div><div class="schips"><span>Retrieval-Augmented Generation (RAG)</span><span>Prompt Engineering</span><span>Fine-tuning</span><span>LangChain</span><span>Hugging Face Transformers</span><span>OpenAI API</span><span>Vector Databases</span><span>Embeddings</span></div></div>
     <div class="scard reveal"><div class="shd"><span class="rico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5.2A3 3 0 0 0 7 17a3 3 0 0 0 5 1.5V5.5A3 3 0 0 0 9.5 4z"/><path d="M14.5 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5.2A3 3 0 0 1 17 17a3 3 0 0 1-5 1.5"/></svg></span><h3>Machine Learning &amp; Deep Learning</h3></div><div class="schips"><span>Supervised &amp; Unsupervised Learning</span><span>Classification</span><span>Regression</span><span>Clustering</span><span>Time Series Analysis</span><span>Recommendation Systems</span><span>CNNs</span><span>RNNs / LSTMs</span><span>GANs</span><span>Transformers</span><span>PyTorch</span><span>TensorFlow</span><span>Keras</span><span>Scikit-learn</span></div></div>
@@ -1046,6 +1081,35 @@ html.nointro #intro{display:none}
         else{var t=document.createElement('textarea');t.value=url;document.body.appendChild(t);t.select();try{document.execCommand('copy');done('Link copied ✓');}catch(e){}document.body.removeChild(t);}
       });
     });
+  })();
+  (function(){
+    var svg=document.getElementById('radar'); if(!svg) return;
+    var data=[["Machine Learning", 5, "XGBoost \u00b7 scikit-learn \u00b7 SHAP \u00b7 time series", "Expert"], ["Statistics", 5, "Inference \u00b7 Bayesian \u00b7 experimentation", "Expert"], ["MLOps & AWS", 4.5, "SageMaker \u00b7 Step Functions \u00b7 Metaflow \u00b7 Terraform", "Advanced+"], ["Generative AI & LLMs", 4, "RAG \u00b7 Bedrock \u00b7 LangChain \u00b7 embeddings", "Advanced"], ["Deep Learning", 4, "PyTorch \u00b7 TensorFlow \u00b7 CNNs \u00b7 Transformers", "Advanced"], ["NLP", 4, "Hugging Face \u00b7 spaCy \u00b7 NER \u00b7 summarization", "Advanced"]], N=data.length, cx=210, cy=190, R=125, ns='http://www.w3.org/2000/svg';
+    function el(t,a,p){var e=document.createElementNS(ns,t);for(var k in a)e.setAttribute(k,a[k]);(p||svg).appendChild(e);return e;}
+    var defs=el('defs',{}); var g=el('radialGradient',{id:'rfill'},defs);
+    el('stop',{offset:'0','stop-color':'var(--accent2)','stop-opacity':'.30'},g); el('stop',{offset:'1','stop-color':'var(--accent)','stop-opacity':'.42'},g);
+    function pt(i,r){var a=-Math.PI/2+i*2*Math.PI/N;return [cx+r*Math.cos(a),cy+r*Math.sin(a)];}
+    for(var l=1;l<=5;l++){var ps=[];for(var i=0;i<N;i++)ps.push(pt(i,R*l/5).join(','));el('polygon',{class:'rgrid',points:ps.join(' ')});}
+    for(var i=0;i<N;i++){var e=pt(i,R);el('line',{class:'raxis',x1:cx,y1:cy,x2:e[0],y2:e[1]});}
+    ['','Basic','','Proficient','','Expert'].forEach(function(t,l){if(t){var p=pt(0,R*l/5);el('text',{class:'rtick',x:p[0]-8,y:p[1]+(l===5?12:3),'text-anchor':'end'}).textContent=t;}});
+    var shape=[];data.forEach(function(d,i){shape.push(pt(i,R*d[1]/5).join(','));});
+    el('polygon',{class:'rshape',points:shape.join(' ')});
+    var tip=document.getElementById('rtip'), box=svg.parentNode, list=document.querySelectorAll('#rlist li'), pts=[], labs=[];
+    data.forEach(function(d,i){
+      var p=pt(i,R*d[1]/5), lp=pt(i,R+26), anchor=Math.abs(lp[0]-cx)<6?'middle':(lp[0]>cx?'start':'end');
+      var t=el('text',{class:'rlab',x:lp[0],y:lp[1]+4,'text-anchor':anchor}); t.textContent=d[0]; labs.push(t);
+      pts.push(el('circle',{class:'rpt',cx:p[0],cy:p[1],r:5}));
+      var h=el('circle',{class:'rhit',cx:p[0],cy:p[1],r:16,tabindex:0,'aria-label':d[0]+': '+d[3]});
+      function on(){set(i,true);} function off(){set(i,false);}
+      h.addEventListener('mouseenter',on);h.addEventListener('mouseleave',off);h.addEventListener('focus',on);h.addEventListener('blur',off);
+      list[i].addEventListener('mouseenter',on);list[i].addEventListener('mouseleave',off);
+    });
+    function set(i,v){
+      pts[i].classList.toggle('on',v); labs[i].classList.toggle('on',v); list[i].classList.toggle('on',v);
+      if(v){var d=data[i],p=pt(i,R*d[1]/5),sc=box.getBoundingClientRect().width/520;
+        tip.innerHTML='<b>'+d[0]+'</b><span>'+d[3]+'</span>';tip.style.left=((p[0]+50)*sc)+'px';tip.style.top=(p[1]*sc)+'px';tip.style.opacity=1;}
+      else tip.style.opacity=0;
+    }
   })();
   var t = document.getElementById('typed');
   if (t && !reduce) {
