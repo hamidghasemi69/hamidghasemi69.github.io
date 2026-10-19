@@ -595,3 +595,12 @@ html.nointro #intro{display:none}
   .sfacts li{grid-template-columns:1fr;gap:2px}
   .learn > .grid{padding:0 14px 14px}
 }
+
+/* Languages line (Journey) */
+.langs{display:flex;flex-wrap:wrap;align-items:center;gap:10px 12px;margin-top:16px;padding:16px 20px;border-radius:16px;background:var(--card);border:1px solid var(--line)}
+.llbl{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-right:6px}
+.lang{display:inline-flex;align-items:baseline;gap:8px;padding:6px 14px;border-radius:999px;border:1px solid var(--line2);background:var(--bg2)}
+.lang b{font-family:var(--head);font-size:15px;font-weight:600;color:var(--text)}
+.lang i{font-style:normal;font-family:var(--mono);font-size:12px;color:var(--accent)}
+.lang.joke{border-style:dashed}
+.lang.joke i{color:var(--muted)}
