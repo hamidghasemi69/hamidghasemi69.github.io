@@ -29,7 +29,7 @@ permalink: /
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
 <style>/* SVG gradient refs stay inline so every browser resolves them against this page */.jarc{stroke:url(#jgrad)}#radar .rshape{fill:url(#rfill)}</style>
 <script type="application/ld+json">
 {
@@ -128,7 +128,7 @@ permalink: /
     <span class="bname">Hamid Ghasemi<small>Principal Data Scientist</small></span>
   </a>
   <div class="links">
-    <a href="#about">About</a><a href="#research">Research</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#talks">Talks</a><a href="#certifications">Certifications</a><a href="#updates">Updates</a><a href="#contact">Contact</a>
+    <a href="#about">About</a><a href="#research">Research</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#talks">Talks</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
   </div>
   <div class="navright">
     <button class="theme" id="themeToggle" type="button" aria-label="Switch between dark and light mode" title="Toggle dark / light mode">
@@ -169,6 +169,16 @@ permalink: /
   <div class="stat"><div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 0 1-.6-9.96A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/><path d="M9.5 13.5l2 2 3.5-4"/></svg></div><div class="n"><span class="count" data-to="3">3</span><em>×</em></div><div class="l">AWS certifications</div></div>
   <div class="stat"><div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2.5" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3.5M8.5 21.5h7"/></svg></div><div class="n"><span class="count" data-to="6">6</span></div><div class="l">Conference talks</div></div>
   <div class="stat"><div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5M22 9v6"/></svg></div><div class="n">Ph.D.</div><div class="l">Electrical Engineering, University of Iowa</div></div>
+</div>
+
+<div class="impact reveal" aria-label="Impact at Arizona State University">
+  <span class="ilbl">Impact <br>at ASU</span>
+  <div class="igrid">
+    <div class="imp"><div class="n">100,000<em>+</em></div><div class="l">students reached by a daily persistence model</div></div>
+    <div class="imp"><div class="n">Hours<em>→</em>min</div><div class="l">model deployment time with end-to-end MLOps</div></div>
+    <div class="imp"><div class="n">99<em>%</em></div><div class="l">production pipeline reliability</div></div>
+    <div class="imp"><div class="n">50<em>%</em></div><div class="l">faster incident response with automated alerts</div></div>
+  </div>
 </div>
 
 <div class="trust reveal" aria-label="Organizations I have worked with, studied at or been certified by">
@@ -219,7 +229,39 @@ permalink: /
 </section>
 
 <section id="projects">
-  <div class="sh reveal"><span class="sico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 5-9 5-9-5z"/><path d="M3 12l9 5 9-5M3 17l9 5 9-5"/></svg></span><h2>Selected Projects</h2><span class="rule"></span></div>
+  <div class="sh reveal"><span class="sico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 5-9 5-9-5z"/><path d="M3 12l9 5 9-5M3 17l9 5 9-5"/></svg></span><h2>Systems &amp; Projects</h2><span class="rule"></span></div>
+  <h3 class="subh reveal">Systems I own</h3>
+  <article class="sys reveal">
+    <div>
+      <div class="smeta"><span class="sorg">Arizona State University · Office of the Provost</span><span class="status st-live">In production · daily</span></div>
+      <h3>Student Persistence Prediction</h3>
+      <p class="sum">A daily XGBoost model that predicts each student's likelihood of persisting, with SHAP explanations of the drivers behind low persistence, so advisors can step in early.</p>
+      <ul class="sfacts">
+        <li><b>Scale</b><span><strong>100,000+ students</strong> reached through proactive interventions</span></li>
+        <li><b>Explainability</b><span>Per-student SHAP drivers alongside every risk score</span></li>
+        <li><b>Ownership</b><span>End to end: features, training, deployment, CI/CD and monitoring</span></li>
+        <li><b>Operations</b><span>Deployment cut from <strong>hours to minutes</strong>, <strong>99% pipeline reliability</strong>, incident response <strong>50% faster</strong></span></li>
+      </ul>
+      <div class="chips"><span class="chip2">XGBoost</span><span class="chip2">SHAP</span><span class="chip2">Metaflow</span><span class="chip2">SageMaker</span><span class="chip2">Step Functions</span><span class="chip2">Terraform</span><span class="chip2">Jenkins</span></div>
+      <div class="slinks"><a href="https://www.youtube.com/watch?v=jcvIhXXAzBY&amp;t=2626s" target="_blank" rel="noopener">Watch the talk ↗</a></div>
+    </div>
+    <figure class="dgwrap"><svg class="dg" viewBox="0 0 360 280" role="img" aria-label="Pipeline: student data flows through a daily Metaflow feature pipeline into an XGBoost model on SageMaker, SHAP explains the key drivers per student, and advisors use them for proactive interventions reaching over 100,000 students; monitoring sends alerts to Slack and Amazon Q."><defs><marker id="dgah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah" d="M0 0L10 5L0 10z"/></marker></defs><rect class="bx" x="6" y="8" width="210" height="40" rx="9"/><text class="t" x="111" y="25" text-anchor="middle">Student data</text><text class="s" x="111" y="39" text-anchor="middle">institutional records</text><rect class="bx" x="6" y="64" width="210" height="40" rx="9"/><text class="t" x="111" y="81" text-anchor="middle">Feature pipeline</text><text class="s" x="111" y="95" text-anchor="middle">Metaflow · refreshed daily</text><rect class="bx hl" x="6" y="120" width="210" height="40" rx="9"/><text class="t" x="111" y="137" text-anchor="middle">XGBoost model</text><text class="s" x="111" y="151" text-anchor="middle">SageMaker · CI/CD: Jenkins</text><rect class="bx" x="6" y="176" width="210" height="40" rx="9"/><text class="t" x="111" y="193" text-anchor="middle">SHAP explanations</text><text class="s" x="111" y="207" text-anchor="middle">key drivers per student</text><rect class="bx hl" x="6" y="232" width="210" height="40" rx="9"/><text class="t" x="111" y="249" text-anchor="middle">Proactive interventions</text><text class="s" x="111" y="263" text-anchor="middle">100,000+ students</text><line class="ar" x1="111" y1="48" x2="111" y2="61" marker-end="url(#dgah)"/><line class="ar" x1="111" y1="104" x2="111" y2="117" marker-end="url(#dgah)"/><line class="ar" x1="111" y1="160" x2="111" y2="173" marker-end="url(#dgah)"/><line class="ar" x1="111" y1="216" x2="111" y2="229" marker-end="url(#dgah)"/><rect class="bx" x="236" y="120" width="120" height="40" rx="9"/><text class="t" x="296" y="137" text-anchor="middle">Monitoring</text><text class="s" x="296" y="151" text-anchor="middle">Slack + Amazon Q</text><line class="ar dash" x1="216" y1="140" x2="236" y2="140"/></svg><figcaption>Pipeline overview</figcaption></figure>
+  </article>
+  <article class="sys reveal">
+    <div>
+      <div class="smeta"><span class="sorg">Arizona State University · Office of the Provost</span><span class="status st-built">Generative AI · AWS</span></div>
+      <h3>RAG Assistant for Academic Advisors</h3>
+      <p class="sum">An LLM solution built on a retrieval-augmented generation architecture that helps academic advisors proactively identify and assist students who need support.</p>
+      <ul class="sfacts">
+        <li><b>Users</b><span>Academic advisors working on student outreach</span></li>
+        <li><b>Architecture</b><span><strong>Amazon Bedrock</strong> for generation, <strong>OpenSearch</strong> for retrieval, orchestrated with Step Functions and Lambda</span></li>
+        <li><b>Ownership</b><span>Designed and implemented end to end</span></li>
+      </ul>
+      <div class="chips"><span class="chip2">RAG</span><span class="chip2">LLMs</span><span class="chip2">Amazon Bedrock</span><span class="chip2">OpenSearch</span><span class="chip2">Step Functions</span><span class="chip2">Lambda</span></div>
+    </div>
+    <figure class="dgwrap"><svg class="dg" viewBox="0 0 360 282" role="img" aria-label="RAG architecture: an academic advisor asks a question, Step Functions and Lambda orchestrate the request, OpenSearch retrieves relevant context, an Amazon Bedrock LLM generates an answer using that context, and grounded guidance returns to the advisor."><defs><marker id="dgah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah" d="M0 0L10 5L0 10z"/></marker></defs><rect class="bx" x="70" y="8" width="220" height="40" rx="9"/><text class="t" x="180" y="25" text-anchor="middle">Academic advisor</text><text class="s" x="180" y="39" text-anchor="middle">question about students to support</text><line class="ar" x1="180" y1="48" x2="180" y2="81" marker-end="url(#dgah2)"/><rect class="bx hl" x="70" y="84" width="220" height="40" rx="9"/><text class="t" x="180" y="101" text-anchor="middle">Orchestration</text><text class="s" x="180" y="115" text-anchor="middle">Step Functions + Lambda</text><rect class="bx" x="4" y="166" width="146" height="40" rx="9"/><text class="t" x="77" y="183" text-anchor="middle">Retrieve</text><text class="s" x="77" y="197" text-anchor="middle">OpenSearch vectors</text><rect class="bx hl" x="210" y="166" width="146" height="40" rx="9"/><text class="t" x="283" y="183" text-anchor="middle">Generate</text><text class="s" x="283" y="197" text-anchor="middle">Amazon Bedrock LLM</text><line class="ar" x1="140" y1="124" x2="88" y2="163" marker-end="url(#dgah2)"/><line class="ar" x1="220" y1="124" x2="272" y2="163" marker-end="url(#dgah2)"/><line class="ar" x1="150" y1="186" x2="207" y2="186" marker-end="url(#dgah2)"/><text class="s" x="179" y="179" text-anchor="middle">context</text><rect class="bx" x="70" y="236" width="220" height="40" rx="9"/><text class="t" x="180" y="253" text-anchor="middle">Grounded guidance</text><text class="s" x="180" y="267" text-anchor="middle">back to the advisor</text><line class="ar" x1="272" y1="206" x2="236" y2="233" marker-end="url(#dgah2)"/></svg><figcaption>Architecture overview</figcaption></figure>
+  </article>
+  <h3 class="subh reveal">Featured project</h3>
   <div class="featured reveal">
     <div>
       <span class="kind">★ Featured · ML Engineering</span>
@@ -234,17 +276,20 @@ permalink: /
       <div class="fstat"><div class="n">97<em>%</em></div><div class="l">test coverage, CI on every push</div></div>
     </div>
   </div>
-  <div class="grid">
-    <a class="card reveal" href="https://github.com/hamidghasemi69/Face-Generation-Using-GAN"><span class="kind">Generative · GAN</span><h4>Face Generation</h4><p>Deep convolutional GAN that generates realistic faces from a celebrity image dataset.</p><span class="go">view code →</span></a>
-    <a class="card reveal" href="https://github.com/hamidghasemi69/Text-Translation-and-Sentiment-Analysis-using-Transformers"><span class="kind">NLP · Transformers</span><h4>Translation &amp; Sentiment Analysis</h4><p>Text translation and sentiment analysis with Hugging Face transformers.</p><span class="go">view code →</span></a>
-    <a class="card reveal" href="https://github.com/hamidghasemi69/Image-Captioning"><span class="kind">Vision · CNN-RNN</span><h4>Image Captioning</h4><p>CNN encoder with an RNN decoder that writes captions for images.</p><span class="go">view code →</span></a>
-    <a class="card reveal" href="https://github.com/hamidghasemi69/Simultaneous-Localization-and-Mapping"><span class="kind">Robotics · SLAM</span><h4>SLAM</h4><p>Tracks a robot's position in a 2D world in real time while mapping landmarks.</p><span class="go">view code →</span></a>
-    <a class="card reveal" href="https://github.com/hamidghasemi69/Facial-Keypoint-Detection"><span class="kind">Vision · PyTorch</span><h4>Facial Keypoint Detection</h4><p>CNN that locates eyes, nose and mouth keypoints in face images.</p><span class="go">view code →</span></a>
-    <a class="card reveal" href="https://github.com/hamidghasemi69/VUI-Speech-Recognizer"><span class="kind">Speech · PyTorch</span><h4>DNN Speech Recognizer</h4><p>Deep network for an end-to-end automatic speech recognition pipeline.</p><span class="go">view code →</span></a>
-    <a class="card reveal" href="https://github.com/hamidghasemi69/NLP-Machine-Translation"><span class="kind">NLP · Seq2Seq</span><h4>Machine Translation</h4><p>RNN encoder-decoder translating between English and French.</p><span class="go">view code →</span></a>
-    <a class="card reveal" href="https://github.com/hamidghasemi69/Part-of-Speech-Tagging"><span class="kind">NLP · HMM</span><h4>Part-of-Speech Tagging</h4><p>Hidden Markov model that tags words with their part of speech.</p><span class="go">view code →</span></a>
-    <a class="card reveal" href="https://github.com/hamidghasemi69/Landmark-Classification-and-Tagging-for-Social-Media"><span class="kind">Vision · CNN</span><h4>Landmark Classification</h4><p>Deep CNN classifying landmarks in social media photos.</p><span class="go">view code →</span></a>
-  </div>
+  <details class="learn">
+    <summary><span class="lt">Learning projects</span><span class="ls">9 deep learning, NLP and computer vision builds, with code on GitHub</span></summary>
+    <div class="grid">
+      <a class="card reveal" href="https://github.com/hamidghasemi69/Face-Generation-Using-GAN"><span class="kind">Generative · GAN</span><h4>Face Generation</h4><p>Deep convolutional GAN that generates realistic faces from a celebrity image dataset.</p><span class="go">view code →</span></a>
+      <a class="card reveal" href="https://github.com/hamidghasemi69/Text-Translation-and-Sentiment-Analysis-using-Transformers"><span class="kind">NLP · Transformers</span><h4>Translation &amp; Sentiment Analysis</h4><p>Text translation and sentiment analysis with Hugging Face transformers.</p><span class="go">view code →</span></a>
+      <a class="card reveal" href="https://github.com/hamidghasemi69/Image-Captioning"><span class="kind">Vision · CNN-RNN</span><h4>Image Captioning</h4><p>CNN encoder with an RNN decoder that writes captions for images.</p><span class="go">view code →</span></a>
+      <a class="card reveal" href="https://github.com/hamidghasemi69/Simultaneous-Localization-and-Mapping"><span class="kind">Robotics · SLAM</span><h4>SLAM</h4><p>Tracks a robot's position in a 2D world in real time while mapping landmarks.</p><span class="go">view code →</span></a>
+      <a class="card reveal" href="https://github.com/hamidghasemi69/Facial-Keypoint-Detection"><span class="kind">Vision · PyTorch</span><h4>Facial Keypoint Detection</h4><p>CNN that locates eyes, nose and mouth keypoints in face images.</p><span class="go">view code →</span></a>
+      <a class="card reveal" href="https://github.com/hamidghasemi69/VUI-Speech-Recognizer"><span class="kind">Speech · PyTorch</span><h4>DNN Speech Recognizer</h4><p>Deep network for an end-to-end automatic speech recognition pipeline.</p><span class="go">view code →</span></a>
+      <a class="card reveal" href="https://github.com/hamidghasemi69/NLP-Machine-Translation"><span class="kind">NLP · Seq2Seq</span><h4>Machine Translation</h4><p>RNN encoder-decoder translating between English and French.</p><span class="go">view code →</span></a>
+      <a class="card reveal" href="https://github.com/hamidghasemi69/Part-of-Speech-Tagging"><span class="kind">NLP · HMM</span><h4>Part-of-Speech Tagging</h4><p>Hidden Markov model that tags words with their part of speech.</p><span class="go">view code →</span></a>
+      <a class="card reveal" href="https://github.com/hamidghasemi69/Landmark-Classification-and-Tagging-for-Social-Media"><span class="kind">Vision · CNN</span><h4>Landmark Classification</h4><p>Deep CNN classifying landmarks in social media photos.</p><span class="go">view code →</span></a>
+    </div>
+  </details>
 </section>
 
 <section id="skills">
@@ -303,43 +348,6 @@ permalink: /
   </div>
 </section>
 
-<section id="updates">
-  <div class="sh reveal"><span class="sico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1.5"/></svg></span><h2>Updates</h2><span class="rule"></span></div>
-  <ul class="updates" id="updList"><li class="upd reveal"><span class="ud">Nov 2025</span><span class="uk k-talk">Talk</span><span class="ut">Spoke on <b>XGBoost for structured data</b> at the ASU Data Conference.</span></li><li class="upd reveal"><span class="ud">Nov 2024</span><span class="uk k-talk">Talk</span><span class="ut">Spoke on <b>Transformers</b> at the ASU Data Conference.</span></li><li class="upd reveal"><span class="ud">Oct 2024</span><span class="uk k-certification">Certification</span><span class="ut">Earned the <b>AWS Certified AI Practitioner</b> certification.</span></li><li class="upd reveal"><span class="ud">Nov 2023</span><span class="uk k-talk">Talk</span><span class="ut">Gave <b>An Introduction to Generative AI</b> at the ASU Data Conference.</span></li><li class="upd reveal"><span class="ud">Apr 2023</span><span class="uk k-certification">Certification</span><span class="ut">Earned the <b>AWS Machine Learning Specialty</b> certification.</span></li><li class="upd reveal"><span class="ud">Mar 2023</span><span class="uk k-certification">Certification</span><span class="ut">Earned the <b>AWS Cloud Practitioner</b> certification.</span></li><li class="upd reveal extra"><span class="ud">Oct 2022</span><span class="uk k-career">Career</span><span class="ut">Promoted to <b>Principal Data Scientist</b> at Arizona State University.</span></li><li class="upd reveal extra"><span class="ud">Dec 2020</span><span class="uk k-career">Career</span><span class="ut">Joined <b>Arizona State University</b> as Senior Data Scientist.</span></li><li class="upd reveal extra"><span class="ud">Mar 2020</span><span class="uk k-career">Career</span><span class="ut">Joined <b>Overstock</b> as Senior Machine Learning Scientist.</span></li><li class="upd reveal extra"><span class="ud">Mar 2018</span><span class="uk k-career">Career</span><span class="ut">Joined <b>Arizona State University</b> as a Postdoctoral Research Associate.</span></li></ul>
-  <button class="morebtn" id="updMore" type="button">Show all updates ↓</button>
-</section>
-
-<section id="visa">
-  <div class="sh reveal"><span class="sico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M8 17h8"/></svg></span><h2>Visa Status</h2><span class="rule"></span></div>
-  <div class="visa reveal">
-    <div class="vhead">
-      <span class="vbadge">🇺🇸 U.S. Citizen</span>
-      <h3>No sponsorship required</h3>
-      <p>My path to U.S. citizenship:</p>
-    </div>
-    <ol class="vsteps">
-      <li class="vstep">
-        <span class="vyear">2016</span>
-        <span class="vdot" aria-hidden="true">🎓</span>
-        <div><b>Green card through the National Interest Waiver (NIW)</b>
-        <p>My research and academic achievements made the case that my work benefits the United States, so I earned an EB-2 NIW green card on my own merit, with no employer sponsor needed. Proud nerd moment!</p></div>
-      </li>
-      <li class="vstep">
-        <span class="vyear">2024</span>
-        <span class="vdot" aria-hidden="true">🗽</span>
-        <div><b>Became a naturalized U.S. citizen</b>
-        <p>Raised my right hand, took the oath, and made it official. One of the best days of my life!</p></div>
-      </li>
-      <li class="vstep now">
-        <span class="vyear">Today</span>
-        <span class="vdot" aria-hidden="true">🚀</span>
-        <div><b>Ready to start, no strings attached</b>
-        <p>Available for any role with no sponsorship, no transfers and no timelines to worry about. Let's build something great.</p></div>
-      </li>
-    </ol>
-  </div>
-</section>
-
 <section id="journey">
   <div class="sh reveal"><span class="sico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><h2>My Journey</h2><span class="rule"></span></div>
   <div class="jwrap reveal">
@@ -379,7 +387,7 @@ permalink: /
 
 <section id="faq">
   <div class="sh reveal"><span class="sico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14"/><circle cx="12" cy="17.3" r=".6" fill="currentColor"/></svg></span><h2>For Recruiters</h2><span class="rule"></span></div>
-  <div class="faqs"><details class="faq reveal" open><summary>Do you require visa sponsorship?<i aria-hidden="true"></i></summary><div class="fa">No. I am a <b>U.S. citizen</b>, so there is no visa, sponsorship or transfer involved.</div></details><details class="faq reveal"><summary>Where are you based?<i aria-hidden="true"></i></summary><div class="fa">Tempe, Arizona (Phoenix area). I am happy to discuss remote, hybrid or on-site arrangements.</div></details><details class="faq reveal"><summary>What kinds of roles interest you?<i aria-hidden="true"></i></summary><div class="fa">Senior and principal-level roles in <b>machine learning, generative AI / LLMs and MLOps</b>, especially where I can own models end to end, from problem framing and modeling to production deployment on AWS.</div></details><details class="faq reveal"><summary>What are your strongest skills?<i aria-hidden="true"></i></summary><div class="fa">Building production ML systems: predictive modeling (XGBoost, deep learning), LLM and RAG applications, explainability with SHAP, and MLOps pipelines on AWS (SageMaker, Bedrock, Step Functions, Lambda).</div></details><details class="faq reveal"><summary>How can I reach you fastest?<i aria-hidden="true"></i></summary><div class="fa"><a href="https://calendly.com/hamidghasemi69/30min" target="_blank" rel="noopener">Book a 30-minute chat</a> on my calendar, use the contact form below, or email <a href="mailto:hamidghasemi69@gmail.com">hamidghasemi69@gmail.com</a>.</div></details><details class="faq reveal"><summary>Can I get your résumé?<i aria-hidden="true"></i></summary><div class="fa">Of course: <a href="/files/resume.pdf">download my résumé (PDF)</a>.</div></details></div>
+  <div class="faqs"><details class="faq reveal" open><summary>Do you require visa sponsorship?<i aria-hidden="true"></i></summary><div class="fa">No. I am a <b>U.S. citizen</b>, so there is no visa, sponsorship or transfer involved. I earned an EB-2 National Interest Waiver green card on my own merit in 2016 and became a naturalized citizen in 2024.</div></details><details class="faq reveal"><summary>Where are you based?<i aria-hidden="true"></i></summary><div class="fa">Tempe, Arizona (Phoenix area). I am happy to discuss remote, hybrid or on-site arrangements.</div></details><details class="faq reveal"><summary>What kinds of roles interest you?<i aria-hidden="true"></i></summary><div class="fa">Senior and principal-level roles in <b>machine learning, generative AI / LLMs and MLOps</b>, especially where I can own models end to end, from problem framing and modeling to production deployment on AWS.</div></details><details class="faq reveal"><summary>What are your strongest skills?<i aria-hidden="true"></i></summary><div class="fa">Building production ML systems: predictive modeling (XGBoost, deep learning), LLM and RAG applications, explainability with SHAP, and MLOps pipelines on AWS (SageMaker, Bedrock, Step Functions, Lambda).</div></details><details class="faq reveal"><summary>How can I reach you fastest?<i aria-hidden="true"></i></summary><div class="fa"><a href="https://calendly.com/hamidghasemi69/30min" target="_blank" rel="noopener">Book a 30-minute chat</a> on my calendar, use the contact form below, or email <a href="mailto:hamidghasemi69@gmail.com">hamidghasemi69@gmail.com</a>.</div></details><details class="faq reveal"><summary>Can I get your résumé?<i aria-hidden="true"></i></summary><div class="fa">Of course: <a href="/files/resume.pdf">download my résumé (PDF)</a>.</div></details></div>
 </section>
 
 <section id="contact">
