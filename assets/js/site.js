@@ -124,7 +124,7 @@
       b.addEventListener('click',function(){
         var lab=b.querySelector('span'), orig=lab.textContent;
         function done(t){b.classList.add('done');lab.textContent=t;setTimeout(function(){b.classList.remove('done');lab.textContent=orig;},1800);}
-        if(navigator.share){navigator.share({title:'Hamidreza Ghasemi · Principal Data Scientist',text:'Hamidreza Ghasemi, Principal Data Scientist at Arizona State University',url:url}).catch(function(){});return;}
+        if(navigator.share){navigator.share({title:'Hamid Ghasemi · Principal Data Scientist',text:'Hamid Ghasemi, Principal Data Scientist at Arizona State University',url:url}).catch(function(){});return;}
         if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(url).then(function(){done('Link copied ✓')},function(){done(url)});}
         else{var t=document.createElement('textarea');t.value=url;document.body.appendChild(t);t.select();try{document.execCommand('copy');done('Link copied ✓');}catch(e){}document.body.removeChild(t);}
       });
